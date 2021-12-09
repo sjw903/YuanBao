@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFFFBF8"
+    tools:context=".main.view.InviteFriendsActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/invite_friends_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/invite_friends_head_view"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/invite_friends_img_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_invite_friends_bg" />
+
+            <RelativeLayout
+                android:id="@+id/invite_friends_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invite_friends_img_bg"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/shape_bg_white_10">
+
+                <TextView
+                    android:id="@+id/invite_friends_tv_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:gravity="center"
+                    android:text="我的邀请码：A221KF（点击复制）"
+                    android:textColor="@color/colorEA5504"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/invite_friends_tv_arrive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/invite_friends_tv_code"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="center"
+                    android:text="已到账：0元"
+                    android:textColor="@color/colorEA5504"
+                    android:textSize="@dimen/text_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/invite_friends_tv_arrive"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+
+                    <TextView
+                        android:id="@+id/invite_friends_tv_wx"
+                        android:layout_width="@dimen/margin_150"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@mipmap/icon_invite_friends_wx" />
+
+                    <TextView
+                        android:id="@+id/invite_friends_tv_generate_mito"
+                        android:layout_width="@dimen/margin_150"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/icon_invite_friends_generate_mito" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/invite_friends_img_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invite_friends_ll"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@mipmap/icon_invite_friends_skill" />
+
+            <ImageView
+                android:id="@+id/invite_friends_img_get_brokerage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invite_friends_img_skill"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@mipmap/icon_invite_friends_get_brokerage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invite_friends_img_get_brokerage"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/shape_bg_white_10">
+
+                <ImageView
+                    android:id="@+id/invite_friends_img_promote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@mipmap/icon_invite_friends_promote" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/invite_friends_recycler_promote_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/invite_friends_img_promote"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20" />
+
+                <TextView
+                    android:id="@+id/invite_friends_tv_more_promote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/invite_friends_recycler_promote_detail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:drawableRight="@mipmap/icon_login_join"
+                    android:text="查看更多"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/text_12" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+</RelativeLayout>

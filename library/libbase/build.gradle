@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.library'
+}
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+
+    }
+}
+
+dependencies {
+
+    implementation lib.arouter
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.0.pr3'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.0.pr3'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.0.pr3'
+
+    implementation lib.recyclerview
+    // 修改为api，使别的module也可使用
+    api lib.glide
+    api lib.fastjson
+
+}

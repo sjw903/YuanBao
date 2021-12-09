@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bindphone.view.BindPhoneActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/bind_phone_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/bind_phone_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bind_phone_head_view"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_20"
+        android:text="为了您的账户安全，请先进行验证"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_20" />
+
+    <EditText
+        android:id="@+id/bind_phone_edit_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/bind_phone_tv_title"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/phone_num"
+        android:inputType="number"
+        android:maxLength="11"
+        android:singleLine="true"
+        android:textColor="@color/colorAAAAAA"
+        android:textColorHint="@color/colorAAAAAA"
+        android:textSize="@dimen/text_15" />
+
+    <View
+        android:id="@+id/bind_phone_view_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/bind_phone_edit_phone_num"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@color/colorD8D8D8" />
+
+    <RelativeLayout
+        android:id="@+id/bind_phone_rl_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/bind_phone_view_line1"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/bind_phone_edit_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:minWidth="@dimen/margin_50"
+            android:singleLine="true"
+            android:textColor="@color/colorAAAAAA"
+            android:textColorHint="@color/colorAAAAAA"
+            android:textSize="@dimen/text_15" />
+
+        <Button
+            android:id="@+id/bind_phone_but_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/shape_gradient_bg_but_line_gray"
+            android:gravity="center_vertical"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:text="@string/get_verification"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bind_phone_view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/bind_phone_rl_verification"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@color/colorD8D8D8" />
+
+    <Button
+        android:id="@+id/bind_phone_but_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/bind_phone_view_line2"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/shape_gradient_bg_but_alpha_50"
+        android:gravity="center"
+        android:text="@string/app_login_modify_phone_num"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_18" />
+
+</RelativeLayout>

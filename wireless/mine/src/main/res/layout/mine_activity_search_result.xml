@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.search.OrderSearchActivity">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@+id/search_ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/search_result_ib_back"
+            android:layout_width="@dimen/title_bar_back_width"
+            android:layout_height="@dimen/title_bar_back_height"
+            android:background="@null"
+            android:padding="@dimen/title_bar_horizontal_padding"
+            android:src="@mipmap/icon_back"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_32"
+            android:layout_weight="1"
+            android:background="@drawable/icon_order_search_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/margin_24"
+                android:layout_height="@dimen/margin_24"
+                android:layout_marginStart="@dimen/margin_9"
+                android:src="@mipmap/icon_order_search" />
+
+            <TextView
+                android:id="@+id/search_tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_32"
+                android:layout_marginStart="@dimen/margin_8"
+                android:background="@drawable/icon_order_search_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/order_search"
+                android:textColorHint="@color/wing_sub_title_hint"
+                android:textColor="@color/wing_sub_title"
+                android:textSize="@dimen/margin_13" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/search_result_ib_message"
+            android:layout_width="@dimen/title_bar_back_width"
+            android:layout_height="@dimen/title_bar_back_height"
+            android:background="@null"
+            android:padding="@dimen/title_bar_horizontal_padding"
+            android:src="@mipmap/icon_shop_message_gray" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_result_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

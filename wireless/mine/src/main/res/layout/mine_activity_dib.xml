@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".dib.view.DibActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:id="@+id/mine_assets_dib_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="说明"
+        app:titleName="零钱" />
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mine_assets_dib_head_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_bg_20d5c8_00b2bf_10">
+
+        <ImageView
+            android:id="@+id/mine_assets_small_change_iv"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"
+            android:src="@mipmap/icon_assets_small_change" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/mine_assets_small_change_iv"
+            android:text="零钱"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_15" />
+
+        <View
+            android:id="@+id/mine_assets_line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mine_assets_small_change_iv"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/icon_dib_line_ffffff" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_assets_line_view"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:text="当前可用"
+            android:textColor="#BEF0EE"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_assets_dib_tv_title"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="￥0.00"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_30" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_tv_freeze_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已冻结不可用"
+            android:textSize="@dimen/text_12"
+            android:textColor="#BEF0EE"
+            android:layout_below="@+id/mine_assets_dib_tv_current"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"/>
+
+        <TextView
+            android:id="@+id/mine_assets_dib_tv_freeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_assets_dib_tv_current"
+            android:layout_toEndOf="@+id/mine_assets_dib_tv_freeze_title"
+            android:text="￥ 0"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_14"
+            android:layout_marginTop="@dimen/margin_19"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/mine_assets_dib_tv_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:background="@drawable/bg_ffffff_radius16"
+            android:paddingStart="27dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="7dp"
+            android:text="提现"
+            android:textColor="@color/color02B4BF"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mine_assets_dib_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/mine_assets_rl" />
+
+</RelativeLayout>

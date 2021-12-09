@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_call_height"
+    android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+    android:layout_marginTop="@dimen/mine_horizontal_margin"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/mine_call_rl_online"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@mipmap/icon_mine_call_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:id="@+id/mine_call_tv_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_item_online_service"
+            android:textColor="@color/mine_call_name_title"
+            android:textSize="@dimen/mine_call_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_call_tv_online"
+            android:layout_marginTop="@dimen/mine_call_sub_text_top_margin"
+            android:text="@string/mine_item_service_time"
+            android:textColor="@color/mine_call_sub_name_title"
+            android:textSize="@dimen/mine_call_sub_text_size" />
+
+        <ImageView
+            android:layout_width="@dimen/mine_call_image_size"
+            android:layout_height="@dimen/mine_call_image_size"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_mine_online" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_call_rl_phone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/mine_call_start_margin"
+        android:layout_weight="1"
+        android:background="@mipmap/icon_mine_call_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:id="@+id/mine_call_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_item_call"
+            android:textColor="@color/mine_call_name_title"
+            android:textSize="@dimen/mine_call_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_call_tv_phone"
+            android:layout_marginTop="@dimen/mine_call_sub_text_top_margin"
+            android:text="@string/mine_item_call_phone"
+            android:textColor="@color/mine_call_sub_name_title"
+            android:textSize="@dimen/mine_call_sub_text_size" />
+
+        <ImageView
+            android:layout_width="@dimen/mine_call_image_size"
+            android:layout_height="@dimen/mine_call_image_size"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_mine_call" />
+
+    </RelativeLayout>
+
+</LinearLayout>

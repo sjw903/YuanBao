@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.cancel.refund.RefundDetailActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/refund_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/icon_refund_card_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:paddingVertical="@dimen/margin_9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refund_order_code"
+                android:textColor="@color/wing_sub_title"
+                android:textSize="@dimen/wing_sub_title" />
+
+
+            <TextView
+                android:id="@+id/refund_tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/wing_sub_title"
+                tools:text="YBG20210915000001" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_18"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refund_title"
+                android:textColor="@color/wing_sub_title"
+                android:textSize="@dimen/wing_sub_title" />
+
+
+            <TextView
+                android:id="@+id/refund_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/refund_tv_pass"
+                android:textColor="@color/wing_selected_title"
+                android:textSize="@dimen/wing_sub_title" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/icon_refund_card_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:paddingVertical="@dimen/margin_9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refund_title"
+                android:textColor="@color/wing_sub_title"
+                android:textSize="@dimen/wing_sub_title" />
+
+
+            <TextView
+                android:id="@+id/refund_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/refund_monty"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/wing_sub_title" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/refund_tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_9"
+            android:text="退款将直接退回您的付款账户，优惠券及零钱将原路返回。请注意查收。"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_11" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/refund_rv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_refund_card_bg"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_9"
+        android:paddingTop="@dimen/margin_17"
+        android:paddingEnd="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_9"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".onecity.view.OneCityOPActivity">
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:id="@+id/shop_onecity_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.yuanbaogo.zui.banner.BannerView
+                android:id="@+id/shop_onecity_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/shop_onecity_rl_function"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_95"
+                android:layout_marginTop="228dp"
+                android:background="@drawable/shape_gradient_top_bg_white_10"
+                android:visibility="gone">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/shop_onecity_viewpager_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/shop_onecity_ll_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_onecity_rl_live_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_onecity_rl_function"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorFFFFFF"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/shop_onecity_rl_live_goods_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:drawableRight="@mipmap/icon_shop_onecity2"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="@string/app_one_city_live_goods"
+                        android:textColor="@color/color424242"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/app_one_city_live_goods_more"
+                        android:textColor="@color/colorAEAEAE"
+                        android:textSize="@dimen/text_12" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_onecity_recycler_live_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_onecity_rl_live_goods_title"
+                    android:layout_margin="@dimen/margin_10"
+                    android:nestedScrollingEnabled="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_onecity_rl_live_explosion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_220"
+                android:background="@drawable/shape_gradient_top_bg_white_10"
+                android:nestedScrollingEnabled="false">
+
+                <RelativeLayout
+                    android:id="@+id/shop_onecity_rl_live_explosion_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:drawableRight="@mipmap/icon_shop_onecity4"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="@string/app_one_city_live_explosion"
+                        android:textColor="@color/color424242"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/app_one_city_live_goods_more"
+                        android:textColor="@color/colorAEAEAE"
+                        android:textSize="@dimen/text_12"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_onecity_recycler_explosion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_onecity_rl_live_explosion_title"
+                    android:layout_margin="@dimen/margin_10" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_onecity_recycler_pavilion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_onecity_rl_live_explosion"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:nestedScrollingEnabled="false" />
+
+            <RelativeLayout
+                android:id="@+id/shop_onecity_rl_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_onecity_recycler_pavilion">
+
+                <ImageView
+                    android:id="@+id/shop_onecity_img_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_shop_onecity_recommend" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_onecity_recycler_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_onecity_img_recommend"
+                    android:nestedScrollingEnabled="false" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_onecity_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/shop_onecity_img_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_shop_cart" />
+
+        <ImageView
+            android:id="@+id/shop_onecity_img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_onecity_img_shopcart"
+            android:src="@mipmap/icon_search_top" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

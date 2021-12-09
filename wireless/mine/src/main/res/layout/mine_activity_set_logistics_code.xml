@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.after.logistics.SetLogisticsCodeActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/logistics_title" />
+
+    <LinearLayout
+        android:id="@+id/set_code_ll_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics_company"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/margin_13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/set_code_tv_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_38"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/logistics_company_hint"
+            android:textColor="@color/wing_title"
+            android:textColorHighlight="@color/wing_sub_title_hint"
+            android:textSize="@dimen/margin_13" />
+
+        <ImageView
+            android:layout_width="@dimen/margin_7"
+            android:layout_height="@dimen/margin_12"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:src="@mipmap/icon_setting_right" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:background="@color/pay_set_line" />
+
+    <LinearLayout
+        android:id="@+id/set_code_ll_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics_code"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/margin_13"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/set_code_et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_38"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/logistics_code_hint"
+            android:inputType="number"
+            android:textColor="@color/wing_title"
+            android:textColorHighlight="@color/wing_sub_title_hint"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/set_code_tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_20"
+            android:background="@drawable/icon_address_add"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/sales_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/address_bottom_btn_text_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

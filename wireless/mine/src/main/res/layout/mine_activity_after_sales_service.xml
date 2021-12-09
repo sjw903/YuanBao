@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.finish.after.AfterSalesServiceActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/after_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/mine_layout_order_goods_list" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_3"
+                android:background="@drawable/icon_address_item_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/after_rl_refunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_75"
+                    android:padding="@dimen/margin_10">
+
+                    <ImageView
+                        android:id="@+id/after_iv_info"
+                        android:layout_width="@dimen/margin_14"
+                        android:layout_height="@dimen/margin_14"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_14"
+                        android:src="@mipmap/icon_after_refunds" />
+
+                    <TextView
+                        android:id="@+id/after_tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/after_iv_info"
+                        android:text="@string/after_refunds"
+                        android:textColor="@color/wing_title"
+                        android:textSize="@dimen/wing_selected_btn" />
+
+                    <ImageView
+                        android:id="@+id/after_iv_right"
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_setting_right" />
+
+                    <TextView
+                        android:id="@+id/afte_tv_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/after_iv_right"
+                        android:text="@string/after_tip"
+                        android:textColor="@color/wing_selected_title"
+                        android:textSize="@dimen/margin_12" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="@dimen/margin_10"
+                    android:background="@color/pay_set_line" />
+
+                <RelativeLayout
+                    android:id="@+id/after_rl_refund_only"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_75"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/after_iv_only"
+                        android:layout_width="@dimen/margin_14"
+                        android:layout_height="@dimen/margin_14"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_14"
+                        android:src="@mipmap/icon_after_refund_only" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/after_iv_only"
+                        android:text="@string/after_refund_only"
+                        android:textColor="@color/wing_title"
+                        android:textSize="@dimen/wing_selected_btn" />
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_setting_right" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/mine_layout_order_service" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

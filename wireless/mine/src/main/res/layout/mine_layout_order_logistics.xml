@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_order_card_order_info_height"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/margin_10">
+
+    <com.yuanbaogo.zui.view.RoundImageView
+        android:id="@+id/logistics_iv_img"
+        android:layout_width="@dimen/margin_32"
+        android:layout_height="@dimen/margin_32"
+        android:layout_marginStart="@dimen/margin_10"
+        app:radius="@dimen/margin_4" />
+
+    <TextView
+        android:id="@+id/logistics_tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_toEndOf="@id/logistics_iv_img"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/margin_12"
+        tools:text="已下单，正在出库" />
+
+    <TextView
+        android:id="@+id/logistics_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_toEndOf="@id/logistics_iv_img"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/margin_10"
+        tools:text="您的订单已在江苏物流仓库拣货完成，正在等待物流取货"
+        android:maxLines="1"/>
+
+
+</RelativeLayout>

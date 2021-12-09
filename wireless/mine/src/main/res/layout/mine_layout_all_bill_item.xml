@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_210"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/icon_address_item_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bill_item_iv_group"
+            android:layout_width="@dimen/margin_16"
+            android:layout_height="@dimen/margin_16"
+            android:src="@mipmap/icon_all_bill_group" />
+
+        <TextView
+            android:id="@+id/bill_item_tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4"
+            android:textColor="@color/bill_item_title"
+            android:textSize="@dimen/margin_13"
+            tools:text="拼团专区" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/bill_item_iv_img1"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:background="#000" />
+
+        <ImageView
+            android:id="@+id/bill_item_iv_img2"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_toEndOf="@id/bill_item_iv_img1"
+            android:background="#000" />
+
+        <ImageView
+            android:id="@+id/bill_item_iv_img3"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_toEndOf="@id/bill_item_iv_img2"
+            android:background="#000" />
+
+        <ImageView
+            android:id="@+id/bill_item_iv_img4"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_toEndOf="@id/bill_item_iv_img3"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/bill_item_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/bill_item_num"
+            android:textSize="@dimen/margin_13"
+            tools:text="共1234件" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/icon_all_bill_item_bg"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:paddingVertical="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/bill_item_tv_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bill_item_title"
+            android:textSize="@dimen/margin_13"
+            tools:text="普通发票-商品明细-个人" />
+
+        <TextView
+            android:id="@+id/bill_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/bill_item_name"
+            android:textSize="@dimen/margin_10"
+            tools:text="抬头名称 王三峰" />
+
+        <TextView
+            android:id="@+id/bill_item_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="¥999999.90"
+            android:textColor="@color/bill_item_title"
+            android:textSize="@dimen/margin_13" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|center">
+
+        <TextView
+            android:id="@+id/bill_item_tv_make_up"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:textColor="@color/bill_item_btn"
+            android:gravity="center"
+            android:text="@string/all_bill_item_make_up"
+            android:textSize="@dimen/margin_13"
+            android:background="@drawable/icon_all_bill_item_btn_active_bg"
+            android:layout_marginEnd="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/bill_item_tv_reopen"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:textColor="@color/bill_item_num"
+            android:gravity="center"
+            android:text="@string/all_bill_item_reopen"
+            android:textSize="@dimen/margin_13"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:layout_marginEnd="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/bill_item_tv_details"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:textColor="@color/bill_item_num"
+            android:gravity="center"
+            android:text="@string/all_bill_item_details"
+            android:textSize="@dimen/margin_13"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:layout_marginEnd="@dimen/margin_10" />
+
+    </LinearLayout>
+
+</LinearLayout>

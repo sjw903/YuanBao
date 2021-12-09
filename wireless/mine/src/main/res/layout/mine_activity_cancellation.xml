@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context="com.yuanbaogo.mine.logout.activity.CancellationActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/login_cancella_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/login_cancella_but_confirm_logout"
+        android:layout_below="@+id/login_cancella_head_view"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@color/colorFAFAFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:drawableTop="@mipmap/icon_close_tip"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="开始注销前，请确认以下内容"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/login_cancella_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:textColor="@color/colorAAAAAA"
+                android:textSize="@dimen/text_13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="·选择注销原因"
+                android:textColor="@color/colorAAAAAA"
+                android:textSize="@dimen/text_13" />
+
+            <TextView
+                android:id="@+id/login_cancella_tv_choose"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/shape_gradient_bg_gray_alpha_5"
+                android:drawableRight="@mipmap/icon_login_join"
+                android:padding="@dimen/margin_10"
+                android:text="选择原因"
+                android:textColor="@color/colorAAAAAA"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/login_cancella_but_confirm_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:background="@drawable/shape_gradient_bg_but_gray_alpha_50"
+        android:gravity="center"
+        android:text="确认注销"
+        android:textColor="@color/colorCCCCCC"
+        android:textSize="@dimen/text_16" />
+
+</RelativeLayout>

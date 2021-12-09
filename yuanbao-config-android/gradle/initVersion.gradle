@@ -1,0 +1,34 @@
+Properties versionProperties = new Properties()
+def versionProPath = "${rootDir}/yuanbao-config-android/properties/version.properties"
+def versionFile = new File(versionProPath)
+if (versionFile.canRead()) {
+    versionProperties.load(versionFile.newDataInputStream())
+} else {
+    println("not find version.properties !!!")
+}
+
+Properties yuanbaoProperties = new Properties()
+def yuanbaoProPath = "${rootDir}/yuanbao-config-android/properties/yuanbao.properties"
+
+def yuanbaoFile = new File(yuanbaoProPath)
+if (yuanbaoFile.canRead()) {
+    yuanbaoProperties.load(yuanbaoFile.newDataInputStream())
+} else {
+    println("not find yuanbao.properties !!!")
+}
+
+rootProject.ext.set("JAVA_VERSION", versionProperties.JAVA_VERSION)
+rootProject.ext.set("COMPILE_VERSION", versionProperties.COMPILE_VERSION)
+rootProject.ext.set("BUILD_TOOLS_VERSION", versionProperties.BUILD_TOOLS_VERSION)
+rootProject.ext.set("ANDROID_SUPPORT_VERSION", versionProperties.ANDROID_SUPPORT_VERSION)
+rootProject.ext.set("TARGET_VERSION", versionProperties.TARGET_VERSION)
+rootProject.ext.set("MIN_VERSION", versionProperties.MIN_VERSION)
+rootProject.ext.set("VERSION_CODE", versionProperties.VERSION_CODE)
+rootProject.ext.set("VERSION_NAME", versionProperties.VERSION_NAME)
+
+rootProject.ext.set("ENV", yuanbaoProperties.Env)
+
+
+
+
+

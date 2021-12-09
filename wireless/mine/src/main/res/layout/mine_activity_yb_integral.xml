@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorFAFAFA"
+    tools:context=".integral.view.YBIntegralActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:id="@+id/mine_assets_integral_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="说明"
+        app:titleName="元宝积分" />
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_integral_rl"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@+id/mine_assets_integral_head_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_bg_ffa365_ee541c_10">
+
+        <ImageView
+            android:id="@+id/mine_assets_small_change_iv"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"
+            android:src="@mipmap/icon_assets_integral_small_change" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/mine_assets_small_change_iv"
+            android:text="元宝积分"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_15" />
+
+        <View
+            android:id="@+id/mine_assets_line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mine_assets_small_change_iv"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/icon_dib_line_ffffff" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_assets_line_view"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:text="当前积分"
+            android:textColor="#FDD7C1"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/mine_assets_integral_tv_current_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_assets_dib_tv_title"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_25"
+            android:text="0"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_30" />
+
+        <TextView
+            android:id="@+id/mine_assets_integral_tv_recharge_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginBottom="@dimen/margin_40"
+            android:background="@drawable/bg_ffffff_radius16"
+            android:paddingStart="27dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="27dp"
+            android:paddingBottom="7dp"
+            android:text="充值"
+            android:textColor="@color/colorEA5504"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mine_assets_integral_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/mine_assets_integral_rl" />
+
+</RelativeLayout>

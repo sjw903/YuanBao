@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/mine_horizontal_margin"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:id="@+id/mine_assets_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_13"
+        android:gravity="center_vertical">
+
+        <com.yuanbaogo.zui.view.CircleImageView
+            android:id="@+id/mine_assets_iv_header"
+            android:layout_width="@dimen/margin_71"
+            android:layout_height="@dimen/margin_71"
+            android:src="@mipmap/icon_default_head" />
+
+        <TextView
+            android:id="@+id/mine_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_16"
+            tools:text="测试" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:src="@mipmap/icon_mine_header_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_55"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/icon_assets_bg"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/mine_ll_assets"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_mine_assets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:text="@string/mine_assets"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/mine_assets_split_width"
+            android:layout_height="@dimen/mine_assets_split_height"
+            android:background="@color/mine_card_split_line_color" />
+
+        <LinearLayout
+            android:id="@+id/mine_ll_coupon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_mine_coupon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:text="@string/mine_coupon"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/mine_assets_split_width"
+            android:layout_height="@dimen/mine_assets_split_height"
+            android:background="@color/mine_card_split_line_color" />
+
+        <LinearLayout
+            android:id="@+id/mine_ll_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_mine_collection" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:text="@string/mine_collection"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

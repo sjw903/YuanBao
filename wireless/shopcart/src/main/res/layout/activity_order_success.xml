@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.view.OrderSuccessActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/order_success_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/order_success_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_success_head_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_80"
+        android:background="@mipmap/icon_order_success" />
+
+    <TextView
+        android:id="@+id/order_success_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_success_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_30"
+        android:text="支付完成"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_20" />
+
+    <TextView
+        android:id="@+id/order_success_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_success_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="共支付 ¥ 0.00"
+        android:textColor="@color/colorAAAAAA"
+        android:textSize="@dimen/text_20" />
+
+    <Button
+        android:id="@+id/order_success_but_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/text_20"
+        android:background="@drawable/shape_gradient_bg_but_line_orrange"
+        android:gravity="center"
+        android:text="继续购物"
+        android:textColor="@color/colorEA5504"
+        android:textSize="@dimen/text_18" />
+
+    <Button
+        android:id="@+id/order_success_but_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_above="@id/order_success_but_continue"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/shape_gradient_bg_but_login_50"
+        android:gravity="center"
+        android:text="返回首页"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_18" />
+
+</RelativeLayout>

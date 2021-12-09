@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_site_view_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_site_view_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@mipmap/icon_share_delete"
+        android:drawablePadding="@dimen/margin_10"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20"
+        android:text="删除"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_12" />
+
+</RelativeLayout>

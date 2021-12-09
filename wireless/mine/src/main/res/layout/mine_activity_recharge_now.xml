@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".groupaccount.view.RechargeNowActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/mine_assets_recharge_now_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_recharge_now_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_recharge_now_head_view"
+        android:background="@color/colorFFFFFF">
+
+        <ImageView
+            android:id="@+id/mine_assets_recharge_now_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_assets_recharge_now_five_hundred" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_recharge_now_img"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="@string/recharge_now"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_recharge_now_rl_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_recharge_now_rl_top"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_gradient_bg_white_10">
+
+        <TextView
+            android:id="@+id/mine_assets_recharge_now_tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:text="元宝券抵扣"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:id="@+id/mine_assets_recharge_now_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_below="@id/mine_assets_recharge_now_tv_coupon"
+            android:background="@color/color4DE4E4E4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mine_assets_recharge_now_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_recharge_now_line"
+            android:layout_marginLeft="@dimen/margin_11"
+            android:layout_marginTop="@dimen/margin_16" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_recharge_now_rl_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_recharge_now_rl_coupon"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_gradient_bg_white_10">
+
+        <RelativeLayout
+            android:id="@+id/mine_assets_recharge_now_rl_deduction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_36">
+
+            <TextView
+                android:id="@+id/mine_assets_recharge_now_tv_deduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="元宝券抵扣"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_13" />
+
+            <TextView
+                android:id="@+id/mine_assets_recharge_now_tv_no_useticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_3"
+                android:layout_toRightOf="@id/mine_assets_recharge_now_tv_deduction"
+                android:text="无可用元宝券"
+                android:textColor="@color/colorEA5504"
+                android:textSize="@dimen/text_11"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mine_assets_recharge_now_tv_useticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="0.00"
+                android:textColor="@color/colorAAAAAA"
+                android:textSize="@dimen/text_13" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_36"
+            android:layout_below="@id/mine_assets_recharge_now_rl_deduction">
+
+            <TextView
+                android:id="@+id/mine_assets_recharge_now_tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="还需支付"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_13" />
+
+            <TextView
+                android:id="@+id/mine_assets_recharge_now_tv_usecash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="500.00"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_13" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_recharge_now_rl_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_recharge_now_rl_hint"
+        android:layout_marginTop="@dimen/margin_20"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/mine_assets_recharge_now_tv_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值后将获得元宝券："
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/mine_assets_recharge_now_tv_get_ingots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mine_assets_recharge_now_tv_get"
+            android:text="500"
+            android:textColor="@color/color00BFA5"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_assets_recharge_now_tv_proportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_recharge_now_rl_get"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="1元宝券 = 1元人民币"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_9"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mine_assets_recharge_now_tv_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_recharge_now_tv_proportion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_1"
+        android:text="注：元宝券用于下一次充值等额抵扣"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_9"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/mine_assets_recharge_now_but_paly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:background="@drawable/selector_bg_but_login"
+        android:gravity="center"
+        android:text="支付"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_16" />
+
+</RelativeLayout>

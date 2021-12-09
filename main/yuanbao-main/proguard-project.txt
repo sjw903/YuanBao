@@ -1,0 +1,327 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.Config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+-optimizationpasses 5
+-dontoptimize
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-dontwarn
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes InnerClasses,SourceFile,LineNumberTable
+-ignorewarnings
+
+-dontwarn java.nio.file.*
+-dontwarn javax.annotation.**
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+
+-keep public class * extends android.app.Activity
+-keep public class * extends androidx.fragment.app.FragmentActivity
+-keep public class * extends androidx.fragment.app.Fragment
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keepnames class * extends android.view.View
+-keep  class android.net.compatibility.** {*; }
+-dontwarn android.net.compatibility.**
+-keep  class android.net.http.** {*; }
+-dontwarn android.net.http.**
+-keep  class android.internal.http.multipart.** {*; }
+-dontwarn android.internal.http.multipart.**
+-dontwarn android.support.**
+-keep class android.net.http.SslError
+-keep class android.webkit.**{*;}
+
+-keep class m.framework.**{*;}
+-keep class **.R$* {*;}
+-keep class **.R{*;}
+
+-keep class androidx.viewpager.widget.ViewPager{
+    *;
+}
+-keep class android.support.v4.view.ViewPager$**{
+	  *;
+}
+
+-keepattributes Signature
+
+#保留自定义View,如"属性动画"中的set/get方法
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+#保留Google原生服务需要的类
+-dontnote **ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+
+
+#保持 Parcelable 不被混淆
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+#保持 Serializable 不被混淆
+-keepnames class * implements java.io.Serializable
+
+#保持 Serializable 不被混淆并且enum 类也不被混淆
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    !static !transient <fields>;
+    !private <fields>;
+    !private <methods>;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+#保持枚举 enum 类不被混淆
+-keepclassmembers enum * {
+  public static **[] values();
+  public static ** valueOf(java.lang.String);
+}
+
+#保留native方法的类名和方法名
+-keepclassmembers class * {
+    public <methods>;
+}
+#保持 native 方法不被混淆
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+#-keepclassmembers class com.fablesoft.haianphoneapp.JavaScriptInterface {
+#   public *;
+#}
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+
+
+
+
+
+# ********************************以下是三方********************************
+
+# -------------OkHttp----------
+-keepattributes Annotation
+-dontwarn okhttp3.**
+-keep class okhttp3.** { *;}
+-keep interface okhttp3.** { *;}
+-dontwarn okio.**
+-dontwarn com.squareup.okhttp.**
+-keep class okio.**{*;}
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+# -------------OkHttp----------
+
+
+# -------------fastjson----------
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.*.** {*; }
+# -------------fastjson----------
+
+
+# -------------butterknife----------
+-keep public class * implements butterknife.internal.ViewBinder { public <init>(); }
+-keep class butterknife.*
+-keep class butterknife.** { *; }
+-dontwarn butterknife.internal.**
+-keep class **$$ViewBinder { *; }
+-keepclasseswithmembernames class * { @butterknife.* <methods>; }
+-keepclasseswithmembernames class * { @butterknife.* <fields>; }
+-keep class **$$ViewInjector { *; }
+# -------------butterknife----------
+
+
+# -------------eventbus----------
+-keepattributes *Annotation*
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(java.lang.Throwable);
+}
+# -------------eventbus----------
+
+
+# -------------Glide----------
+-dontwarn com.bumptech.glide.**
+-keep class com.bumptech.glide.**{*;}
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule {
+   <init>(...);
+  }
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+    **[] $VALUES;
+    public *;
+  }
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+    **[] $VALUES;
+    public *;
+    }
+# -------------Glide----------
+
+# -------------weixin--腾讯--------
+-keep class com.tencent.mm.** { *; }
+-dontwarn com.tencent.**
+-keep class com.tencent.** { *; }
+# -------------weixin---腾讯-------
+
+# -------------mmkv----------
+-keepclasseswithmembers,includedescriptorclasses class com.tencent.mmkv.** {
+    native <methods>;
+    long nativeHandle;
+    private static *** onMMKVCRCCheckFail(***);
+    private static *** onMMKVFileLengthError(***);
+    private static *** mmkvLogImp(...);
+    private static *** onContentChangedByOuterProcess(***);
+}
+# -------------mmkv----------
+
+# -------------友盟----统计，分享------
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.umeng.**
+-keep public class javax.**
+-keep public class android.webkit.**
+-dontwarn android.support.v4.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-keepattributes EnclosingMethod
+-keep public interface com.umeng.socialize.**
+-keep public class com.umeng.socialize.* {*;}
+-keep class com.umeng.commonsdk.statistics.common.MLog {*;}
+-keep class com.umeng.commonsdk.UMConfigure {*;}
+-keep class com.umeng.** {*;}
+-keep class com.umeng.**
+-keep public class com.tencent.** {*;}
+-keep class com.umeng.socialize.handler.**
+-keep class com.umeng.socialize.handler.*
+-keep class com.tencent.mm.opensdk.** {
+   *;
+}
+-keep class com.tencent.** {*;}
+-dontwarn com.tencent.**
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+# -------------友盟----统计，分享------
+
+# -------------腾讯X5浏览器 webview------
+-dontwarn dalvik.**
+-dontwarn com.tencent.smtt.**
+-keep class com.tencent.smtt.** {
+    *;
+}
+-keep class com.tencent.tbs.** {
+    *;
+}
+# -------------腾讯X5浏览器------
+
+
+# -------------极验 SDK 已做混淆处理，集成时请带上混淆规则，勿再次混淆 SDK----------
+-dontwarn com.geetest.sdk.**
+-keep class com.geetest.sdk.**{*;}
+-keep class android.webkit.JavascriptInterface
+# -------------极验------------------
+
+
+
+
+# ********************************以下是业务代码里的model和bean********************************
+
+# ---------------architect------------
+-keep class com.tencent.liteav.demo.beauty.model.** {*;}
+-keep class com.yuanbaogo.commonlib.bean.** {*;}
+-keep class com.yuanbaogo.commonlib.router.model.** {*;}
+-keep class com.yuanbaogo.finance.pay.model.** {*;}
+-keep class com.yuanbaogo.im.model.** {*;}
+-keep class com.yuanbaogo.video.videopublish.model.** {*;}
+#-keep class com.tencent.qcloud.ugckit.module.** {*;}
+
+# ----------------architect-----------
+
+
+# ---------------library----------
+-keep public class com.yuanbaogo.datacenter.local.user.UserInfo
+-keep class com.yuanbaogo.datacenter.remote.model.** {*;}
+-keep public class com.yuanbao.update.entity.AppUpdate
+# ----------------library----------
+
+
+# ---------------wireless-----------
+-keep class com.yuanbaogo.login.login.model.** {*;}
+
+#find
+
+#home
+
+#mine
+-keep class com.yuanbaogo.mine.assets.model.** {*;}
+-keep class com.yuanbaogo.mine.collection.model.** {*;}
+-keep class com.yuanbaogo.mine.detail.model.** {*;}
+-keep class com.yuanbaogo.mine.groupaccount.model.** {*;}
+-keep class com.yuanbaogo.mine.integral.model.** {*;}
+-keep class com.yuanbaogo.mine.live.model.** {*;}
+-keep class com.yuanbaogo.mine.mine.model.** {*;}
+-keep class com.yuanbaogo.mine.myfans.model.** {*;}
+-keep class com.yuanbaogo.mine.order.model.** {*;}
+-keep class com.yuanbaogo.mine.order.after.model.** {*;}
+-keep class com.yuanbaogo.mine.personal.model.** {*;}
+-keep class com.yuanbaogo.mine.setting.model.** {*;}
+
+#shop
+-keep class com.yuanbaogo.shop.joingroup.model.** {*;}
+-keep class com.yuanbaogo.shop.main.model.** {*;}
+-keep class com.yuanbaogo.shop.onecity.model.** {*;}
+-keep class com.yuanbaogo.shop.productdetails.model.** {*;}
+-keep class com.yuanbaogo.shop.publics.model.** {*;}
+-keep class com.yuanbaogo.shop.search.model.** {*;}
+
+#shopcart
+-keep class com.yuanbaogo.shopcart.main.model.** {*;}
+-keep class com.yuanbaogo.shopcart.order.model.** {*;}
+
+#video
+-keep class com.yuanbaogo.homevideo.bringgoods.model.** {*;}
+-keep class com.yuanbaogo.homevideo.live.home.model.** {*;}
+-keep class com.yuanbaogo.homevideo.live.personal.model.** {*;}
+-keep class com.yuanbaogo.homevideo.live.pull.model.** {*;}
+-keep class com.yuanbaogo.homevideo.live.push.model.** {*;}
+-keep class com.yuanbaogo.homevideo.main.bean.** {*;}
+-keep class com.yuanbaogo.homevideo.mine.model.** {*;}
+
+
+
+# -----------wireless----------
+
+

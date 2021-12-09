@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_cart_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rlShoppingCartEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shop_cart_head_view"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/shop_cart_img_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@mipmap/icon_shop_cart_no_data" />
+
+        <TextView
+            android:id="@+id/shop_cart_tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_cart_img_no_data"
+            android:layout_centerHorizontal="true"
+            android:text="购物车是空的"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_cart_tv_no_data"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_cart_tv_lucky_fight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_36"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_weight="1"
+                android:background="@drawable/shape_gradient_bg_but_line_gray"
+                android:gravity="center"
+                android:text="逛逛全民拼团"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/margin_14" />
+
+            <TextView
+                android:id="@+id/shop_cart_tv_look_video"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_36"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_weight="1"
+                android:background="@drawable/shape_gradient_bg_but_line_gray"
+                android:gravity="center"
+                android:text="看看视频直播"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/margin_14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/shop_cart_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/shop_cart_rl_bottom_bar"
+        android:layout_below="@id/shop_cart_head_view"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/shop_cart_rl_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_65"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFFFFFF"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorE4E4E4" />
+
+        <ImageView
+            android:id="@+id/shop_cart_img_select_all"
+            android:layout_width="@dimen/margin_18"
+            android:layout_height="@dimen/margin_18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@mipmap/icon_cancel_check_null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/shop_cart_img_select_all"
+            android:text="全选"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/shop_cart_tv_count_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@id/shop_cart_tv_settle"
+            android:text="已选1件，合计 ¥ 0"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/shop_cart_tv_settle"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/margin_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/selector_bg_but_login"
+            android:gravity="center"
+            android:text="去结算"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/shop_cart_tv_move_to_favorites"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/margin_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@id/shop_cart_tv_settle"
+            android:background="@drawable/shape_gradient_bg_but_line_gray"
+            android:gravity="center"
+            android:text="移入收藏夹"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_16"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_item_shop"
+        android:checked="true"
+        android:icon="@drawable/selector_main_shop"
+        android:iconTint="@color/color212121"
+        android:title="@string/app_shop" />
+
+    <item
+        android:id="@+id/main_item_video"
+        android:icon="@drawable/selector_main_video"
+        android:title="@string/app_name_video" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/main_item_find"-->
+    <!--        android:icon="@drawable/selector_main_find"-->
+    <!--        android:title="@string/app_name_find" />-->
+
+    <item
+        android:id="@+id/main_item_shop_cart"
+        android:icon="@drawable/selector_main_shop_cart"
+        android:title="@string/app_name_shop_cart" />
+
+    <item
+        android:id="@+id/main_item_mine"
+        android:icon="@drawable/selector_main_mine"
+        android:title="@string/app_name_mine" />
+
+</menu>

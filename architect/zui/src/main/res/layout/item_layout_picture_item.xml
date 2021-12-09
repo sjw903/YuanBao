@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="76dp"
+    android:layout_height="76dp"
+    android:layout_marginEnd="@dimen/margin_10"
+    android:orientation="vertical">
+
+    <com.yuanbaogo.zui.view.RoundImageView
+        android:id="@+id/select_img_iv_img"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:background="@drawable/icon_select_image"
+        android:scaleType="centerCrop"
+        app:radius="@dimen/margin_8"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/select_img_iv_close"
+        android:layout_width="@dimen/margin_22"
+        android:layout_height="@dimen/margin_22"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/margin_3"
+        android:scaleType="center"
+        android:src="@mipmap/icon_select_image_close" />
+
+</RelativeLayout>

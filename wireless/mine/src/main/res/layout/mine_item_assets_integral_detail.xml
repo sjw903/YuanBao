@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10">
+
+    <TextView
+        android:id="@+id/item_assets_integral_detail_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_60"
+        android:ellipsize="middle"
+        android:lines="1"
+        android:text="充值"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_15" />
+
+    <TextView
+        android:id="@+id/item_assets_integral_detail_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_assets_integral_detail_tv_title"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="2021-07-13 10:00:00"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_12" />
+
+    <TextView
+        android:id="@+id/item_assets_integral_detail_tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="+25"
+        android:textColor="@color/color00BFA5"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/item_assets_integral_detail_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/item_assets_integral_detail_tv_time"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@color/colorE4E4E4" />
+
+</RelativeLayout>

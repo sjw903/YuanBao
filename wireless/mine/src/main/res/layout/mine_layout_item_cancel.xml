@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/order_ll_cancel"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/icon_address_item_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_10">
+
+    <!--头部-->
+    <include layout="@layout/mine_layout_order_header" />
+
+    <!--商品集合-->
+    <include layout="@layout/mine_layout_order_goods" />
+
+    <TextView
+        android:id="@+id/order_item_tv_refund_details"
+        android:layout_width="@dimen/margin_90"
+        android:layout_height="@dimen/margin_36"
+        android:layout_gravity="end"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+        android:gravity="center"
+        android:text="@string/order_refund_details"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/margin_13" />
+
+</LinearLayout>

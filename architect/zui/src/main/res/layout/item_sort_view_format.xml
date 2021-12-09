@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_sort_rl_sort"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dialog_sort_rl_info"
+    android:layout_marginTop="@dimen/margin_20">
+
+    <TextView
+        android:id="@+id/dialog_sort_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色选择"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_15" />
+
+    <com.yuanbaogo.zui.search.view.SearchLayout
+        android:id="@+id/dialog_sort_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_sort_tv_title" />
+
+    <View
+        android:id="@+id/dialog_sort_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/dialog_sort_recycler"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/colorE4E4E4" />
+
+</RelativeLayout>

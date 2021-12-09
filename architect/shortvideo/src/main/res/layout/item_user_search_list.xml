@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_user_search_head"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:src="@mipmap/icon_video_default_head"/>
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_user_search_head"
+        android:layout_marginLeft="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/tv_user_search_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/color424242"
+            tools:text="星辰大海"/>
+
+        <TextView
+            android:id="@+id/tv_user_search_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/color999999"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="说点简单的"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/margin_70"
+        android:layout_height="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_20"
+        android:gravity="center"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/colorFFFFFF"
+        android:background="@drawable/shape_bg_ea5504_16"
+        tools:text="关注"/>
+
+    <View
+        android:id="@+id/line_user_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/colorD8D8D8"
+        android:layout_below="@+id/iv_user_search_head"
+        android:layout_alignLeft="@id/ll_user"/>
+
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margin_0">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_29">29dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_31">31dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_34">34dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_37">37dp</dimen>
+    <dimen name="margin_38">38dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_41">41dp</dimen>
+    <dimen name="margin_43">43dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_46">46dp</dimen>
+    <dimen name="margin_47">47dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_49">49dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_51">51dp</dimen>
+    <dimen name="margin_53">53dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_57">57dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_66">66dp</dimen>
+    <dimen name="margin_68">68dp</dimen>
+    <dimen name="margin_69">69dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_71">71dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_78">78dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_83">83dp</dimen>
+    <dimen name="margin_84">84dp</dimen>
+    <dimen name="margin_85">85dp</dimen>
+    <dimen name="margin_88">88dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_95">95dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_110">110dp</dimen>
+    <dimen name="margin_115">115dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_135">135dp</dimen>
+    <dimen name="margin_140">138dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_155">155dp</dimen>
+    <dimen name="margin_159">159dp</dimen>
+    <dimen name="margin_165">165dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_180">180dp</dimen>
+    <dimen name="margin_190">190dp</dimen>
+    <dimen name="margin_199">199dp</dimen>
+    <dimen name="margin_210">210dp</dimen>
+    <dimen name="margin_220">220dp</dimen>
+    <dimen name="margin_228">228dp</dimen>
+    <dimen name="margin_230">230dp</dimen>
+    <dimen name="margin_263">263dp</dimen>
+    <dimen name="margin_278">278dp</dimen>
+    <dimen name="margin_280">280dp</dimen>
+    <dimen name="margin_350">350dp</dimen>
+    <dimen name="margin_375">375dp</dimen>
+    <dimen name="margin_390">390dp</dimen>
+    <dimen name="margin_410">410dp</dimen>
+    <dimen name="margin_460">460dp</dimen>
+    <dimen name="margin_600">600dp</dimen>
+
+
+    <!--字号  start-->
+    <dimen name="text_8">8dp</dimen>
+    <dimen name="text_9">9dp</dimen>
+    <dimen name="text_10">10dp</dimen>
+    <dimen name="text_11">11dp</dimen>
+    <dimen name="text_12">12dp</dimen>
+    <dimen name="text_13">13dp</dimen>
+    <dimen name="text_14">14dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_20">20dp</dimen>
+    <dimen name="text_26">26dp</dimen>
+    <dimen name="text_17">17dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_24">24dp</dimen>
+    <dimen name="text_28">28dp</dimen>
+    <dimen name="text_36">36dp</dimen>
+    <dimen name="text_30">30dp</dimen>
+    <!--    字号  end-->
+
+
+    <!--我的页面-->
+    <dimen name="mine_title_bar_height">88dp</dimen>
+    <dimen name="mine_title_bar_top_padding">44dp</dimen>
+    <dimen name="mine_horizontal_margin">10dp</dimen>
+    <dimen name="mine_top_up_rights_height">44dp</dimen>
+    <dimen name="mine_assets_height">130dp</dimen>
+    <dimen name="mine_header_size">48dp</dimen>
+    <dimen name="mine_header_start_margin">17dp</dimen>
+    <dimen name="mine_header_top_margin">12dp</dimen>
+    <dimen name="mine_name_text_size">15dp</dimen>
+    <dimen name="mine_name_text_start_margin">10dp</dimen>
+    <dimen name="mine_assets_btn_vertical_margin">8dp</dimen>
+    <dimen name="mine_assets_btn_to_image_top_margin">2dp</dimen>
+    <dimen name="mine_assets_split_width">1dp</dimen>
+    <dimen name="mine_assets_split_height">16dp</dimen>
+    <dimen name="mine_order_card_height">183dp</dimen>
+    <dimen name="mine_order_card_title_height">50dp</dimen>
+    <dimen name="mine_order_card_title_horizontal_margin">8dp</dimen>
+    <dimen name="mine_order_card_title_size">16dp</dimen>
+    <dimen name="mine_order_card_sub_title_size">13dp</dimen>
+    <dimen name="mine_order_card_right_start_margin">4dp</dimen>
+    <dimen name="mine_order_card_btn_height">60dp</dimen>
+    <dimen name="mine_order_card_btn_image_size">28dp</dimen>
+    <dimen name="mine_order_card_btn_text_size">13dp</dimen>
+    <dimen name="mine_order_card_btn_text_top_margin">8dp</dimen>
+    <dimen name="mine_order_card_btn_image_top_right_size">12dp</dimen>
+    <dimen name="mine_order_card_btn_image_top_right_margin">-5dp</dimen>
+    <dimen name="mine_order_card_btn_image_text_size">8dp</dimen>
+    <dimen name="mine_order_card_order_info_height">52dp</dimen>
+    <dimen name="mine_join_group_height">65dp</dimen>
+    <dimen name="mine_join_group_list_height">144dp</dimen>
+    <dimen name="mine_item_height">48dp</dimen>
+    <dimen name="mine_item_header_size">32dp</dimen>
+    <dimen name="mine_item_name_size">13dp</dimen>
+    <dimen name="mine_item_sub_name_size">10dp</dimen>
+    <dimen name="mine_item_btn_text_size">11dp</dimen>
+    <dimen name="mine_item_name_start_margin">10dp</dimen>
+    <dimen name="mine_item_sub_name_start_margin">4dp</dimen>
+    <dimen name="mine_item_btn_height">28dp</dimen>
+    <dimen name="mine_item_btn_width">60dp</dimen>
+    <dimen name="mine_call_height">60dp</dimen>
+    <dimen name="mine_call_text_size">12dp</dimen>
+    <dimen name="mine_call_sub_text_size">13dp</dimen>
+    <dimen name="mine_call_sub_text_top_margin">4dp</dimen>
+    <dimen name="mine_call_image_size">44dp</dimen>
+    <dimen name="mine_call_start_margin">5dp</dimen>
+
+    <!--设置主页面-->
+    <dimen name="setting_item_height">48dp</dimen>
+    <dimen name="setting_item_name_text_size">15dp</dimen>
+    <dimen name="setting_item_start_margin">11dp</dimen>
+    <dimen name="setting_item_end_margin">10dp</dimen>
+    <dimen name="setting_item_first_top_margin">9dp</dimen>
+    <dimen name="setting_item_top_margin">11dp</dimen>
+    <dimen name="setting_item_small_top_margin">1dp</dimen>
+    <dimen name="setting_item_right_width">12dp</dimen>
+    <dimen name="setting_item_right_height">13dp</dimen>
+
+    <!--地址管理设置页面-->
+    <dimen name="address_bottom_height">60dp</dimen>
+    <dimen name="address_bottom_btn_height">40dp</dimen>
+    <dimen name="address_bottom_btn_text_size">16dp</dimen>
+    <dimen name="address_bottom_btn_horizontal_margin">20dp</dimen>
+
+    <!--添加地址设置页面-->
+    <dimen name="add_address_item_height">48dp</dimen>
+    <dimen name="add_address_item_horizontal_padding">10dp</dimen>
+    <dimen name="add_address_first_item_top_margin">10dp</dimen>
+    <dimen name="add_address_item_text_width">90dp</dimen>
+    <dimen name="add_address_item_text_size">13dp</dimen>
+    <dimen name="add_address_item_divider_height">1dp</dimen>
+
+    <!--通用页面-->
+    <dimen name="common_clear_text_size">12dp</dimen>
+
+    <!--订单页面TitleBar高度-->
+    <dimen name="order_title_bar_height">50dp</dimen>
+    <!--订单页面TabLayout高度-->
+    <dimen name="order_tab_layout_height">50dp</dimen>
+
+    <dimen name="wing_title">15dp</dimen>
+    <dimen name="wing_sub_title">13dp</dimen>
+    <dimen name="wing_selected_btn">16dp</dimen>
+
+    <!-- TitleBar自定义控件高度-->
+    <dimen name="title_bar_height">88dp</dimen>
+    <dimen name="title_bar_back_height">65dp</dimen>
+    <dimen name="title_bar_back_width">64dp</dimen>
+    <dimen name="title_bar_horizontal_padding">20dp</dimen>
+    <dimen name="title_bar_title_size">16dp</dimen>
+    <dimen name="title_bar_right_text_size">13dp</dimen>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanbaogo.shop">
+
+    <application>
+        <activity
+            android:name=".main.view.InviteFriendsPromoteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".main.view.InviteFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".joingroup.view.LuckyFighInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".joingroup.view.LuckyFightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".publics.view.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".international.view.YBInternationalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search.view.ProductDetailsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search.view.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".productdetails.view.ProductDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".joingroup.view.JoinGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spick.view.SpickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onecity.view.OneCityOPActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

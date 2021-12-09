@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shop_product_details_recommend_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_5">
+
+    <ImageView
+        android:id="@+id/item_shop_product_details_recommend_img"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:background="@color/colorF5EFEB" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_recommend_tv_title"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_product_details_recommend_img"
+        android:layout_marginTop="@dimen/margin_5"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_12" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_recommend_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_product_details_recommend_tv_title"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center"
+        android:textColor="@color/colorF63C09"
+        android:textSize="@dimen/text_14" />
+
+</RelativeLayout>

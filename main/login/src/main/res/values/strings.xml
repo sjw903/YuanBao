@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">login</string>
+    <string name="phone_num">请输入手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="get_verification">获取验证码</string>
+    <string name="login_ps">未注册的手机号验证后自动创建元宝账户</string>
+    <string name="yinsi">我已查阅并同意</string>
+    <string name="hint_invite">请输入邀请码</string>
+</resources>

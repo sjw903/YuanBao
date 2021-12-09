@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--   <color name="color_5C5C5C">#5C5C5C</color>
+       <color name="color_232427">#232427</color>
+       <color name="color_F5F5FA">#F5F5FA</color>
+       <color name="color_8F92A1">#8F92A1</color>
+       <color name="color_5E62AC">#5E62AC</color>
+       <color name="color_494C86">#494C86</color>
+       <color name="color_606266">#606266</color>
+       <color name="color_FF6E66">#FF6E66</color>
+       <color name="color_FF8B00">#FF8B00</color>
+       <color name="color_FFF4E3">#FFF4E3</color>
+       <color name="color_FFF6EB">#FFF6EB</color>
+       <color name="color_FF5858">#FF5858</color>
+       <color name="color_F09819">#F09819</color>
+       <color name="color_EDEEF3">#EDEEF3</color>
+       <color name="color_FFB300">#FFB300</color>
+       <color name="color_A7AEB6">#A7AEB6</color>
+       <color name="color_9798A1">#9798A1</color>
+
+       <color name="color_F7B500">#20F7B500</color>
+       <color name="color_3642DA">#203642DA</color>
+       <color name="color_36DAA7">#2036DAA7</color>
+       <color name="color_20FF6E66">#20FF6E66</color>
+       <color name="color_20F7B500">#20F7B500</color>
+       <color name="color_206236FF">#206236FF</color>
+       <color name="color_2038D79F">#2038D79F</color>
+       <color name="color_206D5FFE">#206D5FFE</color>
+       <color name="color_20FFC633">#20FFC633</color>
+       <color name="text_blue7">#9398FF</color>-->
+
+
+    <color name="color75000000">#75000000</color>
+    <color name="color20000000">#20000000</color>
+    <color name="color30000000">#30000000</color>
+    <color name="color30EA5504">#30EA5504</color>
+    <color name="color60ED4D16">#60ED4D16</color>
+
+    <color name="colorEA5504">#EA5504</color>
+    <color name="colorF63C09">#F63C09</color>
+    <color name="colorFB8C00">#FB8C00</color>
+    <color name="colorFFBB82">#FFBB82</color>
+    <color name="colorFFE082">#FFE082</color>
+    <color name="colorFFA365">#FFA365</color>
+    <color name="colorED4D16">#ED4D16</color>
+
+    <color name="colorD8D8D8">#D8D8D8</color>
+    <color name="colorFAFAFA">#FAFAFA</color>
+    <color name="colorF6F6F6">#F6F6F6</color>
+    <color name="colorF1F5F6">#F1F5F6</color>
+    <color name="colorE4E4E4">#E4E4E4</color>
+    <color name="colorAAAAAA">#AAAAAA</color>
+    <color name="color666666">#666666</color>
+    <color name="color212121">#212121</color>
+    <color name="color000000">#000000</color>
+    <color name="color868686">#868686</color>
+    <color name="color222222">#222222</color>
+    <color name="color358CFF">#358CFF</color>
+    <color name="colorFF6E00">#FF6E00</color>
+    <color name="colorFF3D60">#FF3D60</color>
+    <color name="color953DD7">#953DD7</color>
+    <color name="colorFCB088">#FCB088</color>
+    <color name="colorF6754D">#F6754D</color>
+    <color name="colorC8795A">#C8795A</color>
+    <color name="colorFFFBF8">#FFFBF8</color>
+    <color name="color0F131A">#0F131A</color>
+
+    <color name="colorE03030">#E03030</color>
+
+    <color name="color424242">#424242</color>
+
+    <color name="colorFFFFFF">#FFFFFF</color>
+
+    <color name="colorF5EFEB">#F5EFEB</color>
+
+    <color name="color333333">#333333</color>
+    <color name="color999999">#999999</color>
+    <color name="colorCCCCCC">#CCCCCC</color>
+
+
+    <color name="colorAEAEAE">#AEAEAE</color>
+    <color name="colorFFAB91">#FFAB91</color>
+
+    <color name="color70212121">#70212121</color>
+
+    <color name="color6A6A6A">#6A6A6A</color>
+    <color name="color191919">#191919</color>
+    <color name="colorD8D7D7">#D8D7D7</color>
+    <color name="colorEBEBEB">#EBEBEB</color>
+    <color name="colorBEBEBE">#BEBEBE</color>
+    <color name="colorF8CCB3">#F8CCB3</color>
+    <color name="colorFAEDE7">#FAEDE7</color>
+    <color name="colorFAF0E4">#FAF0E4</color>
+    <color name="colorE2F5F2">#E2F5F2</color>
+    <color name="color00BFA5">#00BFA5</color>
+    <color name="color3000BFA5">#3000BFA5</color>
+    <color name="colorE7EFFA">#E7EFFA</color>
+    <color name="colorEFEFEF">#EFEFEF</color>
+    <color name="colorF38450">#F38450</color>
+    <color name="color02B4BF">#02B4BF</color>
+
+    <color name="color33000000">#33000000</color>
+    <color name="colorDA212121">#DA212121</color>
+    <color name="colorBFF63C09">#BFF63C09</color>
+    <color name="colorBFEA5504">#BFEA5504</color>
+    <color name="color4DEA5504">#4DEA5504</color>
+    <color name="color4DE4E4E4">#4DE4E4E4</color>
+    <color name="color00000000">#00000000</color>
+    <color name="color0000001A">#0000001A</color>
+    <color name="color1AFFFFFF">#1AFFFFFF</color>
+    <color name="color70FFFFFF">#70FFFFFF</color>
+    <color name="colorBCE4E4E4">#BCE4E4E4</color>
+    <color name="colorE6FFCDBD">#E6FFCDBD</color>
+    <color name="colorE6FFA365">#E6FFA365</color>
+    <color name="color99FFAB91">#99FFAB91</color>
+    <color name="color4D00BFA5">#4D00BFA5</color>
+    <color name="colorCCFFFFFF">#CCFFFFFF</color>
+    <color name="colorFFAAAAAA">#FFAAAAAA</color>
+    <color name="colorFF666666">#FF666666</color>
+    <color name="colorFF212121">#FF212121</color>
+    <color name="color80000000">#BF000000</color>
+    <color name="color33FF0000">#33FF0000</color>
+    <color name="colorB3212121">#B3212121</color>
+    <color name="color99FFFFFF">#99FFFFFF</color>
+    <color name="color80ED4D16">#80ED4D16</color>
+
+ <!--   <color name="color_5C5C5C">#5C5C5C</color>
+    <color name="color_232427">#232427</color>
+    <color name="color_F5F5FA">#F5F5FA</color>
+    <color name="color_8F92A1">#8F92A1</color>
+    <color name="color_5E62AC">#5E62AC</color>
+    <color name="color_494C86">#494C86</color>
+    <color name="color_606266">#606266</color>
+    <color name="color_FF6E66">#FF6E66</color>
+    <color name="color_FF8B00">#FF8B00</color>
+    <color name="color_FFF4E3">#FFF4E3</color>
+    <color name="color_FFF6EB">#FFF6EB</color>
+    <color name="color_FF5858">#FF5858</color>
+    <color name="color_F09819">#F09819</color>
+    <color name="color_EDEEF3">#EDEEF3</color>
+    <color name="color_FFB300">#FFB300</color>
+    <color name="color_A7AEB6">#A7AEB6</color>
+    <color name="color_9798A1">#9798A1</color>
+
+    <color name="color_F7B500">#20F7B500</color>
+    <color name="color_3642DA">#203642DA</color>
+    <color name="color_36DAA7">#2036DAA7</color>
+    <color name="color_20FF6E66">#20FF6E66</color>
+    <color name="color_20F7B500">#20F7B500</color>
+    <color name="color_206236FF">#206236FF</color>
+    <color name="color_2038D79F">#2038D79F</color>
+    <color name="color_206D5FFE">#206D5FFE</color>
+    <color name="color_20FFC633">#20FFC633</color>
+    <color name="text_blue7">#9398FF</color>-->
+
+
+    <!--我的页面背景色-->
+    <color name="mine_bg">#FAFAFA</color>
+    <!--我的页面标题颜色-->
+    <color name="mine_title_color">#212121</color>
+    <!--我的页面卡片文字选中颜色-->
+    <color name="mine_card_text_selected">#FFBB82</color>
+    <!--我的页面卡片文字未选中颜色-->
+    <color name="mine_card_text_un_selected">#AAAAAA</color>
+    <!--我的页面卡片中分割线颜色-->
+    <color name="mine_card_split_line_color">#1ae4e4e4</color>
+    <!--我的页面我的订单标题颜色-->
+    <color name="mine_card_order_title_color">#212121</color>
+    <!--我的页面我的订单副标题颜色-->
+    <color name="mine_card_order_sub_title_color">#AAAAAA</color>
+    <!--我的页面我的订单按钮字体颜色-->
+    <color name="mine_card_order_btn_text_color">#424242</color>
+    <!--我的页面我的订单按钮字体颜色-->
+    <color name="mine_card_order_msg_text_color">#F63C09</color>
+    <!--我的页面拼团列表标题颜色-->
+    <color name="mine_group_title_color">#424242</color>
+    <!--我的页面拼团副列表标题颜色-->
+    <color name="mine_group_sub_title_color">#FFBB82</color>
+    <!--我的页面拼团人数量颜色-->
+    <color name="mine_group_num_color">#E03030</color>
+    <!--我的页面拼团按钮文字颜色-->
+    <color name="mine_group_btn_text_color">#EA5504</color>
+    <!--我的页面客服标题颜色-->
+    <color name="mine_call_name_title">#666666</color>
+    <!--我的页面客服副标题颜色-->
+    <color name="mine_call_sub_name_title">#EA5504</color>
+
+    <!--添加地址标题-->
+    <color name="add_address_title">#212121</color>
+    <color name="add_address_sub_title">#424242</color>
+    <color name="add_address_sub_title_hint">#AAAAAA</color>
+    <color name="add_address_divider">#ffe4e4e4</color>
+
+    <color name="address_item_address">#424242</color>
+    <color name="address_item_details">#212121</color>
+    <color name="address_item_delete_bg">#FFF55030</color>
+
+    <!--全部发票列表item颜色-->
+    <color name="bill_item_title">#424242</color>
+    <color name="bill_item_num">#AAAAAA</color>
+    <color name="bill_item_name">#ff999999</color>
+    <color name="bill_item_btn">#ffea5504</color>
+
+    <color name="bill_head_divider">#ffe4e4e4</color>
+    <color name="bill_tab_selected">#EA5504</color>
+    <color name="bill_tab_normal">#424242</color>
+
+    <color name="add_bill_title">#212121</color>
+    <color name="add_bill_name">#AAAAAA</color>
+    <color name="add_bill_tip">#999999</color>
+    <color name="add_bill_name_details">#424242</color>
+
+    <color name="add_bill_type_color">#EA5504</color>
+    <color name="add_bill_type_normal_color">#424242</color>
+
+    <!--通用小标题-->
+    <color name="common_sub_title">#AAAAAA</color>
+
+    <!--TitleBar标题栏颜色-->
+    <color name="title_bar_text_color">#424242</color>
+
+    <color name="wing_title">#212121</color>
+    <color name="wing_sub_title">#424242</color>
+    <color name="wing_sub_title_hint">#AAAAAA</color>
+    <color name="wing_selected_title">#EA5504</color>
+    <color name="wing_selected_btn_text">#E03030</color>
+
+    <color name="close_reason">#222222</color>
+    <color name="close_btn">#CCCCCC</color>
+
+    <color name="pay_set_line">#E4E4E4</color>
+
+    <!--修改手机号分割线-->
+    <color name="update_phone_line">#26d8d8d8</color>
+
+    <color name="pk_red">#f03a40</color>
+    <color name="pk_blue">#23B9FB</color>
+    <color name="pk_yellow">#EA5504</color>
+
+    <color name="view_chioce_image_bg">#80E4E4E4</color>
+    <color name="colorBg">#f5f5f5</color>
+    <color name="colorBlack33">#333333</color>
+    <color name="pink_fc4f74">#fc4f74</color>
+    <color name="shimmer_color">#a2878787</color>
+    <color name="light_transparent">#16000000</color>
+
+    <color name="label_color">#EA5504</color>
+
+</resources>

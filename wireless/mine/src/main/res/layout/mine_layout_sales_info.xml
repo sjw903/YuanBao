@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/margin_10">
+
+    <ImageView
+        android:id="@+id/after_iv_img"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/after_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_19"
+        android:layout_toEndOf="@id/after_iv_img"
+        android:textColor="@color/wing_title"
+        android:textSize="@dimen/wing_sub_title"
+        tools:text="迪士尼宝宝凉鞋2021夏季新款来袭" />
+
+    <TextView
+        android:id="@+id/after_tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_19"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/wing_sub_title"
+        tools:text="¥ 19.0" />
+
+    <TextView
+        android:id="@+id/after_tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after_tv_money"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_19"
+        android:text="@string/order_number"
+        android:textColor="@color/wing_sub_title_hint"
+        android:textSize="@dimen/wing_sub_title" />
+
+</RelativeLayout>

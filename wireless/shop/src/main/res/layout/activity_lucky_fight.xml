@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".joingroup.view.LuckyFightActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_shop_lucky_draw_bg" />
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_lucky_draw_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shop_lucky_draw_recycler_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_lucky_draw_head_view"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:nestedScrollingEnabled="false" />
+
+    <LinearLayout
+        android:id="@+id/shop_lucky_draw_ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_lucky_draw_recycler_tab"
+        android:layout_marginTop="@dimen/margin_15"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/shop_lucky_draw_ll_tab_draw_today"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_tv_draw_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日开奖"
+                android:textColor="@color/colorE03030"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_tv_no_miss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_gradient_bg_but_50"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_2"
+                android:paddingRight="@dimen/margin_15"
+                android:paddingBottom="@dimen/margin_2"
+                android:text="不能错过"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shop_lucky_draw_ll_tab_rush_reserve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_tv_rush_reserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抢先预约"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_tv_advance_good_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_2"
+                android:paddingRight="@dimen/margin_15"
+                android:paddingBottom="@dimen/margin_2"
+                android:text="提前选好货"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/text_10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/shop_lucky_draw_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shop_lucky_draw_ll_tab"
+        android:layout_marginTop="@dimen/margin_20">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_lucky_draw_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_5" />
+
+            <RelativeLayout
+                android:id="@+id/shop_lucky_draw_rl_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_100"
+                    android:drawableTop="@mipmap/icon_assets_no_data"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center"
+                    android:text="暂无拼团"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_14" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <ImageView
+        android:id="@+id/shop_lucky_draw_img_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10"
+        android:src="@mipmap/icon_search_top" />
+
+</RelativeLayout>

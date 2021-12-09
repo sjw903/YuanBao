@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanbaogo.mine">
+    <!-- 允许程序读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application android:theme="@style/MineTheme.MyApplication">
+        <activity
+            android:name=".order.after.fail.PendingReviewFailAfterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.refund.PendingRefundDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.back.SentBackAfterDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.pending.PendingReviewAfterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.cancel.CancelAfterSalesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myfollow.view.MyFollowActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myfans.view.MyFansActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".live.view.LiveAmountActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.update.area.UpdateAreaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.update.header.UpdateHeaderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.update.signature.UpdateSignatureActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".personal.update.name.UpdateNameActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".personal.EditMineActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coupon.CouponActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".collection.CollectionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.logistics.SetLogisticsCodeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.finish.AfterSalesFinishDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".groupaccount.view.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.utils.ChangeHostUrlActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.pay.password.success.PaySuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.after.AfterSalesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.search.SearchResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.receipt.refund.ApplyRefundActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.finish.refund.SalesReturnRefundActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.finish.after.AfterSalesServiceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.finish.evaluation.EvaluationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.receipt.detail.ReceiptDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.finish.detail.FinishDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.cancel.detail.CancelDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.pay.detail.PayDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.cancel.refund.RefundDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.search.OrderSearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.pay.password.two.PayTwoPasswordActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".setting.pay.password.PayPasswordActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".setting.pay.set.PaySetActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.account.close.CloseFinalActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.account.close.CloseAccountActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.account.newphone.NewPhoneActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.account.update.UpdatePhoneActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.bill.head.add.AddBillHeadActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".setting.bill.head.update.personal.UpdatePersonalBillHeadActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".setting.bill.head.update.unit.UpdateUnitBillHeadActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".setting.bill.head.BillHeadActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.bill.all.AllBillActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.bill.BillActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.pay.PayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.account.AccountActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.agreement.AgreementActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.policy.PrivacyPolicyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.about.AboutActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.common.CommonActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.address.add.AddAddressActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.address.AddressActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".groupaccount.view.RechargeNowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".groupaccount.view.GroupAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dib.view.WithdrawSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dib.view.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dib.view.DibActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".integral.view.IntegralRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".integral.view.PayStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".integral.view.YBIntegralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".assets.view.AssetsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modifyaccount.activity.ModifyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.OrderActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

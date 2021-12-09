@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+    android:layout_marginTop="@dimen/mine_horizontal_margin"
+    android:background="@drawable/icon_order_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_order_card_title_height"
+        android:layout_marginHorizontal="@dimen/mine_order_card_title_horizontal_margin"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/mine_order_card_title_horizontal_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mine_order"
+            android:textColor="@color/mine_card_order_title_color"
+            android:textSize="@dimen/mine_order_card_title_size" />
+
+        <TextView
+            android:id="@+id/mine_order_tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_view_all"
+            android:textColor="@color/mine_card_order_sub_title_color"
+            android:textSize="@dimen/mine_order_card_sub_title_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mine_order_card_right_start_margin"
+            android:src="@mipmap/icon_mine_order_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_order_card_btn_height"
+        android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+        android:layout_marginBottom="@dimen/margin_10">
+
+        <RelativeLayout
+            android:id="@+id/mine_order_rl_pending_payment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/mine_order_iv_pending_payment"
+                android:layout_width="@dimen/mine_order_card_btn_image_size"
+                android:layout_height="@dimen/mine_order_card_btn_image_size"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_mine_pending_payment" />
+
+            <TextView
+                android:id="@+id/mine_order_tv_pending_payment_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mine_order_card_btn_image_top_right_size"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_marginTop="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_toEndOf="@id/mine_order_iv_pending_payment"
+                android:background="@drawable/icon_order_message_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/mine_order_card_btn_image_top_right_size"
+                android:textColor="@color/mine_card_order_msg_text_color"
+                android:textSize="@dimen/mine_order_card_btn_image_text_size"
+                android:visibility="gone"
+                tools:text="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mine_order_iv_pending_payment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/mine_order_card_btn_text_top_margin"
+                android:text="@string/mine_pending_payment"
+                android:textColor="@color/mine_card_order_btn_text_color"
+                android:textSize="@dimen/mine_order_card_btn_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_order_rl_to_be_received"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/mine_order_iv_to_be_received"
+                android:layout_width="@dimen/mine_order_card_btn_image_size"
+                android:layout_height="@dimen/mine_order_card_btn_image_size"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_mine_to_be_received" />
+
+            <TextView
+                android:id="@+id/mine_order_tv_to_be_received_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mine_order_card_btn_image_top_right_size"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_marginTop="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_toEndOf="@id/mine_order_iv_to_be_received"
+                android:background="@drawable/icon_order_message_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/mine_order_card_btn_image_top_right_size"
+                android:textColor="@color/mine_card_order_msg_text_color"
+                android:textSize="@dimen/mine_order_card_btn_image_text_size"
+                android:visibility="gone"
+                tools:text="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mine_order_iv_to_be_received"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/mine_order_card_btn_text_top_margin"
+                android:text="@string/mine_to_be_received"
+                android:textColor="@color/mine_card_order_btn_text_color"
+                android:textSize="@dimen/mine_order_card_btn_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_order_rl_be_evaluated"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/mine_order_iv_be_evaluated"
+                android:layout_width="@dimen/mine_order_card_btn_image_size"
+                android:layout_height="@dimen/mine_order_card_btn_image_size"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_mine_be_evaluated" />
+
+            <TextView
+                android:id="@+id/mine_order_tv_be_evaluated_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mine_order_card_btn_image_top_right_size"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_marginTop="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_toEndOf="@id/mine_order_iv_be_evaluated"
+                android:background="@drawable/icon_order_message_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/mine_order_card_btn_image_top_right_size"
+                android:textColor="@color/mine_card_order_msg_text_color"
+                android:textSize="@dimen/mine_order_card_btn_image_text_size"
+                android:visibility="gone"
+                tools:text="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mine_order_iv_be_evaluated"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/mine_order_card_btn_text_top_margin"
+                android:text="@string/mine_be_evaluated"
+                android:textColor="@color/mine_card_order_btn_text_color"
+                android:textSize="@dimen/mine_order_card_btn_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_order_rl_after_sale"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/mine_order_iv_after_sale"
+                android:layout_width="@dimen/mine_order_card_btn_image_size"
+                android:layout_height="@dimen/mine_order_card_btn_image_size"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_mine_after_sale" />
+
+            <TextView
+                android:id="@+id/mine_order_tv_after_sale_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mine_order_card_btn_image_top_right_size"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_marginTop="@dimen/mine_order_card_btn_image_top_right_margin"
+                android:layout_toEndOf="@id/mine_order_iv_after_sale"
+                android:background="@drawable/icon_order_message_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/mine_order_card_btn_image_top_right_size"
+                android:textColor="@color/mine_card_order_msg_text_color"
+                android:textSize="@dimen/mine_order_card_btn_image_text_size"
+                android:visibility="gone"
+                tools:text="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mine_order_iv_after_sale"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/mine_order_card_btn_text_top_margin"
+                android:text="@string/mine_after_sale"
+                android:textColor="@color/mine_card_order_btn_text_color"
+                android:textSize="@dimen/mine_order_card_btn_text_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.yuanbaogo.zui.view.ScrollUpView
+        android:id="@+id/mine_order_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_order_card_order_info_height"
+        android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+        android:background="@drawable/icon_order_info_bg"
+        android:visibility="gone" />
+
+</LinearLayout>

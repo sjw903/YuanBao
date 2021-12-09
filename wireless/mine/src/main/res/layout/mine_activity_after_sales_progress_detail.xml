@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.after.detail.progress.AfterSalesProgressDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:background="@drawable/icon_cancel_detail_bg">
+
+            <ImageButton
+                android:id="@+id/after_progress_ib_back"
+                android:layout_width="52dp"
+                android:layout_height="@dimen/margin_53"
+                android:layout_marginTop="@dimen/margin_35"
+                android:background="@null"
+                android:padding="@dimen/margin_14"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/after_progress_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/after_progress_ib_back"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@mipmap/icon_order_progress"
+                android:drawablePadding="@dimen/margin_7"
+                android:gravity="center_vertical"
+                android:text="待寄回"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_18" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_150"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginTop="137dp"
+            android:background="@drawable/icon_address_item_bg"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_14"
+            android:paddingBottom="@dimen/margin_17">
+
+            <TextView
+                android:id="@+id/after_progress_tv_tip_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的商品已寄出，等待平台收货"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/wing_selected_btn"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/after_progress_rv_refund"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_21"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/after_progress_ll_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/icon_address_item_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_14">
+
+                <TextView
+                    android:id="@+id/after_progress_tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_3"
+                    android:text="@string/refund_progress_tip"
+                    android:textColor="@color/wing_title"
+                    android:textSize="@dimen/wing_selected_btn"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_status_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_3"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/refund_progress_sub_tip"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/margin_12" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/after_progress_rl_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/icon_address_item_bg"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/after_progress_iv_location"
+                    android:layout_width="@dimen/margin_18"
+                    android:layout_height="@dimen/margin_18"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:src="@mipmap/icon_cancel_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@id/after_progress_iv_location"
+                    android:textColor="@color/wing_title"
+                    android:textSize="@dimen/wing_sub_title"
+                    android:textStyle="bold"
+                    android:text="商家回寄信息" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_address_title"
+                    android:layout_width="@dimen/margin_70"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_iv_location"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_toEndOf="@id/after_progress_iv_location"
+                    android:text="寄回地址"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/wing_sub_title" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_iv_location"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@id/after_progress_tv_address_title"
+                    android:textColor="@color/wing_title"
+                    android:textSize="@dimen/wing_sub_title"
+                    tools:text="北京朝阳区通天路294号天骄雅苑19-2802" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_name_title"
+                    android:layout_width="@dimen/margin_70"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_tv_address_title"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_toEndOf="@id/after_progress_iv_location"
+                    android:text="收件人"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/wing_sub_title" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_tv_address_title"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@id/after_progress_tv_name_title"
+                    android:textColor="@color/wing_title"
+                    android:textSize="@dimen/wing_sub_title"
+                    tools:text="张先生" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_phone_title"
+                    android:layout_width="@dimen/margin_70"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_tv_name_title"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_toEndOf="@id/after_progress_iv_location"
+                    android:text="收件人电话"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/wing_sub_title" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_tv_name_title"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@id/after_progress_tv_name_title"
+                    android:textColor="@color/wing_title"
+                    android:textSize="@dimen/wing_sub_title"
+                    tools:text="189774859606" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/after_progress_rl_logistics"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/icon_address_item_bg"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/after_progress_iv_logistics"
+                    android:layout_width="@dimen/margin_18"
+                    android:layout_height="@dimen/margin_18"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:src="@mipmap/icon_order_logistics" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_logistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:layout_toEndOf="@id/after_progress_iv_logistics"
+                    android:text="@string/refund_progress_logistics"
+                    android:textColor="@color/wing_title"
+                    android:textSize="@dimen/wing_sub_title"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/after_progress_tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/after_progress_tv_logistics"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:layout_toEndOf="@id/after_progress_iv_logistics"
+                    android:text="@string/refund_progress_logistics_tip"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/margin_12" />
+
+                <TextView
+                    android:id="@+id/after_progress_tv_get_code"
+                    android:layout_width="@dimen/margin_90"
+                    android:layout_height="@dimen/margin_36"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+                    android:gravity="center"
+                    android:text="@string/refund_progress_write_code"
+                    android:textColor="@color/wing_sub_title"
+                    android:textSize="@dimen/margin_15"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/white"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/after_progress_tv_evaluation"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_all_bill_item_btn_active_bg"
+            android:gravity="center"
+            android:text="取消申请"
+            android:textColor="@color/wing_selected_title"
+            android:textSize="@dimen/margin_15"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

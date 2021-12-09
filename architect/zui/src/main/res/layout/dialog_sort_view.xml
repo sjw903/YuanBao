@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_gradient_top_bg_white_10"
+    android:padding="@dimen/margin_20">
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dialog_sort_but"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/dialog_sort_rl_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60">
+
+                <ImageView
+                    android:id="@+id/dialog_sort_img_icon"
+                    android:layout_width="@dimen/margin_60"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorD8D7D7"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/dialog_sort_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/dialog_sort_tv_stock"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_toRightOf="@id/dialog_sort_img_icon"
+                    android:text="29.00"
+                    android:textColor="@color/colorEA5504"
+                    android:textSize="@dimen/text_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dialog_sort_tv_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_toRightOf="@id/dialog_sort_img_icon"
+                    android:text="库存239件"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/text_10" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dialog_sort_ll_add_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/dialog_sort_rl_info"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/dialog_sort_rl_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_below="@id/dialog_sort_ll_add_view"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/dialog_sort_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="购买数量"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/margin_100"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_sort_tv_less_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@mipmap/icon_shop_cart_tv_reduce_num_bg_un"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/dialog_sort_tv_buy_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@mipmap/icon_shop_cart_tv_num_bg"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/color424242"
+                        android:textSize="@dimen/text_13" />
+
+                    <TextView
+                        android:id="@+id/dialog_sort_tv_add_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@mipmap/icon_shop_cart_tv_add_num_bg"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    <Button
+        android:id="@+id/dialog_sort_but"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@drawable/selector_bg_but_login"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_18" />
+
+    <ImageView
+        android:id="@+id/dialog_sort_img_delete"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_30"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_search_delete_item" />
+
+</RelativeLayout>

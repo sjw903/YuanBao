@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_53"
+    android:background="@drawable/shape_gradient_bg_white_10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pay_set_dialog_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/pay_set_dialog_title"
+        android:textColor="@color/close_reason"
+        android:textSize="@dimen/wing_selected_btn" />
+
+    <ImageView
+        android:id="@+id/pay_set_dialog_iv_close"
+        android:layout_width="@dimen/margin_25"
+        android:layout_height="@dimen/margin_25"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_5"
+        android:src="@mipmap/icon_pay_set_dialog_close" />
+
+    <TextView
+        android:id="@+id/pay_set_dialog_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_set_dialog_tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center_vertical"
+        android:text="@string/pay_set_dialog_tip"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/margin_9" />
+
+    <LinearLayout
+        android:id="@+id/pay_set_dialog_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_below="@id/pay_set_dialog_tv_tip"
+        android:layout_marginHorizontal="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/icon_pay_set_dialog_et_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <EditText
+            android:id="@+id/pay_set_dialog_et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/pay_set_dialog_code_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/wing_title"
+            android:textColorHint="@color/colorCCCCCC"
+            android:textSize="@dimen/margin_15" />
+
+        <ImageView
+            android:id="@+id/pay_set_dialog_iv_clear"
+            android:layout_width="@dimen/margin_13"
+            android:layout_height="39dp"
+            android:layout_gravity="center_vertical"
+            android:paddingVertical="@dimen/margin_13"
+            android:src="@mipmap/icon_pay_set_dialog_delete" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/margin_32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/margin_10" />
+
+
+        <TextView
+            android:id="@+id/pay_set_dialog_tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/pay_set_dialog_get_code"
+            android:textColor="@color/wing_sub_title_hint"
+            android:textSize="@dimen/wing_sub_title" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/pay_set_dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/pay_set_dialog_ll"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/colorE4E4E4" />
+
+    <TextView
+        android:id="@+id/pay_set_dialog_tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:layout_below="@id/pay_set_dialog_line"
+        android:gravity="center"
+        android:text="@string/close_dialog_btn_sure"
+        android:textColor="@color/wing_selected_title"
+        android:textSize="@dimen/wing_title" />
+
+</RelativeLayout>

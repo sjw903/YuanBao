@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_gradient_top_bg_white_10">
+
+    <RelativeLayout
+        android:id="@+id/dialog_share_view_rl_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_share_view_recycler_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_share_view_rl_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_share_view_rl_share"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_share_view_recycler_site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dialog_share_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_share_view_rl_site"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:background="@color/colorD8D8D8" />
+
+    <TextView
+        android:id="@+id/dialog_share_view_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/dialog_share_view_line"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color222222"
+        android:textSize="@dimen/text_15" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorFAFAFA"
+    android:orientation="vertical">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/video_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fl_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_16"
+            android:text="@string/app_hot"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_video_hot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_video_hot"/>
+
+    </LinearLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_video_user_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:background="@color/colorFFFFFF"
+        android:visibility="gone"
+        tl:tl_indicator_color="@color/colorEA5504"
+        tl:tl_indicator_height="@dimen/margin_2"
+        tl:tl_indicator_width="@dimen/margin_24"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/color212121"
+        tl:tl_textUnselectColor="@color/color999999" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_video_user_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

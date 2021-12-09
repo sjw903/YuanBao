@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.address.add.AddAddressActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:id="@+id/add_address_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/add_address_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_height"
+        android:layout_marginTop="@dimen/add_address_first_item_top_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/add_address_item_horizontal_padding">
+
+        <TextView
+            android:layout_width="@dimen/add_address_item_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address_name"
+            android:textColor="@color/add_address_title"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+        <EditText
+            android:id="@+id/add_address_et_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_address_name_hint"
+            android:maxLength="10"
+            android:textColor="@color/add_address_sub_title"
+            android:textColorHint="@color/add_address_sub_title_hint"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+        <TextView
+            android:id="@+id/add_address_tv_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_address_book_bg"
+            android:paddingHorizontal="@dimen/margin_7"
+            android:paddingVertical="@dimen/margin_3"
+            android:text="通讯录"
+            android:visibility="gone"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/margin_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_divider_height"
+        android:layout_marginHorizontal="@dimen/add_address_item_horizontal_padding"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/add_address_item_horizontal_padding">
+
+        <TextView
+            android:layout_width="@dimen/add_address_item_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address_phone"
+            android:textColor="@color/add_address_title"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+        <EditText
+            android:id="@+id/add_address_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="1234567890"
+            android:hint="@string/add_address_phone_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColor="@color/add_address_sub_title"
+            android:textColorHint="@color/add_address_sub_title_hint"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_divider_height"
+        android:layout_marginHorizontal="@dimen/add_address_item_horizontal_padding"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/add_address_item_horizontal_padding">
+
+        <TextView
+            android:layout_width="@dimen/add_address_item_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address_area"
+            android:textColor="@color/add_address_title"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+        <TextView
+            android:id="@+id/add_address_tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="请选择地区"
+            android:textColor="@color/add_address_sub_title"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_divider_height"
+        android:layout_marginHorizontal="@dimen/add_address_item_horizontal_padding"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/add_address_item_horizontal_padding">
+
+        <TextView
+            android:layout_width="@dimen/add_address_item_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address_details"
+            android:textColor="@color/add_address_title"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+        <EditText
+            android:id="@+id/add_address_et_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/add_address_details_hint"
+            android:maxLength="100"
+            android:textColor="@color/add_address_sub_title"
+            android:textColorHint="@color/add_address_sub_title_hint"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_divider_height"
+        android:layout_marginHorizontal="@dimen/add_address_item_horizontal_padding"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/add_address_item_horizontal_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_address_default"
+            android:textColor="@color/add_address_title"
+            android:textSize="@dimen/add_address_item_text_size" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/add_address_sw_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:thumb="@drawable/icon_address_switch_thumb"
+            app:track="@null" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_address_item_divider_height"
+        android:layout_marginHorizontal="@dimen/add_address_item_horizontal_padding"
+        android:background="@color/add_address_divider" />
+
+    <TextView
+        android:id="@+id/add_address_tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/address_bottom_btn_height"
+        android:layout_marginHorizontal="@dimen/address_bottom_btn_horizontal_margin"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/icon_address_add"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/add_address_save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/address_bottom_btn_text_size" />
+
+
+</LinearLayout>

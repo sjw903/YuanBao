@@ -1,0 +1,12 @@
+//所有初始化的属性全部放在这里
+
+apply from: "${rootDir}/yuanbao-config-android/gradle/initVersion.gradle"
+apply from: "${rootDir}/yuanbao-config-android/gradle/initTPVersion.gradle"
+
+//apply from: "${rootDir}/gradle/initGitHook.gradle"
+
+repositories {
+
+//    maven { url "http://10.30.23.23:8083/repository/snapshots/" }
+//    maven { url "http://10.30.23.23:8083/repository/releases/" }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_fragment_assets_detail_one_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mine_assets_detail_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/mine_assets_detail_rl_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_100"
+                android:drawableTop="@mipmap/icon_assets_no_data"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="暂无明细"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_14" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

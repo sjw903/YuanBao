@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">元宝</string>
+    <string name="app_shop">首页</string>
+    <string name="app_name_video">元宝视频</string>
+    <string name="app_name_find">圈子</string>
+    <string name="app_name_shop_cart">购物车</string>
+    <string name="app_name_mine">我的</string>
+
+    <string name="app_one_city_one_produccty">一城一品</string>
+
+    <string name="app_one_city_live_goods">直播好货</string>
+    <string name="app_one_city_live_goods_more">更多 ></string>
+    <string name="app_one_city_live_explosion">首推爆款</string>
+
+    <string name="app_product_details_direct_sale">直销特卖</string>
+    <string name="app_product_details_price">¥%1$s </string>
+    <string name="app_product_details_discounted_price">折后价</string>
+    <string name="app_product_details_discount">%1$s折</string>
+    <string name="app_product_details_sales">总库存 %1$s 件，已售 %2$s 件</string>
+    <string name="app_product_details_sold">已售 %1$s 件</string>
+    <string name="app_product_details_worry_free_return">无忧退货</string>
+    <string name="app_product_details_color_optional">%1$s色可选</string>
+
+    <string name="app_product_details_related_suggestion">相关推荐</string>
+    <string name="app_product_details_view_all">查看全部 ></string>
+
+    <string name="app_search_history">历史搜索</string>
+    <string name="app_search_carry_out">完成</string>
+    <string name="app_search_delete_all">全部删除</string>
+
+    <string name="video_go_to_photo">传相片</string>
+    <string name="video_shoot_video">拍视频</string>
+    <string name="upload_video">传视频</string>
+    <string name="video_open_live">开启直播</string>
+    <string name="app_hot">热门</string>
+    <string name="app_publish">发布</string>
+
+    <string name="app_login">登录</string>
+    <string name="app_login_immediately">立即登录</string>
+    <string name="app_login_beautiful_prompt">登录立享缤纷世界</string>
+    <string name="app_login_modify_phone_num">修改手机号</string>
+
+    <string name="shop_title">购物车(%s)</string>
+    <string name="count_money">已选%s件, 合计 ¥%s</string>
+    <string name="count_delete">确认将这%s个宝贝删除？</string>
+
+    <string name="recharge_now">充值规则说明：\t\t\t \n1.充值即送等额元宝券，可1:1用于下次高一级专区充值 \n2.每个专区充值仅可购买本区及低级专区的商品 \n3.充值后帐户余额永久有效</string>
+
+    <!--    Toast提示语    -->
+    <string name="down_pull_refresh_content">下拉刷新内容</string>
+    <string name="toast_view_error_msg">网络错误</string>
+    <string name="toast_view_in_development_msg">开发小哥哥正在加班加点开发中，敬请期待</string>
+
+</resources>

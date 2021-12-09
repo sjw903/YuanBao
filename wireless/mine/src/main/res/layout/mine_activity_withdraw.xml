@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".dib.view.WithdrawActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/mine_assets_dib_withdraw_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mine_assets_dib_withdraw_tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_dib_withdraw_head_view"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="提现到"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_15"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mine_assets_dib_withdraw_tv_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_dib_withdraw_tv_to"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_13"
+        android:drawableLeft="@mipmap/icon_assets_withdraw_method_wx"
+        android:drawablePadding="@dimen/margin_8"
+        android:text=" "
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_15" />
+
+    <TextView
+        android:id="@+id/mine_assets_dib_withdraw_tv_arrival_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_dib_withdraw_tv_method"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_2"
+        android:text="预计三个工作日到账"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_13" />
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_dib_withdraw_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_dib_withdraw_tv_arrival_time"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_gradient_bg_white_10">
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="提现金额"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_15" />
+
+        <RelativeLayout
+            android:id="@+id/mine_assets_dib_withdraw_rl_integral"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:layout_below="@id/mine_assets_dib_withdraw_tv_title"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_35"
+            android:layout_marginRight="@dimen/margin_20">
+
+            <EditText
+                android:id="@+id/mine_assets_dib_withdraw_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="0123456789."
+                android:hint="请输入金额，输入金额不得低于￥100"
+                android:inputType="number"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_36" />
+
+            <ImageView
+                android:id="@+id/mine_assets_dib_withdraw_img_clear"
+                android:layout_width="@dimen/margin_30"
+                android:layout_height="@dimen/margin_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_5"
+                android:src="@mipmap/icon_assets_clear" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/mine_assets_dib_withdraw_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_below="@id/mine_assets_dib_withdraw_rl_integral"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/colorE4E4E4" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提现金额￥"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_12"
+            android:layout_below="@id/mine_assets_dib_withdraw_line"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"/>
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_tv_withdrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_line"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_toRightOf="@+id/mine_assets_dib_withdraw_tv"
+            android:text="00"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_tv_withdrawable_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_line"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_toRightOf="@id/mine_assets_dib_withdraw_tv_withdrawable"
+            android:text="全部提现"
+            android:textColor="@color/color358CFF"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mine_assets_dib_withdraw_but_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/mine_assets_dib_withdraw_rl"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/shape_gradient_bg_but_alpha_50"
+        android:gravity="center"
+        android:text="提现"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_16" />
+
+</RelativeLayout>

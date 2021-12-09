@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".assets.view.AssetsActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/mine_assets_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_rl_yb_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_head_view"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_bg_white_10">
+
+        <TextView
+            android:id="@+id/mine_assets_tv_yb_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:drawableLeft="@mipmap/icon_assets_yb_integral"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="元宝积分"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/mine_assets_tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_tv_yb_integral"
+            android:layout_marginLeft="@dimen/margin_35"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="0"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_24"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mine_assets_tv_yb_integral_recharge"
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/bg_ea5504_radius20"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_rl_group_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_rl_yb_integral"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_bg_faf0e4_10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mine_assets_tv_group_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:drawableLeft="@mipmap/icon_assets_group_account"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="拼团账户"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_tv_group_account"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/mine_assets_group_account_rl_five_hundred"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/mine_assets_group_account_five_hundred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="五百专区"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:id="@+id/mine_assets_group_account_tv_five_hundred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mine_assets_group_account_five_hundred"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:text="￥0.00"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="@dimen/margin_35"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:background="@color/colorE4E4E4" />
+
+            <RelativeLayout
+                android:id="@+id/mine_assets_group_account_rl_five_thousand"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/mine_assets_group_account_five_thousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="五千专区"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:id="@+id/mine_assets_group_account_tv_five_thousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mine_assets_group_account_five_thousand"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:text="￥0.00"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="@dimen/margin_35"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:background="@color/colorE4E4E4" />
+
+            <RelativeLayout
+                android:id="@+id/mine_assets_group_account_rl_fifty_thousand"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/mine_assets_group_account_fifty_thousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="五万专区"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:id="@+id/mine_assets_group_account_tv_fifty_thousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mine_assets_group_account_fifty_thousand"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:text="￥0.00"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_rl_dib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_rl_group_account"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_bg_white_10">
+
+        <TextView
+            android:id="@+id/mine_assets_tv_dib_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:drawableLeft="@mipmap/icon_assets_dib"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="零钱"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/mine_assets_tv_dib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_tv_dib_title"
+            android:layout_marginLeft="@dimen/margin_35"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="￥0"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_24"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mine_assets_tv_freeze_dib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_tv_dib"
+            android:layout_marginLeft="@dimen/margin_35"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:text="冻结不可用  ￥0.00"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/mine_assets_tv_dib_withdraw"
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/shape_bg_11b8c3_14"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_rl_dib"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_bg_e7effa_10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mine_assets_tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:drawableLeft="@mipmap/icon_assets_yb_integral"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="银行卡"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_15"
+            android:drawableRight="@mipmap/icon_login_join"
+            android:text="全部（0）"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13" />
+
+        <RelativeLayout
+            android:id="@+id/mine_assets_rl_bank_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_tv_card"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_135">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_assets_card_ccb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/margin_13"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:text="**** **** **** 7116"
+                    android:textColor="@color/colorFFFFFF"
+                    android:textSize="@dimen/text_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_135"
+                android:layout_marginTop="@dimen/margin_80">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_assets_card_cmb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/margin_13"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:text="**** **** **** 7116"
+                    android:textColor="@color/colorFFFFFF"
+                    android:textSize="@dimen/text_14" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_30"
+            android:layout_below="@id/mine_assets_rl_bank_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:background="@drawable/shape_gradient_bg_white_50"
+            android:drawableLeft="@mipmap/icon_assets_card_add"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_13"
+            android:paddingRight="@dimen/margin_13"
+            android:text="添加银行卡"
+            android:textColor="@color/color358CFF"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

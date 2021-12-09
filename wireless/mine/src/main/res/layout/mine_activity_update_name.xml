@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal.update.name.UpdateNameActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:id="@+id/update_name_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="修改昵称" />
+
+    <FrameLayout
+        android:id="@+id/update_name_fl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/update_name_title_bar"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/update_name_tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="0/12"
+            android:textColor="@color/common_sub_title"
+            android:textSize="@dimen/margin_10" />
+
+        <EditText
+            android:id="@+id/update_name_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColor="@color/wing_sub_title"
+            android:textColorHint="@color/wing_sub_title_hint"
+            android:textSize="@dimen/wing_title" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/update_name_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/update_name_fl"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/colorEFEFEF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_name_view_line"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="好名字更容易让朋友记住你哦"
+        android:textColor="@color/common_sub_title"
+        android:textSize="@dimen/margin_10" />
+
+    <TextView
+        android:id="@+id/update_name_tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/address_bottom_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/address_bottom_btn_horizontal_margin"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:background="@drawable/icon_address_add"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/pay_six_two_save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/address_bottom_btn_text_size" />
+
+</RelativeLayout>

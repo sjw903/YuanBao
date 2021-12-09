@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".international.view.YBInternationalActivity">
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:id="@+id/shop_international_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.yuanbaogo.zui.banner.BannerView
+                android:id="@+id/shop_international_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/shop_international_rl_live_explosion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_220"
+                android:background="@drawable/shape_gradient_top_bg_white_10"
+                android:nestedScrollingEnabled="false">
+
+                <RelativeLayout
+                    android:id="@+id/shop_international_rl_live_explosion_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:drawableRight="@mipmap/icon_shop_international2"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="海淘必Buy"
+                        android:textColor="@color/color424242"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/app_one_city_live_goods_more"
+                        android:textColor="@color/colorAEAEAE"
+                        android:textSize="@dimen/text_12"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_international_recycler_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_international_rl_live_explosion_title"
+                    android:layout_margin="@dimen/margin_10" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_international_recycler_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_international_rl_live_explosion"
+                android:nestedScrollingEnabled="false" />
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_international_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/shop_international_img_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_shop_cart" />
+
+        <ImageView
+            android:id="@+id/shop_international_img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_international_img_shopcart"
+            android:src="@mipmap/icon_search_top" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

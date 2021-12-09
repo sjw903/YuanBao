@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/shop_lucky_draw_tv_lowest_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@mipmap/icon_shop_lucky_draw_gradient_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_5"
+        android:text="十元区"
+        android:textColor="@color/colorEA5504"
+        android:textSize="@dimen/text_13" />
+
+</RelativeLayout>

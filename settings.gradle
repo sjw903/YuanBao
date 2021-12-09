@@ -1,0 +1,35 @@
+include ':library:libshare'
+rootProject.name = "yuanbao-android"
+
+include ':main:yuanbao-main'
+include ':main:login'
+
+include ':wireless:home'
+include ':wireless:shopcart'
+include ':wireless:find'
+include ':wireless:shop'
+include ':wireless:mine'
+include ':wireless:video'
+
+include ':library:libbase'
+include ':library:libshare'
+include ':library:libnetwork'
+include ':library:libdatacenter'
+include ':library:libdatacenter'
+include ':library:libpay'
+include ':library:libweb'
+include ':library:libpermission'
+include ':library:libupdate'
+include ':library:libpermission'
+
+include ':architect:beautysettingkit'
+include ':architect:commonlib'
+include ':architect:livevideo'
+include ':architect:shortvideo'
+include ':architect:im'
+include ':architect:zui'
+include ':architect:res'
+include ':architect:ugckit'
+include ':architect:finance'
+include ':architect:routerscheme'
+

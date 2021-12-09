@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:id="@+id/ll_video_release">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/zi_hv_video_publish_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                app:layout_constraintBottom_toTopOf="@+id/gl_line"
+                android:id="@+id/rl_top_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_video_publish_gauss_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_choose_cover"
+                    android:layout_width="@dimen/margin_210"
+                    android:layout_height="@dimen/margin_280"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_video_publish_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_video_publish_choose_cover"
+                        android:layout_width="@dimen/margin_100"
+                        android:layout_height="@dimen/margin_32"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_18"
+                        android:background="@drawable/shape_bg_70212121_24"
+                        android:gravity="center"
+                        android:text="选择封面"
+                        android:textColor="@color/colorFFFFFF"
+                        android:textSize="@dimen/text_12" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_progress_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color75000000"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <com.yuanbaogo.zui.progress.GradientRoundProgress
+                            android:id="@+id/ziGrp"
+                            android:layout_width="@dimen/margin_80"
+                            android:layout_height="@dimen/margin_80"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/margin_50"
+                            app:grp_endColor="@color/colorED4D16"
+                            app:grp_max="100"
+                            app:grp_midColor="@color/colorFB8C00"
+                            app:grp_progressColor="@color/colorED4D16"
+                            app:grp_roundColor="@color/color212121"
+                            app:grp_roundWidth="6dip"
+                            app:grp_startAngle="-90"
+                            app:grp_startColor="@color/colorFFBB82"
+                            app:grp_textShow="false" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_progress_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_top_bg_f6f6f6_8"
+                android:translationY="-10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gl_line">
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_video_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_toLeftOf="@+id/tv_count"
+                        android:background="@null"
+                        android:hint="说点什么..."
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color999999"
+                        android:textSize="@dimen/text_15" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="0/20"
+                        android:textColor="@color/color999999"
+                        android:textSize="@dimen/text_10" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:layout_below="@+id/rl1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@color/colorCCCCCC" />
+
+                <TextView
+                    android:id="@+id/tv_publish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:layout_marginBottom="@dimen/margin_40"
+                    android:background="@drawable/shape_bg_ea5504_24"
+                    android:gravity="center"
+                    android:text="发布"
+                    android:textColor="@color/colorFFFFFF"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tv_sell_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_publish"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:drawableLeft="@mipmap/icon_video_sell_goods"
+                    android:drawablePadding="@dimen/margin_4"
+                    android:gravity="center_vertical"
+                    android:text="我要带货"
+                    android:textColor="@color/colorEA5504"
+                    android:textSize="@dimen/text_16" />
+
+            </RelativeLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

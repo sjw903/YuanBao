@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.SettingActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:id="@+id/setting_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/setting_title" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/setting_si_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        app:nameText="@string/setting_account" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/setting_si_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_top_margin"
+        app:nameText="@string/setting_address" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/setting_si_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        app:nameText="@string/setting_pay" />
+
+    <!--这块先将发票管理给隐藏掉-->
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/setting_si_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        app:nameText="@string/setting_bill" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/setting_si_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/setting_common" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/setting_si_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/setting_about" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/finish_detail_logistics_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_22">
+
+        <TextView
+            android:id="@+id/finish_detail_logistics_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="已签收"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/finish_detail_logistics_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@id/finish_detail_logistics_tv_type"
+            android:text="00-00-00"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_10" />
+
+        <TextView
+            android:id="@+id/finish_detail_logistics_tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finish_detail_logistics_tv_type"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_15"
+            android:text="des"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

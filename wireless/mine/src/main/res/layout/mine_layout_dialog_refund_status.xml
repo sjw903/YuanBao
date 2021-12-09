@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="227dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/icon_order_cancel_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/margin_13"
+        android:text="@string/sales_status_title"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/wing_title" />
+
+    <RadioGroup
+        android:id="@+id/sales_status_dl_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_34"
+            android:button="@drawable/icon_radio_button"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/margin_5"
+            android:text="@string/sales_status_reason1"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_34"
+            android:button="@drawable/icon_radio_button"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/margin_5"
+            android:text="@string/sales_status_reason2"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sales_status_tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_25"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@drawable/icon_address_add"
+        android:gravity="center"
+        android:text="@string/sales_sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wing_selected_btn" />
+
+</LinearLayout>

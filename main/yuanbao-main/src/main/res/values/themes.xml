@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--    修改文字和图片的间距-->
+    <dimen name="design_bottom_navigation_margin">4dp</dimen>
+    <dimen name="design_bottom_navigation_icon_size">36dp</dimen>
+    <!--    高度 默认的底部导航栏的高度是 56dp，我们增加间距4dp=60dp-->
+    <dimen name="design_bottom_navigation_height">64dp</dimen>
+    <!--修改默认（未选中）的文字大小 -->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <!--修改选中的文字大小 -->
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+
+    <style name="MineTheme.MyApplication.Fullscreen" parent="MineTheme.MyApplication">
+        <item name="android:actionBarStyle">
+            @style/Widget.MineTheme.MyApplication.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="ThemeOverlay.Yuanbao3.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_5"
+    android:layout_marginTop="@dimen/margin_5">
+
+    <TextView
+        android:id="@+id/item_shop_product_details_recommend_tv_title"
+        android:layout_width="@dimen/margin_80"
+        android:layout_height="wrap_content"
+        android:text="适用对象"
+        android:textColor="@color/colorAAAAAA"
+        android:textSize="@dimen/text_13" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_recommend_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_shop_product_details_recommend_tv_title"
+        android:gravity="center"
+        android:text="男童,女童"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_13" />
+
+</RelativeLayout>

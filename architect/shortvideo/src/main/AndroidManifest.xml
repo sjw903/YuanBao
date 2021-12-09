@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanbaogo.video">
+
+    <application android:requestLegacyExternalStorage="true">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".videopublish.view.ChooseFrontCoverActivity"
+            android:exported="true" />
+        <!-- 消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE" /> <!-- 消息收发辅助service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE" /> <!-- 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver> <!-- 系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.union.mymm.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.yuanbaogo.video.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <activity
+            android:name=".play.TCVodPlayerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".videorecord.TCVideoRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/RecordActivityTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".videorecord.TCVideoFollowRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MixRecordActivityTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".videorecord.TCVideoTripleScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MixRecordActivityTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".videopublish.TCVideoPublisherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".videochoose.TCPicturePickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerActivityTheme" />
+        <activity
+            android:name=".videochoose.TCTripleRecordVideoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerActivityTheme" />
+        <activity
+            android:name=".videochoose.TCVideoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickerActivityTheme" />
+        <activity
+            android:name=".videojoiner.TCPictureJoinActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/PictureTransitionActivityStyle" />
+        <activity
+            android:name=".videoeditor.TCVideoCutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditerActivityTheme" />
+        <activity
+            android:name=".videoeditor.TCVideoEditerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditerActivityTheme" />
+        <activity
+            android:name=".videoeditor.TCVideoEffectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditerActivityTheme" />
+        <activity
+            android:name=".videojoiner.TCVideoJoinerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".mainui.TCSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mainui.TCLanguagaSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videopublish.view.VideoPublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search.view.VideoAndUserSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videopublish.view.ChooseCoverActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    api project(":library:libbase")
+    api lib.liteavSdk
+    implementation lib.recyclerview
+    implementation 'com.google.code.gson:gson:2.8.4'
+}
+

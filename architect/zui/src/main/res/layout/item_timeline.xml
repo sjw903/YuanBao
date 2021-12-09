@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal">
+
+    <com.yuanbaogo.zui.setp.TimelineView
+        android:id="@+id/timeline"
+        android:layout_width="@dimen/margin_18"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        app:endLineColor="@color/colorE4E4E4"
+        app:lineStyle="normal"
+        app:lineWidth="@dimen/margin_1"
+        app:markerInCenter="false"
+        app:markerSize="@dimen/margin_18"
+        app:startLineColor="@color/colorE4E4E4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_21">
+
+        <TextView
+            android:id="@+id/logistics_item_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_9"
+            android:text="已签收"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/logistics_item_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22"
+            android:layout_toEndOf="@id/logistics_item_tv_status"
+            android:text="2021-09-18  18:32:59"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/logistics_item_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logistics_item_tv_status"
+            android:layout_marginStart="@dimen/margin_9"
+            android:layout_marginTop="@dimen/margin_11"
+            android:autoLink="phone"
+            android:textColorLink="@color/color358CFF"
+            android:text="[天津市]快件已在[天津市东丽区空港]签收，签收人：菜鸟裹裹驿站，如有疑问电联："
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

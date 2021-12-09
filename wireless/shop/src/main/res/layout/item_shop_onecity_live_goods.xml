@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_shop_onecity_live_goods_rl_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_5"
+    android:layout_marginTop="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_5"
+    android:background="@drawable/shape_bg_e4e4e4_10">
+
+    <com.yuanbaogo.zui.view.RadiuImageView
+        android:id="@+id/item_shop_onecity_live_goods_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_shop_onecity1"
+        app:radius_img="@dimen/margin_10" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_20"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:paddingLeft="@dimen/margin_10"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <com.yuanbaogo.zui.view.RoundImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_30"
+        android:scaleType="centerCrop"
+        app:radius="30dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_50"
+        android:layout_toLeftOf="@+id/ll_like"
+        android:layout_toRightOf="@+id/iv_header"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorFF666666"
+        android:textSize="@dimen/text_13" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_alignLeft="@+id/tv_user_name"
+        android:layout_marginRight="@dimen/margin_85"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:lineSpacingExtra="2dp"
+        android:text=" "
+        android:textColor="@color/colorFF212121"
+        android:textSize="@dimen/text_15" />
+
+    <RelativeLayout
+        android:id="@+id/ll_time_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_alignLeft="@+id/tv_content"
+        android:layout_alignRight="@+id/tv_content"
+        android:layout_marginTop="@dimen/margin_3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bill_item_name"
+            android:textSize="@dimen/text_13"
+            tools:text="05-11" />
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_15"
+            android:layout_toRightOf="@+id/tv_time"
+            android:text="回复"
+            android:textColor="@color/bill_item_name"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_user_name"
+        android:layout_alignBottom="@+id/ll_time_reply"
+        android:layout_alignParentRight="true"
+        android:minWidth="@dimen/margin_48">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_comment_like_unchioce" />
+
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_like"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="200000"
+            android:textColor="#6f6f6f"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="删除"
+            android:textColor="@color/bill_item_name"
+            android:textSize="@dimen/text_13" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

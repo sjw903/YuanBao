@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PactCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_login_cb</item>
+    </style>
+
+    <!--自定义Dialog样式-->
+    <style name="CustomizeDialog" parent="android:Theme.Dialog" type="text/css">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="popAnimRightToLeft" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_push_right_out</item>
+    </style>
+
+    <declare-styleable name="PwdEditText">
+        <attr name="space" format="dimension" /><!-- 每个输入框之间的间距；-->
+        <attr name="strokeWidth" format="dimension" /><!-- 边框的高度；-->
+        <attr name="checkedColor" format="color" /><!-- 已输入的颜色；-->
+        <attr name="defaultColor" format="color" /><!-- 未输入的默认颜色；-->
+        <attr name="textLength" format="integer" /><!-- 规定输入长度；-->
+        <attr name="backColor" format="color" /><!-- 输入框的背景颜色；-->
+        <attr name="textColor" format="color" /><!-- 字体颜色；-->
+        <attr name="circle" format="dimension" /><!-- 密文密码 ● 的大小；-->
+        <attr name="round" format="dimension" /><!-- 输入框的圆角弧度；-->
+        <attr name="textSize" format="dimension" /><!-- 字体大小；-->
+        <attr name="isPwd" format="boolean" /><!-- 是否密文输入 默认true；-->
+        <attr name="waitInputColor" format="color" /><!-- 待输入线的颜色；-->
+        <attr name="isWaitInput" format="boolean" /><!-- 是否显示待输入线 默认false；-->
+    </declare-styleable>
+
+    <declare-styleable name="verticalProgress">
+        <attr name="progress_radius" format="dimension" /><!-- 进度条圆角大小；-->
+        <attr name="progress_border_width" format="dimension" /><!-- 进度条边框的宽度；-->
+        <attr name="progress_gradient_enable" format="boolean" /><!-- 进度条颜色是否渐变；-->
+        <attr name="progress_border_enable" format="boolean" /><!-- 进度条是否有边框；-->
+        <attr name="progress_start_color" format="color" /><!-- 从上到下进度条开始的渐变色；-->
+        <attr name="progress_solid_color" format="color" /><!-- 带边框进度条的背景填充色；-->
+        <attr name="progress_end_color" format="color" /><!-- 从上到下进度条结束的渐变色；-->
+        <attr name="progress_border_color" format="boolean" /><!-- 进度条边框的颜色；-->
+    </declare-styleable>
+
+    <!--通用标题栏-->
+    <declare-styleable name="TitleBar">
+        <attr name="titleName" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="titleNameColor" format="color" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="leftImageRes" format="reference" />
+    </declare-styleable>
+
+    <!--通用设置条目-->
+    <declare-styleable name="SettingItem">
+        <attr name="nameText" format="string" />
+        <attr name="subNameText" format="string" />
+    </declare-styleable>
+
+    <style name="pop_anim_bottom" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/pop_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_push_bottom_out</item>
+    </style>
+
+
+    <style name="picture.default.style" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/white</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/white</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">false</item>
+        <!--返回键图标-->
+        <item name="picture.leftBack.icon">@mipmap/icon_back</item>
+        <!--标题文字颜色-->
+        <item name="picture.title.textColor">@color/title_bar_text_color</item>
+        <!--标题栏右边文字-->
+        <item name="picture.right.textColor">@color/title_bar_text_color</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture.ac_preview.title.textColor">@color/title_bar_text_color</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture.ac_preview.complete.textColor">@color/title_bar_text_color</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture.ac_preview.title.bg">@color/white</item>
+        <!--预览界面返回箭头-->
+        <item name="picture.preview.leftBack.icon">@mipmap/icon_back</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/white</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture.crop.status.color">@color/white</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture.crop.title.color">@color/title_bar_text_color</item>
+
+    </style>
+
+
+    <declare-styleable name="PileLayout">
+        <attr name="PileLayout_vertivalSpace" format="dimension"/>
+        <attr name="PileLayout_pileWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!--仿抖音Loading-->
+    <declare-styleable name="LoadingView">
+        <attr name="radius1" format="dimension"/> <!--球1的半径,默认为6dp,设置的方法:setRadius()-->
+        <attr name="radius2" format="dimension"/><!--球2的半径,默认为6dp,设置的方法:setRadius()-->
+        <attr name="rtlScale" format="float"/><!--小球从右往左的最大缩放倍数,默认0.7,设置的方法:setScales()-->
+        <attr name="ltrScale" format="float"/><!--小球从左往右的最大缩放倍数,默认1.3,设置的方法:setScales()-->
+        <attr name="color1" format="color"/><!--球1的颜色,默认设置的方法:setColors()-->
+        <attr name="color2" format="color"/><!--球2的颜色,默认设置的方法:setColors()-->
+        <attr name="mixColor" format="color"/><!--叠加的颜色,默认是黑色,设置的方法:setColors()-->
+        <attr name="duration" format="integer"/><!--一次转动的动画时长，默认:350ms,设置的方法:setDuration()-->
+        <attr name="pauseDuration" format="integer"/><!--一次转动动画以后停顿的时间,默认80ms,设置的方法:setDuration()-->
+        <attr name="gap" format="dimension"/><!--两球的间隔,默认0.8dp,设置方法：setRadius()-->
+        <attr name="scaleStartFraction" format="float"/><!--动画进度在[0,scaleStartFraction]期间，小球大小逐渐缩放，默认0.2f,设置的方法:setStartEndFraction()-->
+        <attr name="scaleEndFraction" format="float"/><!--动画进度在[scaleEndFraction,1]期间，小球大小逐渐恢复，默认0.8f,设置的方法:setStartEndFraction()-->
+    </declare-styleable>
+    <declare-styleable name="RadiusCardView">
+        <!--        左上圆角大小-->
+        <attr name="rcv_topLeftRadiu" format="dimension" />
+        <!--        右上圆角大小-->
+        <attr name="rcv_topRightRadiu" format="dimension" />
+        <!--        右下圆角大小-->
+        <attr name="rcv_bottomRightRadiu" format="dimension" />
+        <!--        左下圆角大小-->
+        <attr name="rcv_bottomLeftRadiu" format="dimension" />
+    </declare-styleable>
+
+
+    <style name="barheight">
+        <item name="android:paddingTop">20dp</item>
+
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">13dp</item>
+    </style>
+</resources>

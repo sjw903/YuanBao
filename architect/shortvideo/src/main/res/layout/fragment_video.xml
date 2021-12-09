@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color000000">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_ed4d16_to_ed4d16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_55"
+            android:layout_marginTop="@dimen/margin_30">
+
+            <ImageView
+                android:id="@+id/iv_video_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_20"
+                android:src="@mipmap/icon_video_upload" />
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tl_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/margin_7"
+                android:paddingBottom="@dimen/margin_7"
+                tl:tl_indicator_color="@color/colorEA5504"
+                tl:tl_indicator_height="3dp"
+                tl:tl_indicator_width="@dimen/margin_30"
+                tl:tl_tab_padding="@dimen/margin_20"
+                tl:tl_textBold="SELECT"
+                tl:tl_textsize="@dimen/text_16"
+                tl:tl_underline_gravity="BOTTOM" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

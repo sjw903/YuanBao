@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="downloading">下载中...</string>
+    <string name="money">¥</string>
+
+    <!--我的页面-->
+    <string name="mine_title">我的</string>
+    <string name="mine_not_logged_in">登录/注册</string>
+    <string name="mine_assets">我的资产</string>
+    <string name="mine_coupon">卡券</string>
+    <string name="mine_collection">收藏夹</string>
+    <string name="mine_order">我的订单</string>
+    <string name="mine_view_all">查看全部</string>
+    <string name="mine_pending_payment">待付款</string>
+    <string name="mine_to_be_received">待收货</string>
+    <string name="mine_be_evaluated">待评价</string>
+    <string name="mine_after_sale">退换/售后</string>
+    <string name="mine_item_diff">只差</string>
+    <string name="mine_item_spell">人拼成</string>
+    <string name="mine_item_go_group">去参团</string>
+    <string name="mine_item_online_service">在线客服</string>
+    <string name="mine_item_service_time">09:00–24:00</string>
+    <string name="mine_item_call">客服热线</string>
+    <string name="mine_item_call_phone">400-600-5118</string>
+
+    <!--设置主页面-->
+    <string name="setting_title">设置</string>
+    <string name="setting_account">账户管理</string>
+    <string name="setting_address">地址管理</string>
+    <string name="setting_pay">支付设置</string>
+    <string name="setting_bill">发票管理</string>
+    <string name="setting_common">通用</string>
+    <string name="setting_about">关于元宝APP</string>
+
+    <!--设置地址页面-->
+    <string name="address_title">地址管理</string>
+    <string name="address_add_address">新增收货地址</string>
+
+    <!--新增地址页面-->
+    <string name="add_address_title">新增收货地址</string>
+    <string name="update_address_title">编辑收货地址</string>
+    <string name="add_address_name">收货人</string>
+    <string name="add_address_name_hint">请输入名字</string>
+    <string name="add_address_phone">手机号码</string>
+    <string name="add_address_phone_hint">请输入手机号码</string>
+    <string name="add_address_area">选择地区</string>
+    <string name="add_address_details">详细地址</string>
+    <string name="add_address_details_hint">请输入详细地址</string>
+    <string name="add_address_default">设为默认地址</string>
+    <string name="add_address_save">保存</string>
+
+    <!--通用页面-->
+    <string name="common_title">通用</string>
+    <string name="common_clear_cache">清除本地缓存</string>
+
+    <!--关于页面-->
+    <string name="about_title">关于元宝APP</string>
+    <string name="about_update">版本更新</string>
+    <string name="about_statement">特别声明</string>
+    <string name="about_agreement">用户服务协议</string>
+    <string name="about_privacy_policy">隐私政策</string>
+    <string name="about_real_name">实名认证协议</string>
+    <string name="about_pay">元宝支付服务协议</string>
+    <string name="about_update_new_toast">当前为最新版本</string>
+
+    <!--隐私政策页面-->
+    <string name="policy_title">隐私条款</string>
+    <string name="policy_tip">提示条款</string>
+    <string name="policy_important">重要须知：元宝社交平台及APP客户端所有权人及关联方（下称“元宝购”）在此特别提醒您仔细阅读本《用户服务协议条款》，包括但不限于免除或者限制元宝购责任的条款、对用户权利进行限制的条款以及约定争议解决方式、司法管辖的条款。您有权选择同意或者不同意本协议。</string>
+    <string name="policy_item">本政策将帮助您了解以下内容：\n
+1、 我们如何收集和使用您的个人信息 \n
+2、我们如何使用Cookie和同类技术 \n
+3、我们如何保护和保存您的个人信息 \n
+4、我们如何管理您的个人信息 \n
+5、通知和修订 \n
+6、如何联系我们</string>
+
+    <!--隐私政策页面-->
+    <string name="agree_title">用户服务协议</string>
+    <string name="agree_tip">版本生效日期：2021年9月15日</string>
+    <string name="agree_important">重要须知：元宝社交平台及APP客户端所有权人及关联方（下称“元宝购”）在此特别提醒您仔细阅读本《用户服务协议条款》，包括但不限于免除或者限制元宝购责任的条款、对用户权利进行限制的条款以及约定争议解决方式、司法管辖的条款。您有权选择同意或者不同意本协议。</string>
+    <string name="agree_item">1.名词解释 \n
+        在此特别提醒您仔细阅读本： \n
+        1.1 元宝购服务条款：指享有全部知识产权等。 \n
+        1.2 元宝购平台：指享有全部知识产权等。 \n
+        1.3 销售商：指享有全部知识产权等。 \n
+        1.4 购物车：指享有全部知识产权等。</string>
+
+    <!--账号管理页面-->
+    <string name="account_title">修改账号</string>
+    <string name="account_update_phone">修改手机号</string>
+    <string name="account_other_settings">其他设置</string>
+    <string name="account_logout">注销账号</string>
+    <string name="account_sign_out">退出登录</string>
+    <string name="account_sign_out_toast">正在退出登录，请稍后</string>
+    <string name="account_error">网络错误，请稍后重试</string>
+
+    <!--支付设置页面-->
+    <string name="pay_title">支付设置</string>
+    <string name="pay_set_password">设置支付密码</string>
+    <string name="pay_reset_password">重置支付密码</string>
+    <string name="pay_code_error">获取验证码失败，请稍后重试</string>
+
+    <!--发票管理页面-->
+    <string name="bill_title">发票管理</string>
+    <string name="bill_view_all">查看全部发票</string>
+    <string name="bill_head">抬头管理</string>
+    <string name="bill_change">换开发票</string>
+
+    <string name="all_bill_title">全部发票</string>
+    <string name="all_bill_item_make_up">申请补开</string>
+    <string name="all_bill_item_reopen">申请换开</string>
+    <string name="all_bill_item_details">查看详情</string>
+
+    <string name="bill_head_title">抬头管理</string>
+    <string name="bill_head_unit">普通发票抬头-单位</string>
+    <string name="bill_head_personal">普通发票抬头-个人</string>
+    <string name="bill_head_add">新增发票抬头</string>
+
+    <string name="update_bill_title">编辑发票抬头</string>
+
+    <string name="add_bill_head">发票抬头</string>
+    <string name="add_bill_head_hint">请输入发票抬头</string>
+    <string name="add_bill_num">单位税号</string>
+    <string name="add_bill_num_hint">请输入单位税号</string>
+    <string name="add_bill_tip">其他选填项</string>
+    <string name="add_bill_address">注册地址</string>
+    <string name="add_bill_optional">选填</string>
+    <string name="add_bill_phone">注册电话</string>
+    <string name="add_bill_bank">开户银行</string>
+    <string name="add_bill_bank_num">银行账号</string>
+    <string name="add_bill_delete">删除</string>
+    <string name="add_bill_update">提交修改</string>
+
+    <string name="add_bill_title">新增发票抬头</string>
+    <string name="add_bill_type">发票类型</string>
+    <string name="add_bill_normal_type">普通发票</string>
+    <string name="add_bill_head_type">抬头类型</string>
+    <string name="add_bill_personal">个人</string>
+    <string name="add_bill_unit">单位</string>
+    <string name="add_bill_save">提交</string>
+
+    <string name="update_phone_title">修改手机号</string>
+    <string name="update_phone_tip">为了您的账户安全，请先进行验证</string>
+    <string name="update_phone_hint">请输入 %s 收到的短信验证码</string>
+    <string name="update_phone_code_hint">验证码</string>
+    <string name="update_phone_get_code">获取验证码</string>
+    <string name="update_phone">下一步</string>
+    <string name="update_phone_second">已发送(%ds)</string>
+    <string name="update_phone_reacquire">重新获取</string>
+
+    <string name="new_phone_tip">输入新的手机号</string>
+    <string name="new_phone_hint">请输入手机号</string>
+    <string name="new_phone_btn">确定</string>
+    <string name="new_phone_bind_success">绑定成功</string>
+    <string name="new_phone_bind_fail">绑定失败</string>
+
+    <string name="close_title">账号注销</string>
+    <string name="close_tip">开始注销前，请确认以下内容</string>
+    <string name="close_note1">注销账户 \n
+        为保障您的帐号安全，提交注销申请前需要同时满足以下条件：\n
+        1. 账号处于正常使用状态，无被盗风险 \n
+        2. 账号财产已结清，本账号没有未完成或存在争议的服务 \n
+        3. 账号无任何纠纷，包括投诉举报</string>
+    <string name="close_note2">请注意，一旦注销账户： \n
+         1. 您的账号将无法登录与使用，您的用户权益将被清空且无法恢复 \n
+         2. 您的元宝支付账户将同时注销 \n
+         3. 您的开通直播功能将被自动关闭 \n
+         4. 如果您开通了免密/指纹/面容支付等服务，服务将被自动关闭 \n
+         5. 您将无法便捷地查询账号历史交易记录 \n
+         6. 您的账号与其他应用账号将自动解除关联</string>
+    <string name="close_next">下一步</string>
+    <string name="close_reason">·选择注销原因</string>
+    <string name="close_select_reason">·选择原因</string>
+    <string name="close_log_out_now">确认注销</string>
+
+    <string name="close_dialog_reason">注销原因</string>
+    <string name="close_dialog_reason1">不喜欢了</string>
+    <string name="close_dialog_reason2">被封号了</string>
+    <string name="close_dialog_reason3">很无奈要注销</string>
+    <string name="close_dialog_btn_sure">确定</string>
+    <string name="close_dialog_btn_cancel">取消</string>
+    <string name="close_toast_tip">正在注销账号，请稍后</string>
+    <string name="close_toast_fail">网络原因注销失败</string>
+
+    <string name="pay_dialog_title">关于数字支付密码</string>
+    <string name="pay_dialog_content">- 使用6位数字组合，方便记忆使用\n- 手机APP使用，独立于原有支付密码\n- 付款提现时使用，安全可靠</string>
+    <string name="pay_dialog_not_open">暂时不开启</string>
+    <string name="pay_dialog_keep_on">继续开启</string>
+    <string name="pay_set_phone">手机号</string>
+    <string name="pay_set_code">发送验证码</string>
+
+    <string name="pay_toast_same_number">支付密码不能设置相同数字</string>
+    <string name="pay_toast_consecutive_number">支付密码不能设置连续数字</string>
+
+    <string name="pay_set_dialog_title">安全验证</string>
+    <string name="pay_set_dialog_tip">请输入手机号%s收到的短信验证码</string>
+    <string name="pay_set_dialog_code_hint">输入短信验证码</string>
+    <string name="pay_set_dialog_get_code">获取验证码</string>
+    <string name="pay_set_dialog_second">%d秒后重发</string>
+    <string name="pay_six_reset">重置</string>
+    <string name="pay_six_password">请输入6位数字支付密码</string>
+    <string name="pay_six_two_password">请确认您的6位数字支付密码</string>
+    <string name="pay_six_two_save">保存</string>
+    <string name="pay_six_two_please_reset">两次密码输入不一致，请重新设置</string>
+    <string name="pay_six_two_pass_success">设置支付密码成功</string>
+    <string name="pay_six_two_pass_fail">设置支付密码失败</string>
+
+    <!--订单页面Tab-->
+    <string name="order_tab_tv_all">全部</string>
+    <string name="order_tab_tv_pay">待付款</string>
+    <string name="order_tab_tv_receipt">待收货</string>
+    <string name="order_tab_tv_finish">已完成</string>
+    <string name="order_tab_tv_cancel">已取消</string>
+
+    <string name="order_item_pay">付款</string>
+    <string name="order_item_refund">申请退款</string>
+    <string name="order_item_confirm">确认收货</string>
+
+    <string name="order_search">搜索订单</string>
+
+    <string name="order_mall_area">商城订单</string>
+    <string name="order_video_area">视频订单</string>
+    <string name="order_live_area">直播订单</string>
+    <string name="order_app_area">小程序订单</string>
+
+    <string name="order_wait_pay">等待付款</string>
+    <string name="order_out_of_stock">已下单，正在出库</string>
+    <string name="order_in_transit">已出库，运输中</string>
+    <string name="order_cancelled">已取消</string>
+    <string name="order_completed">已完成</string>
+    <string name="order_money">¥%s</string>
+    <string name="order_number">共%s件</string>
+
+    <string name="order_no_data_toast">没有更多数据了</string>
+
+    <string name="order_refund_details">退款明细</string>
+
+    <string name="cancel_refund_success">取消申请退款成功</string>
+    <string name="cancel_refund_fail">取消申请退款失败</string>
+    <string name="cancel_refund_fail_limit">每笔订单只能申请撤销一次，您已超限</string>
+
+    <string name="confirm_success">确认收货成功</string>
+    <string name="confirm_fail">确认收货失败</string>
+
+    <string name="cancel_order_success">取消订单成功</string>
+    <string name="cancel_order_fail">取消订单失败</string>
+
+    <string name="order_btn_bill">电子发票</string>
+    <string name="order_btn_service">售后服务</string>
+    <string name="order_btn_evaluated">已评价</string>
+    <string name="order_btn_be_evaluated">待评价</string>
+    <string name="order_btn_cancel">取消订单</string>
+
+    <string name="order_dialog_cancel_title">取消订单</string>
+    <string name="order_dialog_tip">取消后无法恢复，优惠券、红包可退回，有效期内使用</string>
+    <string name="order_dialog_reason">请选择取消订单的原因（必须）：</string>
+    <string name="order_dialog_reason1">不想要了</string>
+    <string name="order_dialog_reason2">地址信息填写错误</string>
+    <string name="order_dialog_reason3">商品选错/多选</string>
+    <string name="order_dialog_reason4">商品降价</string>
+    <string name="order_dialog_reason5">没用/少用/错用优惠券</string>
+    <string name="order_dialog_not_cancel">暂不取消</string>
+    <string name="order_dialog_next_cancel">继续取消</string>
+
+    <string name="refund_title">取消/退款进度</string>
+    <string name="refund_order_code">订单编号</string>
+    <string name="refund_tv_pass">取消申请已通过</string>
+    <string name="refund_detail">退款明细</string>
+    <string name="refund_monty">¥%s(预计三个工作日到账)</string>
+    <string name="refund_text">退款文本退款文本退款文本退款文本退款文本退款文本退款文本退款文本退款文本退
+        款文本退款文本退款文本退款文本退款文本退款文本退款文本退款文本</string>
+
+    <string name="refund_step1">您的退款元宝已受理完成，到账周期可产看退款明细。</string>
+    <string name="refund_step2">系统尝试拦截中，请耐心等待。</string>
+    <string name="refund_step3">您的取消申请已提交</string>
+
+    <string name="wait_pay_title">等待支付</string>
+    <string name="wait_pay_money">需支付¥%.2f   &#160; &#160; &#160; 剩余</string>
+    <string name="wait_pay_hour">小时</string>
+    <string name="wait_pay_minute">分钟</string>
+    <string name="wait_to_pay">去支付</string>
+
+    <string name="wait_pay_code">订单编号</string>
+    <string name="wait_pay_copy">复制</string>
+    <string name="wait_pay_time">下单时间</string>
+    <string name="wait_pay_method">支付方式</string>
+    <string name="wait_pay_date">支付时间</string>
+    <string name="wait_pay_total">商品总额</string>
+    <string name="wait_pay_freight">运费</string>
+    <string name="wait_pay_money_details">需支付 </string>
+    <string name="wait_pay_money_already">已支付 </string>
+    <string name="wait_pay_advisory_service">咨询客服</string>
+
+    <string name="cancel_again_buy">再次购买</string>
+    <string name="cancel_delete">删除订单</string>
+    <string name="cancel_title">已取消</string>
+    <string name="cancel_tip">您的订单已经取消</string>
+    <string name="order_code_copy">订单编号已复制到剪贴板</string>
+    <string name="cancel_online_pay">在线支付</string>
+    <string name="order_seven">七天退换</string>
+    <string name="order_add_car">加入购物车</string>
+
+    <string name="order_pay_type_1">元宝支付</string>
+    <string name="order_pay_type_2">微信支付</string>
+    <string name="order_pay_type_3">支付宝支付</string>
+    <string name="order_pay_type_4">银联支付</string>
+
+    <string name="finish_title">交易完成</string>
+    <string name="finish_tip">您的订单已经签收，本人确认签收</string>
+
+    <string name="receipt_title">订单状态</string>
+
+    <string name="order_delete_title">确认删除此订单？</string>
+    <string name="order_delete_cancel">我再想想</string>
+    <string name="order_delete_sure">确定</string>
+
+    <string name="evaluation_title">发表评价</string>
+    <string name="evaluation_save">发布</string>
+    <string name="evaluation_error_toast">请输入商品评价</string>
+    <string name="evaluation_success">发表评价成功</string>
+    <string name="evaluation_fail">发表评价失败</string>
+    <string name="evaluation_matches">描述相符</string>
+    <string name="evaluation_text_tip">从多个角度评价宝贝，可以帮助更多想买的人</string>
+    <string name="evaluation_shop">商城评价</string>
+    <string name="evaluation_service">服务态度</string>
+    <string name="evaluation_logistics">物流服务</string>
+    <string name="evaluation_rating1">非常差</string>
+    <string name="evaluation_rating2">差</string>
+    <string name="evaluation_rating3">一般</string>
+    <string name="evaluation_rating4">好</string>
+    <string name="evaluation_rating5">非常好</string>
+
+    <string name="after_title">售后服务</string>
+    <string name="after_refunds">退货退款</string>
+    <string name="after_tip">支持7天无理由退货</string>
+    <string name="after_refund_only">只退款（不退货）</string>
+
+    <string name="sales_title_refund">只退款不退货</string>
+    <string name="sales_title_refund_good">退货退款</string>
+    <string name="sales_info">退款信息</string>
+    <string name="sales_status">货物状态</string>
+    <string name="sales_reason">退款原因</string>
+    <string name="sales_select">请选择</string>
+    <string name="sales_money">退款金额</string>
+    <string name="sales_select_method">选择退货方式</string>
+    <string name="sales_self_return">自行寄回</string>
+    <string name="sales_credentials">补充描述和凭证</string>
+    <string name="sales_text_tip">补充描述，有助于商家更好的处理售后问题</string>
+    <string name="sales_submit">提交</string>
+
+    <string name="sales_reason_tip">请选择退货的原因（必须）：</string>
+    <string name="sales_reason1">商品损坏/包装脏污</string>
+    <string name="sales_reason2">少/错商品</string>
+    <string name="sales_reason3">发错货</string>
+    <string name="sales_reason4">商品与页面描述不符</string>
+    <string name="sales_reason5">质量问题</string>
+    <string name="sales_sure">确定</string>
+    <string name="sales_reason_toast">请选择退货的原因</string>
+
+    <string name="sales_status_reason1">未收到货</string>
+    <string name="sales_status_reason2">已收到货</string>
+    <string name="sales_status_title">货物状态</string>
+
+    <string name="apply_title">申请退款</string>
+    <string name="apply_tip">温馨提示： \n
+         \n
+        1.限时特价/团购资格等购买优惠可能一并取消  \n
+        2.支付优惠一并取消 \n
+        3.订单一旦取消，无法恢复</string>
+    <string name="apply_reason">退款原因：</string>
+    <string name="apply_reason_hint">请选择退款原因</string>
+    <string name="apply_name">退款联系人：</string>
+    <string name="apply_name_hint">请输入退款联系人：</string>
+    <string name="apply_phone">联系方式：</string>
+    <string name="apply_phone_hint">请输入联系方式</string>
+    <string name="apply_toast">无效的手机号，请重新输入</string>
+    <string name="apply_small_tip">若您的商品已出库，订单拦截可能不成功，请您关注订单详情页最新进展。</string>
+    <string name="apply_submit_success">申请退款成功</string>
+    <string name="apply_submit_fail">申请退款失败</string>
+
+    <string name="search_tip">历史搜索</string>
+    <string name="search_right">搜索</string>
+    <string name="search_toast">搜索关键字不能为空</string>
+
+    <string name="sales_title">退换/售后</string>
+    <string name="sales_tab_apply">售后申请</string>
+    <string name="sales_tab_process">处理中</string>
+    <string name="sales_tab_record">申请记录</string>
+    <string name="sales_text_hint">商品名称/订单编号</string>
+
+
+    <string name="refund_service_code">服务单号：</string>
+    <string name="refund_cancel">取消申请</string>
+    <string name="refund_refunds_goods">退货退款</string>
+    <string name="refund_refund">退款</string>
+
+    <string name="refund_wait">待审核</string>
+    <string name="refund_returning">退货中</string>
+    <string name="refund_refunding">退款中</string>
+    <string name="refund_finish">退款成功</string>
+    <string name="refund_wait_desc">正在退货中</string>
+    <string name="refund_returning_desc">待售后退款中</string>
+    <string name="refund_refunding_desc">商品名称/订单编号</string>
+    <string name="refund_finish_desc">服务已完成，感谢您的支持与理解</string>
+
+    <string name="refund_status1">取消申请待审核</string>
+    <string name="refund_status2">取消申请已通过</string>
+    <string name="refund_status3">已退货，正在退款中</string>
+    <string name="refund_status4">已退款，退款成功</string>
+    <string name="refund_status5">订单已完成</string>
+    <string name="refund_status6">订单已关闭</string>
+
+    <string name="password_not_set">您还没有设置支付密码</string>
+    <string name="password_set">为了您的账户安全，请先设置支付密码</string>
+
+    <string name="refund_title_success">退款成功</string>
+    <string name="refund_title_close">退款关闭</string>
+    <string name="refund_status_success_tip">七天退换，快速响应，请退货给商家</string>
+    <string name="refund_status_fail_tip">因您超时未处理，本次申请关闭\n如您的问题未解决，您可以联系客服</string>
+    <string name="refund_title_fail">退款失败</string>
+    <string name="refund_bottom_tv">售后评价</string>
+    <string name="refund_money">退款金额</string>
+    <string name="refund_returned_to">退还至</string>
+    <string name="refund_small_money">原路返回</string>
+
+    <string name="refund_progress_title">退款中</string>
+    <string name="refund_progress_tip">您的申请已通过，请尽早发货</string>
+    <string name="refund_progress_sub_tip">请填写真是退货信息，逾期未填写，退货申请将关闭，关闭后若超出售后期，将无法再次发起售后服务</string>
+    <string name="refund_progress_logistics">我要寄件</string>
+    <string name="refund_progress_logistics_tip">点击填写物流单号</string>
+    <string name="refund_progress_write_code">填写单号</string>
+    <string name="refund_progress_return">撤销申请</string>
+
+    <string name="logistics_title">填写快递单号</string>
+    <string name="logistics_company">快递公司</string>
+    <string name="logistics_company_hint">选择快递公司</string>
+    <string name="logistics_code">快递单号</string>
+    <string name="logistics_code_hint">请输入快递单号</string>
+
+    <string name="after_dialog_tip">您仅能主动撤销一次，撤销后将不能在主动撤销且超出保障期后再无法再次发起售后</string>
+    <string name="after_dialog_cancel">取消</string>
+    <string name="after_dialog_sure">确定</string>
+
+    <string name="collection_title">收藏夹</string>
+    <string name="collection_right">管理</string>
+    <string name="collection_right_submit">完成</string>
+
+    <string name="delete_address_title">删除收货地址</string>
+    <string name="delete_address_content">是否确定删除该地址?</string>
+    <string name="delete_address_left">取消</string>
+    <string name="delete_address_right">删除</string>
+
+    <string name="set_logistics_success">设置物流信息成功</string>
+    <string name="set_logistics_fail">设置物流信息失败</string>
+
+    <!--短视频-->
+    <string name="video_chioce_cover">封面</string>
+    <string name="video_save">保存</string>
+
+    <string name="sure_delete_edit">是否退出当前编辑</string>
+    <string name="max_text_num">已达到最大字数限制</string>
+    <string name="upload_success">上传成功</string>
+    <string-array name="report_list">
+        <item>色情低俗</item>
+        <item>造谣传谣</item>
+        <item>涉政敏感</item>
+        <item>违法、诈骗</item>
+        <item>谩骂攻击</item>
+        <item>冒充他人</item>
+        <item>青少儿不宜/引人不适</item>
+        <item>其他</item>
+    </string-array>
+
+    <string name="after_apply">申请售后</string>
+    <string name="after_already_apply">该订单已申请售后</string>
+
+    <string name="live_amount">直播场次</string>
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+
+
+</resources>

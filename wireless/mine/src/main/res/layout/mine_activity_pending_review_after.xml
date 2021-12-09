@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.after.pending.PendingReviewAfterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:background="@drawable/icon_cancel_detail_bg">
+
+            <ImageButton
+                android:id="@+id/after_ib_back"
+                android:layout_width="52dp"
+                android:layout_height="@dimen/margin_53"
+                android:layout_marginTop="@dimen/margin_35"
+                android:background="@null"
+                android:padding="@dimen/margin_14"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/after_ib_back"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@mipmap/icon_order_progress"
+                android:drawablePadding="@dimen/margin_7"
+                android:gravity="center_vertical"
+                android:text="待审核"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_18" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/icon_address_item_bg"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_14"
+            android:paddingTop="@dimen/margin_14"
+            android:paddingBottom="@dimen/margin_17">
+
+            <TextView
+                android:id="@+id/after_tv_tip_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的申请已提交，等待平台审核"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/wing_selected_btn"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/after_rv_refund"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_21"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/icon_address_item_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_14"
+        android:paddingTop="@dimen/margin_14"
+        android:paddingBottom="@dimen/margin_17">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的申请已提交"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/margin_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="审核通过后您可根据商家提供的地址寄回商品"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/white"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/after_tv_cancel"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_all_bill_item_btn_active_bg"
+            android:gravity="center"
+            android:text="取消申请"
+            android:textColor="@color/wing_selected_title"
+            android:textSize="@dimen/margin_15"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

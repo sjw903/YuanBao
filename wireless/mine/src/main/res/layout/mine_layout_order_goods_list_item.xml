@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_detail_rl_good"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_20"
+    android:layout_marginBottom="@dimen/margin_15"
+    android:minHeight="88dp"
+    android:orientation="vertical">
+
+    <com.yuanbaogo.zui.view.RoundImageView
+        android:id="@+id/order_detail_iv_img"
+        android:layout_width="89dp"
+        android:layout_height="88dp"
+        app:radius="@dimen/margin_4" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginStart="@dimen/margin_9"
+        android:layout_marginEnd="@dimen/margin_25"
+        android:layout_toEndOf="@id/order_detail_iv_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/wing_title"
+        android:textSize="@dimen/wing_sub_title"
+        tools:text="超大力生枣随身点点滴滴点点滴滴点点滴滴点点滴滴点点滴滴点点滴滴的袋" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_9"
+        android:textColor="@color/wing_sub_title_hint"
+        android:textSize="@dimen/wing_sub_title"
+        tools:text="×1" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_17"
+        android:layout_below="@id/order_detail_tv_name"
+        android:layout_marginStart="@dimen/margin_9"
+        android:layout_marginTop="@dimen/margin_12"
+        android:maxLines="1"
+        android:layout_toEndOf="@id/order_detail_iv_img"
+        android:enabled="true"
+        android:gravity="center"
+        android:textColor="@color/wing_sub_title_hint"
+        android:textSize="@dimen/margin_11" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_9"
+        android:layout_toEndOf="@id/order_detail_iv_img"
+        android:textColor="@color/wing_selected_btn_text"
+        android:textSize="@dimen/wing_title"
+        tools:text="¥ 12.90" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_add_car"
+        android:layout_width="@dimen/margin_90"
+        android:layout_height="@dimen/margin_28"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+        android:gravity="center"
+        android:text="@string/order_add_car"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/margin_13"
+        android:visibility="gone" />
+
+</RelativeLayout>

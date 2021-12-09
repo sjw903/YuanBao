@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.receipt.detail.ReceiptDetailActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/receipt_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/receipt_ll_raffle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/margin_20"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="已预约，待抽奖"
+                    android:textColor="@color/colorFB8C00"
+                    android:textSize="@dimen/margin_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:text="抽奖时间"
+                    android:textColor="@color/color424242"
+                    android:textSize="@dimen/margin_12" />
+
+                <TextView
+                    android:id="@+id/receipt_tv_raffle_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/margin_10"
+                    tools:text="2021-09-18  18:32:59" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receipt_ll_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margin_19"
+                android:paddingTop="@dimen/margin_17"
+                android:paddingEnd="@dimen/margin_25"
+                android:paddingBottom="@dimen/margin_9"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/receipt_iv_status"
+                        android:layout_width="@dimen/margin_18"
+                        android:layout_height="@dimen/margin_18" />
+
+                    <TextView
+                        android:id="@+id/receipt_tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_9"
+                        android:text="已签收"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/receipt_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_22"
+                        android:text="2021-09-18  18:32:59"
+                        android:textColor="#999999"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/receipt_tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_25"
+                    android:layout_marginTop="@dimen/margin_11"
+                    android:autoLink="phone"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/margin_12"
+                    tools:text="[天津市]快件已在[天津市东丽区空港]签收，签收人：菜鸟裹裹驿站，如有疑问电联：" />
+
+                <TextView
+                    android:id="@+id/receipt_tv_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_11"
+                    android:drawableEnd="@mipmap/icon_receipt_right"
+                    android:text="查看详细物流状态"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/margin_9" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/receipt_rv_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margin_9"
+                android:paddingTop="@dimen/margin_17"
+                android:paddingEnd="@dimen/margin_15"
+                android:paddingBottom="@dimen/margin_9"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <include layout="@layout/mine_layout_order_address_item" />
+
+            <include layout="@layout/mine_layout_order_goods_list" />
+
+            <include layout="@layout/mine_layout_order_details" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/receipt_ll_refund"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/white"
+        android:gravity="end|center"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/receipt_tv_refund"
+            android:layout_width="@dimen/margin_110"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:gravity="center"
+            android:text="@string/order_item_refund"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_selected_btn" />
+
+        <TextView
+            android:id="@+id/receipt_tv_confirm"
+            android:layout_width="@dimen/margin_100"
+            android:layout_height="@dimen/margin_40"
+            android:background="@drawable/icon_address_add"
+            android:gravity="center"
+            android:text="@string/order_item_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wing_selected_btn" />
+
+    </LinearLayout>
+
+</LinearLayout>

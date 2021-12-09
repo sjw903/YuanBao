@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".publics.view.RecommendActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_recommend_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/shop_recommend_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_recommend_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_5" />
+
+        <RelativeLayout
+            android:id="@+id/shop_recommend_list_rl_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_100"
+                android:drawableTop="@mipmap/icon_assets_no_data"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="暂无明细"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_14" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

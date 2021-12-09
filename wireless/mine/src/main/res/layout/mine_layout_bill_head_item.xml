@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bill_head_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/bill_head_item_tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#ff424242"
+            android:textSize="@dimen/margin_13"
+            tools:text="王三峰" />
+
+        <ImageView
+            android:id="@+id/bill_head_item_iv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingVertical="17.5dp"
+            android:paddingEnd="@dimen/margin_10"
+            android:src="@mipmap/icon_update"/>
+
+    </LinearLayout>
+
+</LinearLayout>

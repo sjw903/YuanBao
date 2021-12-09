@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_shop_search_commodity_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5"
+    android:background="@drawable/shape_gradient_bg_white_line_10">
+
+    <com.yuanbaogo.zui.view.RadiuImageView
+        android:id="@+id/item_shop_search_commodity_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_no_img"
+        android:padding="@dimen/margin_2"
+        android:scaleType="fitXY"
+        app:left_top_radius="@dimen/margin_18"
+        app:right_top_radius="@dimen/margin_18" />
+
+    <LinearLayout
+        android:id="@+id/item_shop_search_commodity_ll_agg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_35"
+        android:layout_above="@id/item_shop_search_commodity_tv_title"
+        android:layout_margin="@dimen/margin_1"
+        android:background="@color/colorCCFFFFFF"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_shop_search_commodity_recycler_agg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_shop_search_commodity_tv_agg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:text="@string/app_product_details_color_optional"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_10" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_shop_search_commodity_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_search_commodity_img"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_5"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="BOBDOG | 巴布豆新款新款"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_13" />
+
+    <TextView
+        android:id="@+id/item_shop_search_commodity_tv_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_search_commodity_tv_title"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:padding="@dimen/margin_3"
+        android:text="棉纱面料 透气舒适"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_10" />
+
+    <com.yuanbaogo.zui.search.view.SearchLayout
+        android:id="@+id/shop_product_details_sl_direct_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_search_commodity_tv_material" />
+
+    <RelativeLayout
+        android:id="@+id/shop_product_details_rl_price"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_30"
+        android:layout_below="@id/shop_product_details_sl_direct_sale">
+
+        <TextView
+            android:id="@+id/shop_product_details_tv_discounted_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/app_product_details_price"
+            android:textColor="@color/colorE03030"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/shop_product_details_rl_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/shop_product_details_tv_discounted_price">
+
+            <TextView
+                android:id="@+id/shop_product_details_tv_discounted_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:text="@string/app_product_details_discounted_price"
+                android:textColor="@color/colorE03030"
+                android:textSize="@dimen/text_10"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/shop_product_details_tv_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_toRightOf="@id/shop_product_details_tv_discounted_price1"
+                android:text="@string/app_product_details_price"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/text_10" />
+
+            <TextView
+                android:id="@+id/shop_product_details_tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_toRightOf="@id/shop_product_details_tv_original_price"
+                android:text="@string/app_product_details_discount"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/text_10" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shop_product_details_tv_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_product_details_rl_price"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:text="@string/app_product_details_sold"
+        android:textColor="@color/colorE03030"
+        android:textSize="@dimen/text_9" />
+
+</RelativeLayout>

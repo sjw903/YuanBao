@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.account.update.UpdatePhoneActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/update_phone_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/update_phone_tip"
+        android:textColor="@color/wing_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/margin_20" />
+
+    <TextView
+        android:id="@+id/update_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/update_phone_hint"
+        android:singleLine="true"
+        android:inputType="number"
+        android:textColor="@color/wing_sub_title_hint"
+        android:textSize="@dimen/margin_15" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/update_et_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/update_phone_code_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:minWidth="@dimen/margin_50"
+            android:singleLine="true"
+            android:textColor="@color/wing_title"
+            android:textColorHint="@color/wing_sub_title_hint"
+            android:textSize="@dimen/margin_15" />
+
+        <TextView
+            android:id="@+id/update_tv_get_code"
+            android:layout_width="88dp"
+            android:layout_height="@dimen/margin_32"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/icon_update_phone_code_default"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/update_phone_get_code"
+            android:textColor="@color/wing_sub_title_hint"
+            android:textSize="@dimen/margin_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@color/update_phone_line" />
+
+    <TextView
+        android:id="@+id/update_tv_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:layout_marginHorizontal="@dimen/address_bottom_btn_horizontal_margin"
+        android:layout_marginTop="@dimen/margin_21"
+        android:background="@drawable/icon_address_add"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/update_phone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/address_bottom_btn_text_size" />
+
+</LinearLayout>

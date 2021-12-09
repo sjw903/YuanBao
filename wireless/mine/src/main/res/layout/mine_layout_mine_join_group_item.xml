@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_item_height"
+    android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/mine_item_iv_header"
+        android:layout_width="@dimen/mine_item_header_size"
+        android:layout_height="@dimen/mine_item_header_size"
+        tools:src="#000" />
+
+    <TextView
+        android:id="@+id/mine_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mine_item_name_start_margin"
+        android:textColor="@color/mine_group_title_color"
+        android:textSize="@dimen/mine_item_name_size"
+        tools:text="玩家甲" />
+
+    <TextView
+        android:id="@+id/mine_item_tv_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mine_item_sub_name_start_margin"
+        android:layout_weight="1"
+        android:textColor="@color/mine_group_sub_title_color"
+        android:textSize="@dimen/mine_item_sub_name_size"
+        tools:text="5百专区" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_item_diff"
+        android:textColor="@color/mine_group_title_color"
+        android:textSize="@dimen/mine_item_name_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mine_group_num_color"
+        android:textSize="@dimen/mine_item_name_size"
+        tools:text="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_item_spell"
+        android:textColor="@color/mine_group_title_color"
+        android:textSize="@dimen/mine_item_name_size" />
+
+    <TextView
+        android:layout_width="@dimen/mine_item_btn_width"
+        android:layout_height="@dimen/mine_item_btn_height"
+        android:layout_marginStart="@dimen/mine_item_name_start_margin"
+        android:background="@drawable/icon_mine_group_item_btn_bg"
+        android:gravity="center"
+        android:text="@string/mine_item_go_group"
+        android:textColor="@color/mine_group_btn_text_color"
+        android:textSize="@dimen/mine_item_btn_text_size" />
+
+</LinearLayout>

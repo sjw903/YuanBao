@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.yuanbaogo.zui.setp.TimelineView
+        android:id="@+id/refund_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        app:endLineColor="@color/colorE4E4E4"
+        app:lineOrientation="horizontal"
+        app:lineStyle="normal"
+        app:lineWidth="@dimen/margin_1"
+        app:markerSize="@dimen/margin_18"
+        app:startLineColor="@color/colorE4E4E4" />
+
+    <TextView
+        android:id="@+id/refund_item_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_7"
+        android:paddingHorizontal="@dimen/margin_7"
+        android:textColor="@color/wing_selected_title"
+        android:textSize="@dimen/margin_12"
+        tools:text="提交审核" />
+
+</LinearLayout>

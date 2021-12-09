@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_invite_friends_promote_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="元宝用户001"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_13" />
+
+    <TextView
+        android:id="@+id/item_invite_friends_promote_tv_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="元宝万能充电宝"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/text_13" />
+
+    <TextView
+        android:id="@+id/item_invite_friends_promote_tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="¥ 2"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/text_13" />
+
+</LinearLayout>

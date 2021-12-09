@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_53"
+    android:background="@drawable/shape_gradient_bg_white_10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sure_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_18"
+        android:layout_marginVertical="@dimen/margin_35"
+        android:text="退款申请已提交成功！"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/wing_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/colorE4E4E4" />
+
+    <TextView
+        android:id="@+id/sure_tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:gravity="center"
+        android:text="查看订单"
+        android:textColor="@color/colorEA5504"
+        android:textSize="@dimen/margin_15" />
+
+</LinearLayout>

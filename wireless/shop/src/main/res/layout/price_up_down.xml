@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/price_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_30"
+    android:paddingTop="@dimen/margin_10"
+    android:paddingRight="@dimen/margin_30"
+    android:paddingBottom="@dimen/margin_10"
+    android:text="筛选"
+    android:textColor="@color/color424242"
+    android:textSize="@dimen/text_13" />
+

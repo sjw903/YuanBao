@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refund_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/icon_address_item_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_10">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/refund_item_tv_code_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4"
+            android:text="@string/refund_service_code"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/refund_item_tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4"
+            android:layout_toEndOf="@id/refund_item_tv_code_title"
+            android:textColor="@color/wing_sub_title_hint"
+            android:textSize="@dimen/margin_12"
+            tools:text="0393943438888555592" />
+
+        <TextView
+            android:id="@+id/refund_item_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorFB8C00"
+            android:textSize="@dimen/margin_11"
+            android:text="退货退款" />
+
+    </RelativeLayout>
+
+    <!--商品集合-->
+    <include layout="@layout/mine_layout_order_goods" />
+
+    <RelativeLayout
+        android:id="@+id/refund_item_rl_status_big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:background="@drawable/icon_refund_item_bg"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/refund_item_tv_status_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title"
+            tools:text="待审核" />
+
+        <TextView
+            android:id="@+id/refund_item_tv_status_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_toEndOf="@id/refund_item_tv_status_big"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10"
+            android:visibility="gone"
+            tools:text="您的服务单已申请成功，待售后审核中" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_setting_right" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/refund_item_tv_cancel"
+        android:layout_width="@dimen/margin_90"
+        android:layout_height="@dimen/margin_36"
+        android:layout_gravity="end"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:background="@drawable/icon_address_add"
+        android:gravity="center"
+        android:text="@string/refund_cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_13" />
+
+    <RelativeLayout
+        android:id="@+id/refund_item_rl_refund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/refund_item_tv_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/after_already_apply"
+            android:textColor="@color/wing_selected_title"
+            android:textSize="@dimen/margin_11" />
+
+        <TextView
+            android:id="@+id/refund_item_tv_refund_apply"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/icon_all_bill_item_btn_active_bg"
+            android:gravity="center"
+            android:text="@string/after_apply"
+            android:textColor="@color/bill_item_btn"
+            android:textSize="@dimen/margin_13" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shop_group_joining_zone_rl_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_3"
+    android:paddingRight="@dimen/margin_3">
+
+    <ImageView
+        android:id="@+id/item_shop_group_joining_zone_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_shop_group_joining_zone3" />
+
+</RelativeLayout>

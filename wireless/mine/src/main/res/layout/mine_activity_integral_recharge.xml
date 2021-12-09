@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".integral.view.IntegralRechargeActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/mine_assets_integral_recharge_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/mine_assets_integral_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_integral_recharge_head_view"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/shape_gradient_bg_white_10">
+
+        <TextView
+            android:id="@+id/mine_assets_integral_recharge_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="充值金额"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_15" />
+
+        <RelativeLayout
+            android:id="@+id/mine_assets_integral_recharge_rl_integral"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:layout_below="@id/mine_assets_integral_recharge_tv_title"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_35"
+            android:layout_marginRight="@dimen/margin_20">
+
+            <EditText
+                android:id="@+id/mine_assets_integral_recharge_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入充值金额"
+                android:inputType="number"
+                android:textColor="@color/color212121"
+                android:textColorHint="@color/colorAAAAAA"
+                android:textSize="@dimen/margin_28" />
+
+            <ImageView
+                android:id="@+id/mine_assets_integral_recharge_img_clear"
+                android:layout_width="@dimen/margin_30"
+                android:layout_height="@dimen/margin_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_5"
+                android:src="@mipmap/icon_assets_clear" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/mine_assets_integral_recharge_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_below="@id/mine_assets_integral_recharge_rl_integral"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/colorE4E4E4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_integral_recharge_line"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="*可直接用于购物，1积分=1元"
+            android:textColor="@color/colorE03030"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mine_assets_integral_recharge_but_paly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@+id/mine_assets_integral_rl"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/shape_gradient_bg_but_alpha_50"
+        android:gravity="center"
+        android:text="支付"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_16" />
+
+</RelativeLayout>

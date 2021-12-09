@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".mine.view.MineActivity">
+
+    <com.yuanbaogo.homevideo.mine.view.widget.ScaleScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_220"
+                android:background="@color/colorEFEFEF"
+                android:scaleType="centerCrop" />
+
+            <com.yuanbaogo.homevideo.mine.view.widget.ProfileLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-34dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/label_color"
+                app:tabIndicatorHeight="@dimen/margin_2"
+                app:tabMaxWidth="@dimen/margin_150"
+                app:tabMinWidth="@dimen/margin_100"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="20dp"
+                app:tabPaddingStart="20dp"
+                app:tabSelectedTextColor="@color/label_color"
+                app:tabTextColor="@color/color424242"
+                app:tabRippleColor="@color/transparent"/>
+
+            <com.yuanbaogo.homevideo.mine.view.widget.FullViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.yuanbaogo.homevideo.mine.view.widget.ScaleScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent" />
+
+        <com.yuanbaogo.homevideo.mine.view.widget.TitleLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFFFFFF"
+            android:visibility="invisible"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/label_color"
+            app:tabIndicatorHeight="@dimen/margin_2"
+            app:tabMaxWidth="@dimen/margin_150"
+            app:tabMinWidth="@dimen/margin_100"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="20dp"
+            app:tabPaddingStart="20dp"
+            app:tabSelectedTextColor="@color/label_color"
+            app:tabTextColor="@color/color424242" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_release_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:layout_gravity="bottom"
+        android:background="@color/colorFFFFFF"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/but_mine_release_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/icon_address_add_bg"
+            android:text="发布作品"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/margin_16" />
+
+    </RelativeLayout>
+
+</FrameLayout>

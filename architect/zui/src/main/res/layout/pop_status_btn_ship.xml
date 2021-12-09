@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ship_pic"
+            android:layout_width="@dimen/margin_120"
+            android:layout_height="@dimen/margin_120"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_14"
+            android:src="@mipmap/auth_sucess" />
+
+        <TextView
+            android:id="@+id/tv_ship_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_ship_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_31"
+            android:layout_marginBottom="@dimen/margin_40"
+            android:gravity="center"
+            android:text="认证成功"
+            android:textColor="@color/color424242"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_ship_txt"
+            android:layout_marginTop="@dimen/margin_18"
+            android:background="@color/colorE4E4E4" />
+
+        <TextView
+            android:id="@+id/tv_ship_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:gravity="center"
+            android:text="我已知晓"
+            android:textColor="@color/colorEA5504"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

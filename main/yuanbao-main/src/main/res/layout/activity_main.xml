@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF5EFEB">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bnve" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_bnve"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFFFFFF"
+        android:paddingBottom="@dimen/margin_4"
+        app:itemBackground="@null"
+        app:itemRippleColor="@null"
+        app:itemIconSize="@dimen/margin_30"
+        app:itemTextColor="@drawable/selector_main_text"
+        app:itemTextAppearanceActive="@style/bottom_tab_title"
+        app:itemTextAppearanceInactive="@style/bottom_tab_title"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/main_bottom_menu_navigation_fab" />
+
+    <RelativeLayout
+        android:id="@+id/main_rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:layout_above="@id/main_bnve"
+        android:background="@color/colorB3212121">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/app_login_beautiful_prompt"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_12" />
+
+        <Button
+            android:id="@+id/main_but_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@drawable/selector_bg_but"
+            android:text="@string/app_login_immediately"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

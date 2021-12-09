@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".spick.view.SpickActivity">
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:id="@+id/shop_spick_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.yuanbaogo.zui.banner.BannerView
+                android:id="@+id/shop_spick_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_230" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_spick_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_220"
+                android:background="@drawable/shape_gradient_top_bg_white_10"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="10"
+                tools:listitem="@layout/item_shop_spick" />
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_spick_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/shop_spick_img_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_shop_cart" />
+
+        <ImageView
+            android:id="@+id/shop_spick_img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_spick_img_shopcart"
+            android:src="@mipmap/icon_search_top" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

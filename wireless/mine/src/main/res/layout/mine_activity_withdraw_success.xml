@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".dib.view.WithdrawSuccessActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/mine_assets_dib_withdraw_success_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_assets_dib_withdraw_success_head_view"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/shape_gradient_bg_white_10">
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_success_tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:drawablePadding="@dimen/margin_17"
+            android:text="提现金额"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_success_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_success_tv_mode"
+            android:layout_centerHorizontal="true"
+            android:text="￥00.00"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_success_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_success_tv_price"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_6"
+            android:text="处理中"
+            android:textColor="@color/colorEA5504"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_success_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_success_tv_type"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_40"
+            android:text="提现到微信:"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/mine_assets_dib_withdraw_success_tv_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_success_tv_type"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_toRightOf="@id/mine_assets_dib_withdraw_success_tv_account"
+            android:text=" "
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_13" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_assets_dib_withdraw_success_tv_account"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_32">
+
+            <TextView
+                android:id="@+id/mine_assets_dib_withdraw_success_tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理进度："
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_13" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_100"
+                android:layout_toRightOf="@id/mine_assets_dib_withdraw_success_tv_progress">
+
+                <RelativeLayout
+                    android:id="@+id/mine_assets_dib_withdraw_success_rl_progress"
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_36">
+
+                    <com.yuanbaogo.zui.progress.VerticalProgress
+                        android:id="@+id/mine_assets_dib_withdraw_success_progress"
+                        android:layout_width="@dimen/margin_1"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_assets_withdraw_success_progress" />
+
+                    <ImageView
+                        android:id="@+id/mine_assets_dib_withdraw_success_img_success"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@mipmap/icon_assets_withdraw_success_progress_un" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:layout_toRightOf="@id/mine_assets_dib_withdraw_success_rl_progress"
+                    android:text="提现已申请，\n预计三个工作日到账"
+                    android:textColor="@color/colorEA5504"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:layout_toRightOf="@id/mine_assets_dib_withdraw_success_rl_progress"
+                    android:text="到账成功"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/text_13" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mine_assets_dib_withdraw_but_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_49"
+        android:background="@drawable/selector_bg_but_login"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_16" />
+
+</RelativeLayout>

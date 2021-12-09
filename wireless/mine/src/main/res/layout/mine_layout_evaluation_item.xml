@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/icon_address_item_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10">
+
+    <com.yuanbaogo.zui.view.RoundImageView
+        android:id="@+id/evaluation_iv_img"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:id="@+id/evaluation_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:maxLines="1"
+        android:layout_toEndOf="@id/evaluation_iv_img"
+        android:textColor="@color/wing_title"
+        android:textSize="@dimen/wing_sub_title"
+        tools:text="迪士尼宝宝凉鞋2021夏季新款来袭" />
+
+    <TextView
+        android:id="@+id/evaluation_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/evaluation_tv_name"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_9"
+        android:layout_toEndOf="@id/evaluation_iv_img"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/margin_11"
+        tools:text="迪士尼宝宝凉鞋2021夏季新款来袭" />
+
+    <TextView
+        android:id="@+id/evaluation_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/evaluation_iv_img"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/evaluation_matches"
+        android:textColor="@color/wing_sub_title"
+        android:textSize="@dimen/wing_title" />
+
+    <com.yuanbaogo.zui.view.RatingBar
+        android:id="@+id/evaluation_rb_desc"
+        android:layout_width="@dimen/margin_170"
+        android:layout_height="@dimen/margin_22"
+        android:layout_below="@id/evaluation_iv_img"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginTop="@dimen/margin_19"
+        android:layout_toEndOf="@id/evaluation_tv_tip"
+        app:starCount="5"
+        app:starEmpty="@mipmap/icon_rating_bar"
+        app:starFill="@mipmap/icon_rating_bar_selected"
+        app:starHalf="@mipmap/icon_rating_bar_selected"
+        app:starImageSize="@dimen/margin_22"
+        app:starPadding="@dimen/margin_10"
+        app:starStep="5"
+        app:stepSize="Half" />
+
+    <TextView
+        android:id="@+id/evaluation_tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/evaluation_iv_img"
+        android:layout_marginTop="@dimen/margin_21"
+        android:layout_toEndOf="@id/evaluation_rb_desc"
+        android:text="@string/evaluation_rating5"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/wing_sub_title" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_14"
+        android:layout_height="@dimen/margin_14"
+        android:layout_below="@id/evaluation_tv_tip"
+        android:layout_marginTop="@dimen/margin_30"
+        android:src="@mipmap/icon_evaluation" />
+
+    <EditText
+        android:id="@+id/evaluation_et_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70"
+        android:layout_below="@id/evaluation_tv_tip"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/evaluation_text_tip"
+        android:paddingStart="@dimen/margin_20"
+        android:textColor="@color/wing_sub_title"
+        android:textColorHint="@color/wing_sub_title_hint"
+        android:textSize="@dimen/wing_sub_title" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/evaluation_rv_img"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_below="@id/evaluation_et_evaluation"
+        android:layout_marginTop="@dimen/margin_15" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/video_back_iv"
+        android:layout_width="@dimen/margin_44"
+        android:layout_height="@dimen/margin_44"
+        android:src="@mipmap/icon_head_back_white"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="34dp"
+        android:padding="8dp"/>
+
+</RelativeLayout>

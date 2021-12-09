@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cd_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10">
+
+        <RelativeLayout
+            android:id="@+id/rl_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_220"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_anchor_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_220"
+                android:background="@color/colorFFFFFF"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/tv_living"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/video_radius180_000000"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_gradient_ed4d16"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_7"
+                    android:paddingTop="@dimen/margin_3"
+                    android:paddingRight="@dimen/margin_7"
+                    android:paddingBottom="@dimen/margin_3">
+
+                    <ImageView
+                        android:id="@+id/item_live_img_live"
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_2"
+                        android:text="直播中"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_9" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_viewer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_2"
+                    android:layout_marginRight="@dimen/margin_4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_9" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_selling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:background="@drawable/video_radius180_000000"
+                android:drawableLeft="@mipmap/icon_live_sale"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_7"
+                android:paddingTop="@dimen/margin_3"
+                android:paddingRight="@dimen/margin_7"
+                android:paddingBottom="@dimen/margin_3"
+                android:text="带货"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_9" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_living_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_root"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_12"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cv_anchor_head"
+            android:layout_width="@dimen/text_15"
+            android:layout_height="@dimen/text_15"
+            android:layout_below="@+id/tv_living_title"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <TextView
+            android:id="@+id/tv_anchor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_living_title"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toRightOf="@+id/cv_anchor_head"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorFB8C00"
+            android:textSize="@dimen/text_10"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

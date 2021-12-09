@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/like_ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:background="@drawable/icon_order_like_bg"
+    android:orientation="vertical">
+
+    <com.yuanbaogo.zui.view.RoundImageView
+        android:id="@+id/like_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_180"
+        app:radius="@dimen/margin_8" />
+
+    <TextView
+        android:id="@+id/like_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="生力枣超值礼盒装500g… "
+        android:textColor="@color/wing_title"
+        android:textSize="@dimen/margin_13" />
+
+    <TextView
+        android:id="@+id/like_tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="天津 桂发祥 250g"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/margin_6"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/like_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_6"
+        android:background="@drawable/icon_like_bg"
+        android:paddingHorizontal="@dimen/margin_5"
+        android:paddingVertical="@dimen/margin_2"
+        android:text="直销特卖"
+        android:textColor="@color/colorE03030"
+        android:textSize="@dimen/margin_9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/like_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥59"
+            android:textColor="@color/wing_selected_title"
+            android:textSize="@dimen/margin_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:text="折后价"
+            android:textColor="@color/colorE03030"
+            android:textSize="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/like_tv_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:text="¥358"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/like_tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:text="1.7折"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/like_tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:text="已售279件"
+        android:textColor="@color/colorE03030"
+        android:textSize="@dimen/margin_9" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+// 环境配置
+Properties envProp = new Properties()
+// appKey配置
+Properties appKeyProp = new Properties()
+Properties versionProp= new Properties()
+def yuanbaoProPath = "${rootDir}/yuanbao-config-android/properties/yuanbao.properties"
+versionProp.load(new FileInputStream(file("${rootDir}/yuanbao-config-android/properties/version.properties")))
+// 供Jenkins使用
+if ('test'.equals(JENKINS_ENV)) {
+    envProp.load(new FileInputStream(file("${rootDir}/yuanbao-config-android/jenkins-prop/test_env.properties")))
+//    if ('1'.equals(APP_KEY_CONFIG)) {
+//        appKeyProp.load(new FileInputStream(file('../yuanbao-config-android/jenkins-prop/debug_appkey.properties')))
+//    } else if ('2'.equals(APP_KEY_CONFIG)) {
+//        appKeyProp.load(new FileInputStream(file('../yuanbao-config-android/jenkins-prop/release_appkey.properties')))
+//    } else {
+//        appKeyProp.load(new FileInputStream(file(yuanbaoProPath)))
+//    }
+} else if ('product'.equals(JENKINS_ENV)) {
+    envProp.load(new FileInputStream(file("${rootDir}/yuanbao-config-android/jenkins-prop/product_env.properties")))
+//    if ('1'.equals(APP_KEY_CONFIG)) {
+//        appKeyProp.load(new FileInputStream(file('../yuanbao-config-android/jenkins-prop/debug_appkey.properties')))
+//    } else if ('2'.equals(APP_KEY_CONFIG)) {
+//        appKeyProp.load(new FileInputStream(file('../yuanbao-config-android/jenkins-prop/release_appkey.properties')))
+//    } else {
+//        appKeyProp.load(new FileInputStream(file(yuanbaoProPath)))
+//    }
+} else {
+    envProp.load(new FileInputStream(file(yuanbaoProPath)))
+    appKeyProp.load(new FileInputStream(file(yuanbaoProPath)))
+}
+
+android {
+    //设置编译版本
+    compileSdkVersion Integer.parseInt("${COMPILE_VERSION}")
+    //设置构建工具版本
+    buildToolsVersion "${BUILD_TOOLS_VERSION}"
+
+    //默认配置
+    defaultConfig {
+
+        //设置最低适配版本
+        minSdkVersion "${MIN_VERSION}"
+        //设置目标适配版本
+        targetSdkVersion "${TARGET_VERSION}"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath true
+            }
+        }
+        buildConfigField "int", "ENV", "${envProp['ENV']}"
+        buildConfigField "int", "VERSION_CODE", "${versionProp['VERSION_CODE']}"
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'yuanbao'
+            keyPassword 'yuanbao18522327220'
+            storeFile file("${rootDir}/yuanbao.jks")
+            storePassword 'yuanbao18522327220'
+        }
+        release {
+            keyAlias 'yuanbao'
+            keyPassword 'yuanbao18522327220'
+            storeFile file("${rootDir}/yuanbao.jks")
+            storePassword 'yuanbao18522327220'
+        }
+    }
+
+    packagingOptions {
+        //排重可能存在的文件
+//        exclude 'META-INF/*'
+//        exclude 'META-INF/DEPENDENCIES.txt'
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'META-INF/notice.txt'
+//        exclude 'META-INF/license.txt'
+//        exclude 'META-INF/dependencies.txt'
+//        exclude 'META-INF/LGPL2.1'
+//        exclude 'META-INF/gfprobe-provider.xml'
+    }
+
+    compileOptions {
+        sourceCompatibility JAVA_VERSION
+        targetCompatibility JAVA_VERSION
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(include: '*.jar', dir: 'libs')
+
+
+}
+
+configurations.all {
+//    resolutionStrategy.cacheDynamicVersionsFor Integer.MAX_VALUE, 'seconds'
+//    resolutionStrategy.cacheDynamicVersionsFor 0, 'seconds'
+
+}
+
+
+
+
+
+

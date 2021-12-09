@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yuanbaogo.zui.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_14"
+    android:layout_marginBottom="@dimen/margin_19"
+    android:orientation="vertical"
+    android:id="@+id/sl_shop">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="@dimen/margin_45"
+            android:layout_height="match_parent"
+            android:background="@color/colorF6F6F6"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:text="移除"
+            android:gravity="center"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/tv_down"
+            android:layout_width="@dimen/margin_45"
+            android:layout_height="match_parent"
+            android:background="@color/colorFFBB82"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:text="下移"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/tv_up"
+            android:layout_width="@dimen/margin_45"
+            android:layout_height="match_parent"
+            android:background="@color/colorFB8C00"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:text="上移"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="@dimen/margin_45"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/colorF63C09"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:text="讲解"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_bring_goods_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient_bg_white_10">
+
+        <ImageView
+            android:id="@+id/iv_goods_img"
+            android:layout_width="@dimen/margin_95"
+            android:layout_height="@dimen/margin_95"
+            android:background="@color/colorFAFAFA"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_shop_onecity1" />
+
+        <TextView
+            android:id="@+id/tv_goods_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toRightOf="@id/iv_goods_img"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textStyle="bold"
+            android:text="缔晶 银耳钉一周套装女百搭长短款流苏耳饰礼盒女生饰品网红网红网红"
+            android:textColor="@color/color212121"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="@dimen/margin_6"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toRightOf="@id/iv_goods_img"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingRight="@dimen/margin_8"
+            android:text="T298  内存8.0T  纯银"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="@dimen/margin_26"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_toRightOf="@id/iv_goods_img"
+            android:text="￥ 1200"
+            android:textStyle="bold"
+            android:textColor="@color/colorF63C09"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_explain"
+            android:layout_width="@dimen/margin_95"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/iv_goods_img"
+            android:background="@color/colorF63C09"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_2"
+                android:drawableLeft="@mipmap/three_view"
+                android:text="讲解中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_9" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.yuanbaogo.zui.swipe.SwipeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.after.finish.AfterSalesFinishDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:background="@drawable/icon_cancel_detail_bg">
+
+            <ImageButton
+                android:id="@+id/after_finish_ib_back"
+                android:layout_width="52dp"
+                android:layout_height="@dimen/margin_53"
+                android:layout_marginTop="@dimen/margin_35"
+                android:background="@null"
+                android:padding="@dimen/margin_14"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/after_finish_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/after_finish_ib_back"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@mipmap/icon_order_finish"
+                android:drawablePadding="@dimen/margin_7"
+                android:gravity="center_vertical"
+                android:text="@string/refund_title_success"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_18" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_150"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginTop="137dp"
+            android:background="@drawable/icon_address_item_bg"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_14"
+            android:paddingBottom="@dimen/margin_17">
+
+            <TextView
+                android:id="@+id/after_finish_tv_tip_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家已完成退款"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/wing_selected_btn"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/after_finish_rv_refund"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_21"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/after_finish_ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/icon_address_item_bg"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/margin_9"
+                android:paddingStart="@dimen/margin_10"
+                android:paddingEnd="@dimen/margin_14">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/margin_9">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/refund_money"
+                        android:textColor="@color/wing_sub_title"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/after_finish_tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wing_title"
+                        android:textSize="@dimen/margin_13"
+                        tools:text="¥99.00" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/margin_9">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/refund_returned_to"
+                        android:textColor="@color/wing_sub_title"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/after_finish_tv_small_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refund_small_money"
+                        android:textColor="@color/wing_title"
+                        android:textSize="@dimen/margin_13" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/mine_layout_order_goods_list" />
+
+            <include layout="@layout/mine_layout_after_detail" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/after_finish_rl_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/white"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/after_finish_tv_evaluation"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:gravity="center"
+            android:text="@string/refund_bottom_tv"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/margin_15"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

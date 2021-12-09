@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_item"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape_bg_white_line_e4e4e4_8">
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_video_list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_230"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_video_list_play"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_video_list_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_img"
+        android:layout_margin="@dimen/margin_10"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_12"
+        android:text="凄凄切切群群群群群群群群群群群群群群群群群群群群群群群凄凄切切群群群群群群群群群群群群"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_video_list_describe"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <ImageView
+            android:id="@+id/iv_video_list_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_video_default_head"/>
+
+        <TextView
+            android:id="@+id/tv_video_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_video_list_head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:textSize="@dimen/text_10"
+            android:textColor="@color/colorFB8C00"
+            tools:text="龙潭虎穴"/>
+
+        <TextView
+            android:id="@+id/tv_video_list_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_10"
+            android:textColor="@color/colorAAAAAA"
+            tools:text="798"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_video_list_like_count"
+            android:src="@mipmap/icon_video_like_count"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

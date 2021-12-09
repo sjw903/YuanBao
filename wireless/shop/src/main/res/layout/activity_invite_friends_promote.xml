@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".main.view.InviteFriendsPromoteActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/invite_friends_promote_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_friends_promote_head_view"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/shape_bg_white_10">
+
+        <LinearLayout
+            android:id="@+id/invite_friends_promote_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_25">
+
+            <TextView
+                android:id="@+id/item_invite_friends_promote_tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="用户"
+                android:textColor="@color/color0F131A"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/item_invite_friends_promote_tv_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商品名称"
+                android:textColor="@color/color0F131A"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/item_invite_friends_promote_tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="获得佣金"
+                android:textColor="@color/color0F131A"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/invite_friends_promote_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invite_friends_promote_ll"
+            android:layout_marginTop="@dimen/margin_10" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

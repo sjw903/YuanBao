@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_live_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_88"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_35"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_live_video_follow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20" />
+
+    </LinearLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_live_view"
+        app:srlAccentColor="@color/color000000"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlHeaderHeight="@dimen/margin_80"
+        app:srlHeaderInsetStart="@dimen/margin_20">
+
+        <com.yuanbaogo.zui.view.VideoRefreshHeader
+            android:id="@+id/zi_refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/color000000"
+            app:srlPrimaryColor="@color/color000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fr.castorflex.android.verticalviewpager.VerticalViewPager
+                android:id="@+id/vertical_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="183dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@mipmap/icon_no_data_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:text="暂无内容"
+                    android:textColor="@color/colorAAAAAA"
+                    android:textSize="@dimen/margin_14" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_live_view_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_live_view"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="183dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/icon_no_network" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="网络连接失败，请检查网络设置"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/margin_14" />
+
+        <TextView
+            android:id="@+id/tv_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/shape_bg_212121_50"
+            android:paddingLeft="@dimen/margin_12"
+            android:paddingTop="@dimen/margin_6"
+            android:paddingRight="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_6"
+            android:text="点击重试"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="183dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/icon_no_data_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="您还未登录"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/margin_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="登录后查看您关注的精彩内容"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/margin_14" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/shape_bg_ea5504_24"
+            android:paddingLeft="@dimen/margin_12"
+            android:paddingTop="@dimen/margin_6"
+            android:paddingRight="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_6"
+            android:text="去登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_14" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_progress_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_open_live_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_90"
+        android:background="@drawable/bg_30000000_radius20"
+        android:drawableRight="@mipmap/icon_under_triangular"
+        android:paddingLeft="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_3"
+        android:paddingRight="@dimen/margin_12"
+        android:paddingBottom="@dimen/margin_3"
+        android:text="1个直播"
+        android:textColor="@color/color70FFFFFF"
+        android:textSize="@dimen/margin_12"
+        android:visibility="gone" />
+
+</RelativeLayout>

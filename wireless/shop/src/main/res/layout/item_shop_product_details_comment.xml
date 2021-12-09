@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:background="@color/colorFFFFFF"
+    android:padding="@dimen/margin_10">
+
+    <com.yuanbaogo.zui.view.CircleImageView
+        android:id="@+id/item_shop_product_details_comment_img"
+        android:layout_width="@dimen/margin_25"
+        android:layout_height="@dimen/margin_25"
+        android:src="@mipmap/icon_default_head" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_comment_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_25"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toRightOf="@id/item_shop_product_details_comment_img"
+        android:gravity="center"
+        android:text="昵****称"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_10" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_comment_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_25"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_10" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_comment_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_product_details_comment_img"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="第一次买这个牌子，样子好看，款式不错，穿起来舒服，跟脚。运动鞋,儿童鞋,户外鞋,软底鞋。样子好看，款式不错，穿起来舒服	，样子好看，款式不错，穿起来舒服	"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_12" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_shop_product_details_comment_recycler_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_product_details_comment_tv_content"
+        android:layout_marginTop="@dimen/margin_10" />
+
+</RelativeLayout>

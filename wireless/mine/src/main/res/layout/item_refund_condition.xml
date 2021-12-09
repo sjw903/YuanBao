@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_refund_condition_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_20"
+    android:layout_marginTop="@dimen/margin_10">
+
+    <CheckBox
+        android:id="@+id/item_refund_condition_cb"
+        android:layout_width="@dimen/margin_20"
+        android:layout_height="@dimen/margin_20"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        android:drawableStart="@drawable/icon_collection_checkbox_bg"
+        android:enabled="false"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/item_refund_condition_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_toRightOf="@id/item_refund_condition_cb"
+        android:text="商品损坏/包装肮脏"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_14" />
+
+</RelativeLayout>

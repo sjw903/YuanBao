@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@drawable/shape_gradient_bg_white_10">
+
+    <RelativeLayout
+        android:id="@+id/item_shop_cart_confirm_order_info_rl_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品金额"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/item_shop_cart_confirm_order_info_tv_lump_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00.0"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_shop_cart_confirm_order_info_rl_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_cart_confirm_order_info_rl_price"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="快递 免邮"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_shop_cart_confirm_order_info_rl_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_cart_confirm_order_info_rl_delivery"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/icon_login_join"
+            android:text="无可用券"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_shop_cart_confirm_order_info_rl_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_cart_confirm_order_info_rl_coupon"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发票"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/icon_login_join"
+            android:text="电子发票-张先生"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

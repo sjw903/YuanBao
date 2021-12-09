@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.library'
+}
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        resourcePrefix "commonlib_"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation lib.multidex
+
+    api project(":library:libweb")
+    api project(":library:libbase")
+    implementation project(":library:libdatacenter")
+    api lib.arouter
+
+    api lib.appcompat
+    api lib.design
+    api lib.liteavSdk
+    api lib.immersionbar
+
+    implementation lib.umsdk_common
+    implementation lib.umsdk_asms
+    implementation lib.umsdk_share_core
+    implementation lib.umsdk_share_wx
+
+    api project(":architect:res")
+    api project(":architect:im")
+    api project(":architect:routerscheme")
+
+    implementation lib.arouter
+    annotationProcessor lib.arouter_compiler
+
+    api 'com.tencent.tbs:tbssdk:44085'
+
+}

@@ -1,0 +1,173 @@
+plugins {
+    id 'com.android.application'
+}
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    defaultConfig {
+        applicationId "com.yuanbaogo.app"
+        flavorDimensions "versionCode"
+        versionCode "${VERSION_CODE}" as int
+        versionName "${VERSION_NAME}"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+//            minifyEnabled true
+//            shrinkResources true
+//            signingConfig signingConfigs.release
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+    packagingOptions {
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libRSSupport.so'
+        pickFirst '**/librsjni.so'
+        doNotStrip "*/armeabi/libYTCommon.so"
+        doNotStrip "*/armeabi-v7a/libYTCommon.so"
+        doNotStrip "*/x86/libYTCommon.so"
+        doNotStrip "*/arm64-v8a/libYTCommon.so"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
+    productFlavors {
+//        Baidu {//投放百度91手机助手市场
+//        }
+//        Wandoujia {//投放豌豆荚市场
+//        }
+//        Meizu {//投放魅族市场
+//        }
+//        _360 {//投放360手机助手
+//        }
+        Yuanbao {//升级，二维码安装等
+        }
+        Tencent {//投放应用宝市场
+        }
+        Vivo {//投放vivo市场
+        }
+        Oppo {//投放oppo市场
+        }
+        Xiaomi {//投放小米市场
+        }
+        Huawei {//投放华为应用市场
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            if ("release".equals(variant.buildType.name)) {
+                variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + '/outputs/release')
+                outputFileName = "yuanbao_v${variant.versionName}_${variant.productFlavors[0].name}.apk"
+            } else if (variant.buildType.name.equals('debug')) {
+                variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + '/outputs/debug')  //指定apk输出目录
+                outputFileName = "yuanbao_debug.apk"
+            }
+        }
+    }
+
+
+//    android.applicationVariants.all { variant ->
+//        variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + '/outputs/' + versionName)  //指定apk输出目录
+//        def buildName = '元宝优品'
+//        def type = variant.buildType.name
+//        def versionName = variant.versionName
+//        def flavor = variant.productFlavors[0].name
+//        if (variant.buildType.name.equals('release')) {
+//            variant.outputs.all { output ->
+//                def releaseApkName = buildName + '_v' + versionName + '_' + flavor + '_' + type + '.apk'
+////                def releaseApkName = buildName + '.apk'
+//                outputFileName = releaseApkName
+//            }
+//        } else if (variant.buildType.name.equals('debug')) {
+//            variant.outputs.all { output ->
+////                def debugApkName = buildName + '_v' + versionName + '_' + type + '.apk'
+//                def debugApkName = buildName + '.apk'
+//                outputFileName = debugApkName
+//            }
+//        }
+//    }
+
+
+}
+
+
+dependencies {
+
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+
+    implementation project(":main:login")
+    implementation project(":library:libpay")
+    implementation project(":library:libdatacenter")
+    implementation project(":architect:zui")
+    implementation project(":architect:res")
+    implementation project(":architect:commonlib")
+    implementation project(":architect:shortvideo")
+    implementation project(":architect:im")
+    implementation project(":wireless:shop")
+    implementation project(":wireless:find")
+    implementation project(":wireless:shopcart")
+    implementation project(":wireless:mine")
+    implementation project(":wireless:video")
+
+    implementation lib.opensdk_wechat
+    implementation lib.bottomNavigationViewEx
+    annotationProcessor lib.arouter_compiler
+
+
+    //友盟Push相关依赖（必须）
+    api 'com.umeng.umsdk:push:latest.integration'
+    implementation 'com.umeng.umsdk:alicloud-httpdns:latest.integration'
+    implementation 'com.umeng.umsdk:alicloud-utils:latest.integration'
+    implementation 'com.umeng.umsdk:alicloud_beacon:latest.integration'
+    api 'com.umeng.umsdk:agoo-accs:latest.integration'
+    implementation 'com.umeng.umsdk:agoo_aranger:latest.integration'
+    implementation 'com.umeng.umsdk:agoo_networksdk:latest.integration'
+    implementation 'com.umeng.umsdk:agoo_tnet4android:latest.integration'
+
+
+    implementation lib.umsdk_common
+    implementation lib.umsdk_utdid
+    implementation lib.umsdk_asms
+    implementation lib.umsdk_apm
+
+    implementation lib.umsdk_share_core
+    implementation lib.umsdk_share_wx
+    implementation lib.opensdk_wechat
+
+
+}

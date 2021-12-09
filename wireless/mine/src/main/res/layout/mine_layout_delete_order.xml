@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_70"
+    android:background="@drawable/shape_gradient_bg_white_10">
+
+    <TextView
+        android:id="@+id/dialog_confirm_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_35"
+        android:layout_marginBottom="@dimen/margin_35"
+        android:text="@string/order_delete_title"
+        android:textColor="@color/color212121"
+        android:textSize="@dimen/text_16" />
+
+    <View
+        android:id="@+id/dialog_confirm_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@id/dialog_confirm_view_title"
+        android:background="@color/colorE4E4E4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:layout_below="@id/dialog_confirm_view_line"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/delete_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/order_delete_cancel"
+            android:textColor="@color/wing_selected_btn_text"
+            android:textSize="@dimen/wing_title" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/colorE4E4E4" />
+
+        <TextView
+            android:id="@+id/delete_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/order_delete_sure"
+            android:textColor="@color/wing_sub_title_hint"
+            android:textSize="@dimen/wing_title" />
+
+    </LinearLayout>
+
+</RelativeLayout>

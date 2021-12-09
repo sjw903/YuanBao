@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_mine_top_bg" />
+
+    <RelativeLayout
+        android:id="@+id/mine_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_title_bar_height"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/mine_title_bar_top_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mine_horizontal_margin"
+            android:text="@string/mine_title"
+            android:textColor="@color/mine_title_color"
+            android:textSize="@dimen/title_bar_title_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mine_ib_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/mine_horizontal_margin"
+            android:src="@mipmap/icon_setting" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mine_iv_top_up_rights"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_top_up_rights_height"
+        android:layout_below="@id/mine_rl_top"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_top_up_rights"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mine_iv_top_up_rights">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 个人信息、我的资产-->
+            <include layout="@layout/mine_mine_layout_information" />
+
+            <!-- 我的订单-->
+            <include layout="@layout/mine_layout_mine_order" />
+
+            <!-- 拼团信息-->
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_join_group_height"
+                android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+                android:layout_marginTop="@dimen/mine_horizontal_margin"
+                android:background="@drawable/icon_mine_join_group_bg"
+                android:visibility="gone" />
+
+            <!-- 拼团列表-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mine_rv_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_join_group_list_height"
+                android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+                android:layout_marginTop="@dimen/mine_horizontal_margin"
+                android:background="@drawable/icon_order_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/mine_layout_mine_join_group_item" />
+
+            <!-- 在线客服-->
+            <include layout="@layout/mine_layout_mine_call" />
+
+            <!-- 邀请新用户-->
+            <com.yuanbaogo.zui.view.RoundImageView
+                android:id="@+id/mine_iv_invite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_170"
+                android:layout_marginHorizontal="@dimen/mine_horizontal_margin"
+                android:layout_marginTop="@dimen/margin_8"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_mine_invite"
+                android:visibility="visible"
+                app:radius="@dimen/margin_10" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

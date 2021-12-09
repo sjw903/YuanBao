@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".search.view.ProductDetailsListActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_product_details_list_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shop_product_details_list_head_view"
+        android:background="@color/colorFAFAFA">
+
+        <LinearLayout
+            android:id="@+id/shop_product_details_list_ll_filter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@color/colorFFFFFF"
+            android:orientation="horizontal">
+
+            <com.yuanbaogo.shop.search.widget.FilterView
+                android:id="@+id/shop_product_details_filter_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <com.yuanbaogo.shop.search.widget.FilterView
+                android:id="@+id/shop_product_details_filter_sales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <com.yuanbaogo.shop.search.widget.FilterView
+                android:id="@+id/shop_product_details_filter_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/shop_product_details_list_smart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shop_product_details_list_ll_filter">
+
+            <com.scwang.smart.refresh.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_product_details_list_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_5" />
+
+                <RelativeLayout
+                    android:id="@+id/shop_product_details_list_rl_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_180"
+                        android:layout_height="@dimen/margin_180"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin_100"
+                        android:background="@mipmap/icon_search_no_data" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_10">
+
+            <ImageView
+                android:id="@+id/shop_product_details_img_shopcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_search_shop_cart" />
+
+            <ImageView
+                android:id="@+id/shop_product_details_img_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_product_details_img_shopcart"
+                android:src="@mipmap/icon_search_top" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

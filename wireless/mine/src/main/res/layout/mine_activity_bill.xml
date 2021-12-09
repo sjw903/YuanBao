@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.bill.BillActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/bill_title" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/bill_si_view_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_top_margin"
+        app:nameText="@string/bill_view_all" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/bill_si_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/bill_head" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/bill_si_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/bill_change" />
+
+</LinearLayout>

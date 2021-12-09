@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="UnifiedDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 对话框是否浮动 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 对话框无标题 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 对话框是否透明 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景昏暗是否启用 -->
+        <item name="android:windowBackground">#00000000</item>
+        <!-- 除去背景色 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="bottom_tab_title">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.MineTheme.MyApplication.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.MineTheme.MyApplication.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+</resources>

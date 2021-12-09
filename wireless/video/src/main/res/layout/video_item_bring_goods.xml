@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bring_goods_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_5"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:background="@drawable/shape_gradient_bg_white_10">
+
+
+    <CheckBox
+        android:id="@+id/item_bring_goods_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        android:drawableStart="@drawable/icon_collection_checkbox_bg"
+        android:padding="@dimen/margin_10" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bring_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_bring_goods_cb">
+
+        <ImageView
+            android:id="@+id/item_bring_goods_img"
+            android:layout_width="@dimen/margin_95"
+            android:layout_height="@dimen/margin_95"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@color/colorFAFAFA" />
+
+        <TextView
+            android:id="@+id/item_bring_goods_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toRightOf="@id/item_bring_goods_img"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="缔晶 银耳钉一周套装女百搭长短款流苏耳饰礼盒女生饰品网红网红网红"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/item_bring_goods_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_bring_goods_tv_title"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toRightOf="@id/item_bring_goods_img"
+            android:background="@drawable/shape_gradient_bg_gray_50"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="@dimen/margin_8"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingRight="@dimen/margin_8"
+            android:paddingBottom="@dimen/margin_3"
+            android:text="T298  内存8.0T  纯银"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_11" />
+
+        <TextView
+            android:id="@+id/item_bring_goods_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_bring_goods_tv_info"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toRightOf="@id/item_bring_goods_img"
+            android:text="￥ 1200"
+            android:textColor="@color/colorF63C09"
+            android:textSize="@dimen/text_18" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/shop_lucky_draw_info_rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/shop_lucky_draw_info_rl_countdown_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/shop_lucky_draw_info_ll_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_55"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/shape_gradient_bg_black_alpha_50">
+
+                <RelativeLayout
+                    android:id="@+id/shop_lucky_draw_info_rl_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape_bg_ed4de6_to_ffa365">
+
+                    <TextView
+                        android:id="@+id/shop_lucky_draw_info_tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:textColor="@color/colorFFFFFF"
+                        android:textSize="@dimen/text_30" />
+
+                    <RelativeLayout
+                        android:id="@+id/shop_lucky_draw_info_rl_progress_bar"
+                        android:layout_width="@dimen/margin_80"
+                        android:layout_height="@dimen/margin_18"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_30">
+
+                        <com.yuanbaogo.zui.progress.GradientProgressBar
+                            android:id="@+id/item_lucky_draw_info_progress_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/item_lucky_draw_info_tv_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_2"
+                            android:text="80/100"
+                            android:textColor="@color/colorFFFFFF"
+                            android:textSize="@dimen/text_13"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/shop_lucky_draw_info_tv_number_winners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_25"
+                        android:text="0人已中奖"
+                        android:textColor="@color/colorFFFFFF"
+                        android:textSize="@dimen/text_13"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.yuanbaogo.zui.countdown.CountdownView
+                        android:id="@+id/item_lucky_draw_info_countdown_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/shop_lucky_draw_info_tv_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="本期活动已结束"
+                        android:textColor="@color/colorFFFFFF"
+                        android:textSize="@dimen/text_13"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/shop_lucky_draw_info_img_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_135"
+                android:src="@mipmap/icon_lucky_draw_full"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shop_lucky_draw_info_rl_direct_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_lucky_draw_info_rl_countdown_info">
+
+            <com.yuanbaogo.zui.search.view.SearchLayout
+                android:id="@+id/shop_lucky_draw_info_sl_direct_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_120" />
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_info_tv_rule_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/shape_bg_f6f6f6_16"
+                android:drawableRight="@mipmap/icon_login_join"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_3"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_3"
+                android:text="规则说明"
+                android:textColor="@color/color666666"
+                android:textSize="@dimen/text_12" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shop_lucky_draw_info_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_lucky_draw_info_rl_direct_sale"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_lucky_draw_info_recycler_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_lucky_draw_info_tv_title"
+            android:layout_margin="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/shop_lucky_draw_info_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_lucky_draw_info_recycler_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_lucky_draw_info_tv_time"
+            android:layout_marginLeft="@dimen/margin_60"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_60"
+            android:layout_marginBottom="@dimen/margin_20">
+
+            <ProgressBar
+                android:id="@+id/shop_lucky_draw_info_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_2"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_bg" />
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_info_tv_reserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_gradient_bg_but_login_50"
+                android:paddingLeft="@dimen/margin_13"
+                android:paddingTop="@dimen/margin_3"
+                android:paddingRight="@dimen/margin_13"
+                android:paddingBottom="@dimen/margin_3"
+                android:text="开始"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_11" />
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_info_tv_lottery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_bg_aaaaaa_50"
+                android:paddingLeft="@dimen/margin_13"
+                android:paddingTop="@dimen/margin_3"
+                android:paddingRight="@dimen/margin_13"
+                android:paddingBottom="@dimen/margin_3"
+                android:text="预约"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_11" />
+
+            <TextView
+                android:id="@+id/shop_lucky_draw_info_tv_ship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_bg_aaaaaa_50"
+                android:paddingLeft="@dimen/margin_13"
+                android:paddingTop="@dimen/margin_3"
+                android:paddingRight="@dimen/margin_13"
+                android:paddingBottom="@dimen/margin_3"
+                android:text="抽奖"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_11" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

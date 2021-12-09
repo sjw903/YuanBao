@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_150"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/collection_item_cb_selected"
+        android:layout_width="@dimen/margin_18"
+        android:layout_height="@dimen/margin_18"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_10"
+        android:button="@drawable/icon_collection_checkbox_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/collection_item_rl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_weight="1"
+        android:background="@drawable/shape_gradient_bg_white_line_10">
+
+        <com.yuanbaogo.zui.view.RadiuImageView
+            android:id="@+id/collection_item_iv_img"
+            android:layout_width="@dimen/margin_150"
+            android:layout_height="@dimen/margin_150"
+            android:background="@mipmap/icon_no_img"
+            android:padding="@dimen/margin_2"
+            android:scaleType="fitXY"
+            app:left_bottom_radius="@dimen/margin_18"
+            app:left_top_radius="@dimen/margin_18" />
+
+        <TextView
+            android:id="@+id/collection_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toEndOf="@id/collection_item_iv_img"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="芭拉鸭 | 儿童汽车闯关大冒险玩具小火车轨道3岁4岁男孩女孩… "
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <TextView
+            android:id="@+id/collection_item_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection_item_tv_name"
+            android:layout_marginHorizontal="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toEndOf="@id/collection_item_iv_img"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_5"
+            android:paddingVertical="@dimen/margin_2"
+            android:text="直销特卖"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/margin_9" />
+
+        <TextView
+            android:id="@+id/collection_item_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection_item_tv_type"
+            android:layout_marginHorizontal="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toEndOf="@id/collection_item_iv_img"
+            android:text="¥18"
+            android:textColor="@color/colorF63C09"
+            android:textSize="@dimen/margin_18" />
+
+        <TextView
+            android:id="@+id/collection_item_tv_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection_item_tv_money"
+            android:layout_marginHorizontal="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toEndOf="@id/collection_item_iv_img"
+            android:text="已售0件"
+            android:textColor="@color/colorF63C09"
+            android:textSize="@dimen/margin_10" />
+
+        <ImageView
+            android:id="@+id/collection_item_car"
+            android:layout_width="@dimen/margin_28"
+            android:layout_height="@dimen/margin_28"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:src="@mipmap/icon_collection_car"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/collection_item_view_off_shelf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/collection_item_tv_off_shelf"
+            android:layout_width="@dimen/margin_48"
+            android:layout_height="@dimen/margin_48"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_50"
+            android:background="@drawable/icon_collection_off_shelf_bg"
+            android:gravity="center"
+            android:text="下架"
+            android:textColor="#E6FFFFFF"
+            android:textSize="@dimen/wing_sub_title"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/icon_address_item_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款原因"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+
+        <TextView
+            android:id="@+id/after_tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title"
+            android:textStyle="bold"
+            tools:text="7天无理由退换货" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款金额"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <TextView
+            android:id="@+id/after_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title"
+            android:textStyle="bold"
+            tools:text="¥ 199.00" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请时间"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <TextView
+            android:id="@+id/after_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title"
+            android:textStyle="bold"
+            tools:text="2021-07-20 18" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款编号"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <TextView
+            android:id="@+id/after_tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title"
+            android:textStyle="bold"
+            tools:text="YB23124132123" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/after_rl_express"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递公司"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <TextView
+            android:id="@+id/after_tv_express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title"
+            android:textStyle="bold"
+            tools:text="顺丰快递" />
+
+    </RelativeLayout>
+
+</LinearLayout>

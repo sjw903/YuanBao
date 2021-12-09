@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_inputdlg_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="5dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="#595151"
+    android:outlineSpotShadowColor="#595151"
+    android:transformPivotY="-5dp"
+    android:translationY="5dp"
+    android:visibility="visible"
+    android:paddingTop="@dimen/margin_10"
+    android:paddingBottom="@dimen/margin_41">
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_bottomsheet_rv_lists"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/icon_order_search_bg"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@+id/iv_face">
+
+            <TextView
+                android:id="@+id/tv_input_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_15"
+                android:textColor="@color/color424242"
+                android:paddingStart="10dp"
+                android:paddingEnd="6dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_input_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingTop="@dimen/margin_7"
+                android:paddingBottom="@dimen/margin_7"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="说点什么吧~"
+                android:imeActionLabel="发送"
+                android:imeOptions="actionDone"
+                android:lineSpacingMultiplier="1.1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorFFAAAAAA"
+                android:textCursorDrawable="@drawable/shape_edit_cursor"
+                android:textSize="@dimen/text_15"
+                tools:ignore="InvalidImeActionId" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
+            android:layout_toLeftOf="@+id/bt_confirm"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_14"
+            android:visibility="gone"
+            android:src="@mipmap/icon_face" />
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_bg_ea5504_24"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.bill.head.update.personal.UpdatePersonalBillHeadActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/update_bill_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/add_address_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_44"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/mine_horizontal_margin"
+        android:text="@string/bill_head_unit"
+        android:textColor="@color/add_bill_title"
+        android:textSize="@dimen/margin_13" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_11"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/mine_horizontal_margin"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_bill_head"
+            android:textColor="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <EditText
+            android:id="@+id/add_unit_bill_et_head"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_bill_head_hint"
+            android:textColor="@color/add_bill_name_details"
+            android:textColorHint="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <ImageView
+            android:id="@+id/add_unit_bill_iv_head"
+            android:layout_width="@dimen/margin_22"
+            android:paddingEnd="@dimen/margin_10"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_bill_delete"
+            tools:ignore="RtlSymmetry" />
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_bill_num"
+            android:textColor="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <EditText
+            android:id="@+id/add_unit_bill_et_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_bill_num_hint"
+            android:textColor="@color/add_bill_name_details"
+            android:textColorHint="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_16"
+        android:layout_marginStart="@dimen/mine_horizontal_margin"
+        android:text="@string/add_bill_tip"
+        android:textColor="@color/add_bill_tip"
+        android:textSize="@dimen/margin_10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_bill_address"
+            android:textColor="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <EditText
+            android:id="@+id/add_unit_bill_et_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_bill_optional"
+            android:textColor="@color/add_bill_name_details"
+            android:textColorHint="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_bill_phone"
+            android:textColor="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <EditText
+            android:id="@+id/add_unit_bill_et_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_bill_optional"
+            android:textColor="@color/add_bill_name_details"
+            android:textColorHint="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_bill_bank"
+            android:textColor="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <EditText
+            android:id="@+id/add_unit_bill_et_bank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_bill_optional"
+            android:textColor="@color/add_bill_name_details"
+            android:textColorHint="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mine_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_bill_bank_num"
+            android:textColor="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+        <EditText
+            android:id="@+id/add_unit_bill_et_bank_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/add_bill_optional"
+            android:textColor="@color/add_bill_name_details"
+            android:textColorHint="@color/add_bill_name"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/add_address_divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/add_unit_bill_tv_update"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_weight="1"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:gravity="center"
+            android:text="@string/add_bill_delete"
+            android:textColor="@color/bill_item_num"
+            android:textSize="@dimen/margin_13" />
+
+        <TextView
+            android:id="@+id/add_unit_bill_tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_weight="1"
+            android:background="@drawable/icon_all_bill_item_btn_active_bg"
+            android:gravity="center"
+            android:text="@string/add_bill_update"
+            android:textColor="@color/bill_item_btn"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+</LinearLayout>

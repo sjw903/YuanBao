@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.bill.head.BillHeadActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/bill_head_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bill_head_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_44"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bill_head_tv_unit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bill_head_unit"
+            android:textColor="@color/bill_tab_selected"
+            android:textSize="@dimen/margin_13" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/bill_head_divider" />
+
+        <TextView
+            android:id="@+id/bill_head_tv_personal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bill_head_personal"
+            android:textColor="@color/bill_tab_normal"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bill_head_divider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bill_head_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_12"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/mine_layout_bill_head_item"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/address_bottom_height"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bill_head_tv_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/address_bottom_btn_height"
+            android:layout_marginHorizontal="@dimen/address_bottom_btn_horizontal_margin"
+            android:background="@drawable/icon_address_add_bg"
+            android:gravity="center"
+            android:text="@string/bill_head_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/address_bottom_btn_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

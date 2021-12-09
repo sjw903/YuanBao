@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.finish.detail.FinishDetailActivity">
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/order_item_ll_bottom"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/finish_rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_230"
+                    android:background="@drawable/icon_cancel_detail_bg" />
+
+                <TextView
+                    android:id="@+id/finish_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_80"
+                    android:drawableStart="@mipmap/icon_order_finish"
+                    android:drawablePadding="@dimen/margin_7"
+                    android:text="@string/finish_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/margin_18" />
+
+                <LinearLayout
+                    android:id="@+id/finish_rl_address_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/finish_tv_title"
+                    android:layout_marginHorizontal="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginBottom="@dimen/margin_3"
+                    android:background="@drawable/icon_address_item_bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/finish_rl_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_10">
+
+                        <ImageView
+                            android:id="@+id/finish_iv_info"
+                            android:layout_width="@dimen/margin_18"
+                            android:layout_height="@dimen/margin_18"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:src="@mipmap/icon_order_logistics" />
+
+                        <TextView
+                            android:id="@+id/finish_tv_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_20"
+                            android:layout_toEndOf="@id/finish_iv_info"
+                            android:text="@string/finish_tip"
+                            android:textColor="@color/wing_title"
+                            android:textSize="@dimen/wing_sub_title" />
+
+                        <TextView
+                            android:id="@+id/finish_tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/finish_tv_tip"
+                            android:layout_marginTop="@dimen/margin_7"
+                            android:layout_toEndOf="@id/finish_iv_info"
+                            android:textColor="@color/color999999"
+                            android:textSize="@dimen/margin_12"
+                            tools:text="2021-07-13  17:12:32" />
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_12"
+                            android:layout_height="@dimen/margin_13"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_setting_right" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/finish_detail_recycler_logistics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:nestedScrollingEnabled="false"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/pay_set_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/finish_rl_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:padding="@dimen/margin_10">
+
+                        <ImageView
+                            android:id="@+id/finish_iv_location"
+                            android:layout_width="@dimen/margin_18"
+                            android:layout_height="@dimen/margin_18"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:src="@mipmap/icon_cancel_location" />
+
+                        <TextView
+                            android:id="@+id/finish_tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_3"
+                            android:layout_toEndOf="@id/finish_iv_location"
+                            android:textColor="@color/wing_title"
+                            android:textSize="@dimen/wing_sub_title"
+                            tools:text="张先生" />
+
+                        <TextView
+                            android:id="@+id/finish_tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/finish_tv_name"
+                            android:textColor="@color/wing_title"
+                            android:textSize="@dimen/wing_sub_title"
+                            tools:text="189774859606" />
+
+                        <TextView
+                            android:id="@+id/finish_tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/finish_tv_name"
+                            android:layout_marginTop="@dimen/margin_7"
+                            android:layout_toEndOf="@id/finish_iv_location"
+                            android:textColor="@color/color999999"
+                            android:textSize="@dimen/margin_12"
+                            tools:text="北京朝阳区通天路" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/mine_layout_order_goods_list" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finish_rl_top"
+                android:orientation="vertical">
+
+                <include layout="@layout/mine_layout_order_details" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    <ImageButton
+        android:id="@+id/finish_ib_back"
+        android:layout_width="52dp"
+        android:layout_height="@dimen/margin_53"
+        android:layout_marginTop="@dimen/margin_35"
+        android:background="@null"
+        android:padding="@dimen/margin_14"
+        android:src="@mipmap/icon_back"
+        android:tint="@color/white"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/order_item_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:layout_alignParentBottom="true"
+        android:gravity="end|center"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/order_item_tv_bill"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:gravity="center"
+            android:text="@string/order_btn_bill"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/margin_13"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/order_item_tv_service"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:gravity="center"
+            android:text="@string/order_btn_service"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/margin_13" />
+
+        <TextView
+            android:id="@+id/order_item_tv_evaluated"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:background="@drawable/icon_address_add"
+            android:gravity="center"
+            android:text="@string/order_btn_be_evaluated"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_ll_refund"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:layout_alignParentBottom="true"
+        android:gravity="end|center"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/order_tv_refunding"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:background="@drawable/icon_all_bill_item_btn_normal_bg"
+            android:gravity="center"
+            android:text="已申请售后"
+            android:textColor="@color/wing_sub_title"
+            android:textSize="@dimen/margin_13" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

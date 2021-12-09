@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_product_details_tv_direct_sale"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/shape_gradient_bg_red_50"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingRight="@dimen/margin_5"
+    android:text="@string/app_product_details_direct_sale"
+    android:textColor="@color/colorE03030"
+    android:textSize="@dimen/text_12" />

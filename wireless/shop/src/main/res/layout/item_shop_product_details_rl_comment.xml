@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@color/colorFFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_shop_product_details_comment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40">
+
+        <TextView
+            android:id="@+id/item_shop_product_details_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center"
+            android:text="商品评价"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/item_shop_product_details_comment_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@id/item_shop_product_details_comment_title"
+            android:gravity="center"
+            android:text="(1)"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_shop_product_details_comment_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_product_details_comment_rl" />
+
+    <TextView
+        android:id="@+id/item_shop_product_details_comment_tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/item_shop_product_details_comment_recycler"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:gravity="center"
+        android:text="查看全部评论"
+        android:textColor="@color/color358CFF"
+        android:textSize="@dimen/text_12" />
+
+</RelativeLayout>

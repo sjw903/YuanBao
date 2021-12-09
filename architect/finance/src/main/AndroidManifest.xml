@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanbaogo.finance">
+
+    <application>
+        <activity
+            android:name=".bindBankCard.view.BindBankCardSuccessActivity"
+            android:exported="true" />
+        <activity
+            android:name=".bindBankCard.view.BindBankCardActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

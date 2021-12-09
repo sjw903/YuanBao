@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_gradient_bg_white_10"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/margin_12"
+        android:text="@string/close_dialog_reason"
+        android:textColor="@color/close_reason"
+        android:textSize="@dimen/wing_selected_btn"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/colorE4E4E4" />
+
+    <TextView
+        android:id="@+id/close_dialog_tv_reason1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/margin_12"
+        android:gravity="center"
+        android:text="@string/close_dialog_reason1"
+        android:textColor="@color/wing_selected_title"
+        android:textSize="@dimen/wing_selected_btn"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/colorE4E4E4" />
+
+    <TextView
+        android:id="@+id/close_dialog_tv_reason2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/margin_12"
+        android:gravity="center"
+        android:text="@string/close_dialog_reason2"
+        android:textColor="@color/wing_selected_title"
+        android:textSize="@dimen/wing_selected_btn"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/colorE4E4E4" />
+
+    <TextView
+        android:id="@+id/close_dialog_tv_reason3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/margin_12"
+        android:gravity="center"
+        android:text="@string/close_dialog_reason3"
+        android:textColor="@color/wing_selected_title"
+        android:textSize="@dimen/wing_selected_btn"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_5"
+        android:background="@color/colorE4E4E4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/close_dialog_tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/close_dialog_btn_cancel"
+            android:textColor="@color/close_reason"
+            android:textSize="@dimen/wing_title" />
+
+    </LinearLayout>
+
+</LinearLayout>

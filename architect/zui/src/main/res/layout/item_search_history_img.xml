@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_condition"
+    android:layout_width="@dimen/margin_30"
+    android:layout_height="@dimen/margin_30"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:background="@drawable/shape_gradient_bg_gray_50"
+    android:padding="@dimen/margin_4"
+    android:src="@mipmap/icon_search_down" />

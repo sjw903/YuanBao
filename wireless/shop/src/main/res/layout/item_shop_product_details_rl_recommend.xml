@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@color/colorFFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_shop_product_details_recommend_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <TextView
+            android:id="@+id/item_shop_product_details_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/app_product_details_related_suggestion"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/item_shop_product_details_recommend_all"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:gravity="center"
+            android:text="@string/app_product_details_view_all"
+            android:textColor="@color/colorFB8C00"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_shop_product_details_recommend_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10" />
+
+</LinearLayout>

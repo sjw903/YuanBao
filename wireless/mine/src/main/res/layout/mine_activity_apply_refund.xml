@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.receipt.refund.ApplyRefundActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/apply_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_10"
+            android:background="@drawable/icon_refund_text_bg"
+            android:padding="@dimen/margin_10"
+            android:text="@string/apply_tip"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/pay_set_line" />
+
+        <LinearLayout
+            android:id="@+id/apply_ll_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_15"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/apply_reason"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/margin_13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/apply_tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_reason_hint"
+                android:textColor="@color/wing_sub_title"
+                android:textColorHint="@color/common_sub_title"
+                android:textSize="@dimen/margin_13" />
+
+            <ImageView
+                android:layout_width="@dimen/setting_item_right_width"
+                android:layout_height="@dimen/setting_item_right_height"
+                android:src="@mipmap/icon_setting_right" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/pay_set_line" />
+
+        <LinearLayout
+            android:id="@+id/apply_ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_name"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/margin_13"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/apply_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:hint="@string/apply_name_hint"
+                android:textColor="@color/wing_sub_title"
+                android:textColorHint="@color/common_sub_title"
+                android:textSize="@dimen/margin_13" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/pay_set_line" />
+
+        <LinearLayout
+            android:id="@+id/apply_ll_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_phone"
+                android:textColor="@color/wing_title"
+                android:textSize="@dimen/margin_13"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/apply_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:hint="@string/apply_phone_hint"
+                android:inputType="number"
+                android:textColor="@color/wing_sub_title"
+                android:textColorHint="@color/common_sub_title"
+                android:textSize="@dimen/margin_13"
+                tools:ignore="TextFields"
+                tools:text="178866488586" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/pay_set_line" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/apply_small_tip"
+        android:textColor="@color/wing_selected_title"
+        android:textSize="@dimen/margin_11" />
+
+
+    <TextView
+        android:id="@+id/apply_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/address_bottom_btn_height"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/icon_address_add"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/apply_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/address_bottom_btn_text_size" />
+
+</LinearLayout>

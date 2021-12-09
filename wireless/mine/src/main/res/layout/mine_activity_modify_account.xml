@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".modifyaccount.activity.ModifyAccountActivity">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/mine_modify_account_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/mine_modify_account_rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/mine_modify_account_head_view"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/colorFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="手机号"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/mine_modify_account_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_20"
+            android:drawableRight="@mipmap/icon_login_join"
+            android:drawablePadding="@dimen/margin_5"
+            android:text=""
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_modify_account_tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_45"
+        android:layout_below="@id/mine_modify_account_rl_phone"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:gravity="center"
+        android:text="其他账号绑定"
+        android:textColor="@color/colorAAAAAA"
+        android:textSize="@dimen/text_15" />
+
+    <RelativeLayout
+        android:id="@+id/mine_modify_account_rl_wx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/mine_modify_account_tv_other"
+        android:background="@color/colorFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="微信号"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/mine_modify_account_tv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_20"
+            android:drawableRight="@mipmap/icon_login_join"
+            android:drawablePadding="@dimen/margin_5"
+            android:text=""
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_modify_account_tv_site"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_45"
+        android:layout_below="@id/mine_modify_account_rl_wx"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:gravity="center"
+        android:text="其他设置"
+        android:textColor="@color/colorAAAAAA"
+        android:textSize="@dimen/text_15" />
+
+    <RelativeLayout
+        android:id="@+id/mine_modify_account_rl_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@id/mine_modify_account_tv_site"
+        android:background="@color/colorFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="注销账号"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_15" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mine_modify_account_but_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:background="@drawable/shape_gradient_bg_but_alpha_50"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/text_18" />
+
+</RelativeLayout>

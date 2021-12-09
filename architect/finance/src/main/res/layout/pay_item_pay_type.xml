@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_8"
+    android:layout_marginRight="@dimen/margin_10"
+    android:background="@color/colorFFFFFF">
+
+    <CheckBox
+        android:id="@+id/checkbox_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:background="@android:color/transparent"
+        android:button="@drawable/pay_checkbox_select"
+        android:padding="@dimen/margin_10" />
+
+    <ImageView
+        android:id="@+id/tv_type_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/checkbox_select"
+        android:src="@mipmap/yuanbao_icon" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toRightOf="@+id/tv_type_icon"
+        android:text="元宝积分"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_15" />
+
+    <TextView
+        android:id="@+id/tv_suggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toLeftOf="@+id/tv_make_right"
+        android:layout_toRightOf="@+id/tv_type"
+        android:drawablePadding="@dimen/margin_10"
+        android:textColor="@color/colorAAAAAA"
+        android:textSize="@dimen/text_12" />
+
+    <ImageView
+        android:id="@+id/tv_make_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:src="@mipmap/icon_login_join" />
+
+</RelativeLayout>

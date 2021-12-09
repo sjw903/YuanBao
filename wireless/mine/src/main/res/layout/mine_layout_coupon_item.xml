@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/coupon_item_ll_hidden"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_80"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_120"
+        android:background="@drawable/icon_coupon_item_bottom_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/coupon_item_tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_18"
+            android:text="来源：五百专区邀请好友组团成功"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/coupon_item_tv_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="使用说明：仅可用于秒杀专区"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/coupon_item_tv_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="使用规则：一件商品仅可使用一张秒杀券；秒杀专区仅支持秒杀券支付"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:background="@drawable/icon_collection_item_bg">
+
+        <com.yuanbaogo.zui.view.RoundImageView
+            android:id="@+id/coupon_item_iv_img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:radius="@dimen/margin_8" />
+
+        <TextView
+            android:id="@+id/coupon_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_toEndOf="@id/coupon_item_iv_img"
+            android:maxLines="2"
+            android:text="秒杀券 | 商城秒杀专区-全部商品通用券"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_sub_title" />
+
+
+        <TextView
+            android:id="@+id/coupon_tv_use"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_24"
+            android:layout_below="@id/coupon_item_tv_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:background="@drawable/icon_address_add"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="立即使用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_11" />
+
+        <CheckBox
+            android:id="@+id/coupon_item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_12"
+            android:layout_below="@id/coupon_tv_use"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:button="@null"
+            android:drawableEnd="@drawable/icon_coupon_checkbox_bg"
+            android:text="永久有效"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/margin_10" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

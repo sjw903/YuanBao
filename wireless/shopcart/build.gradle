@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        resourcePrefix "shopcart_"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(":architect:commonlib")
+    annotationProcessor lib.arouter_compiler
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation project(":architect:zui")
+    implementation lib.flycoTabLayout
+    implementation project(":library:libdatacenter")
+    implementation project(':architect:finance')
+
+}

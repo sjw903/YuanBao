@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".personal.EditMineActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="编辑资料" />
+
+    <LinearLayout
+        android:id="@+id/edit_ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/setting_item_start_margin"
+            android:layout_weight="1"
+            android:text="头像"
+            android:textColor="@color/title_bar_text_color"
+            android:textSize="@dimen/setting_item_name_text_size" />
+
+        <com.yuanbaogo.zui.view.CircleImageView
+            android:id="@+id/edit_civ_head"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_margin="@dimen/margin_5"
+            android:src="@mipmap/icon_mine_call_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/setting_item_right_width"
+            android:layout_height="@dimen/setting_item_right_height"
+            android:layout_marginEnd="@dimen/setting_item_end_margin"
+            android:src="@mipmap/icon_setting_right" />
+
+    </LinearLayout>
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/edit_si_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1"
+        app:nameText="昵称"
+        app:subNameText="昵称" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/edit_si_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1"
+        app:nameText="地区"
+        app:subNameText="请设置地区" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/edit_si_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1"
+        app:nameText="个性签名"
+        app:subNameText="请填写个性签名" />
+
+</LinearLayout>

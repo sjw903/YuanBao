@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.about.AboutActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/about_title" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/about_si_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        app:nameText="@string/about_update" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/about_si_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        app:nameText="@string/about_statement" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/about_si_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/about_agreement" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/about_si_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/about_privacy_policy" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/about_si_real_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/about_real_name" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/about_si_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_top_margin"
+        app:nameText="@string/about_pay" />
+
+
+</LinearLayout>

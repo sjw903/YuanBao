@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_53"
+    android:layout_marginRight="@dimen/margin_53"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="@dimen/margin_24"
+        android:layout_height="@dimen/margin_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginRight="@dimen/margin_4"
+        android:src="@mipmap/icon_search_delete_item"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_back"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pwd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="密码输入错误"
+            android:textColor="@color/colorE03030"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/tv_pwd_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="今日尽可输入4次"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入6位数字支付密码"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_16" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+

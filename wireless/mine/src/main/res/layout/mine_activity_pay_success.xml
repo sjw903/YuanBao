@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting.pay.password.success.PaySuccessActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:id="@+id/pay_success_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImageRes="@mipmap/icon_left_close"
+        app:titleName="@string/pay_title" />
+
+
+    <ImageView
+        android:id="@+id/pay_success_img"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_120"
+        android:layout_below="@id/pay_success_title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_60"
+        android:src="@mipmap/icon_pay_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_success_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_25"
+        android:text="密码设置成功"
+        android:textColor="@color/wing_title"
+        android:textSize="@dimen/margin_20" />
+
+    <TextView
+        android:id="@+id/pay_success_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/address_bottom_btn_horizontal_margin"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:background="@drawable/icon_address_add"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/address_bottom_btn_text_size" />
+
+</RelativeLayout>

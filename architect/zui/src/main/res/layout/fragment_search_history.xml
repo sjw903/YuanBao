@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_history_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_1"
+    android:background="@color/colorFAFAFA">
+
+    <RelativeLayout
+        android:id="@+id/search_history_rl_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_search_history"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_16" />
+
+        <ImageView
+            android:id="@+id/search_history_img_delete"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_12"
+            android:src="@mipmap/icon_search_delete" />
+
+        <RelativeLayout
+            android:id="@+id/search_history_rl_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/search_history_tv_carry_out"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/app_search_carry_out"
+                android:textColor="@color/color6A6A6A"
+                android:textSize="@dimen/text_13" />
+
+            <View
+                android:id="@+id/search_history_view_line"
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="@dimen/margin_10"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_toLeftOf="@id/search_history_tv_carry_out"
+                android:background="@color/colorD8D8D8" />
+
+            <TextView
+                android:id="@+id/search_history_tv_delete_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/search_history_view_line"
+                android:gravity="center"
+                android:text="@string/app_search_delete_all"
+                android:textColor="@color/color6A6A6A"
+                android:textSize="@dimen/text_13" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.yuanbaogo.zui.search.view.SearchLayout
+        android:id="@+id/search_history_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_history_rl_history"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_10" />
+
+</RelativeLayout>

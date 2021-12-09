@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/item_assets_recharge_now_rl"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/margin_22"
+    android:layout_marginBottom="@dimen/margin_20">
+
+    <ImageView
+        android:id="@+id/item_assets_recharge_now_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_assets_recharge_now_500_un" />
+
+    <ImageView
+        android:id="@+id/item_assets_recharge_now_img_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/icon_assets_recharge_now_select" />
+
+</RelativeLayout>

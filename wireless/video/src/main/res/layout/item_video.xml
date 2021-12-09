@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_fl_video"
+    android:layout_width="match_parent"
+    android:layout_height="114dp"
+    android:layout_margin="2dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_img_video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#393a44"
+        android:scaleType="centerCrop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_tv_video_count"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="@dimen/margin_4"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:background="@drawable/bg_video_play_num"
+        android:drawableLeft="@mipmap/ic_video_pause"
+        android:drawablePadding="2dp"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_2"
+        android:text="0次播放"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/text_9" />
+
+</FrameLayout>

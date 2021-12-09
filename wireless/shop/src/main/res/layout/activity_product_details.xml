@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF5EFEB"
+    tools:context=".productdetails.view.ProductDetailsActivity">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/shop_product_details_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/shop_product_details_rl_bottom">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.yuanbaogo.zui.scrollview.ObservableScrollView
+            android:id="@+id/shop_product_details_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.yuanbaogo.zui.banner.BannerView
+                    android:id="@+id/shop_product_details_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_product_details_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_product_details_banner" />
+
+            </RelativeLayout>
+
+        </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/shop_product_details_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yuanbaogo.zui.head.HeadView
+            android:id="@+id/shop_product_details_head_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/shop_product_details_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_44"
+            android:layout_below="@+id/shop_product_details_head_view"
+            android:visibility="gone"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_color="@color/colorEA5504"
+            tl:tl_indicator_corner_radius="@dimen/margin_3"
+            tl:tl_indicator_height="@dimen/margin_3"
+            tl:tl_indicator_width="@dimen/margin_30"
+            tl:tl_textSelectColor="@color/colorEA5504"
+            tl:tl_textUnselectColor="@color/color666666"
+            tl:tl_textsize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shop_product_details_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_65"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFFFFFF">
+
+        <TextView
+            android:id="@+id/shop_product_details_tv_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:drawableTop="@mipmap/icon_shop_favorites_gray"
+            android:gravity="center"
+            android:padding="@dimen/margin_5"
+            android:text="收藏夹"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/shop_product_details_tv_consult"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@id/shop_product_details_tv_favorites"
+            android:drawableTop="@mipmap/icon_shop_advisory_gray"
+            android:gravity="center"
+            android:padding="@dimen/margin_5"
+            android:text="咨询"
+            android:textColor="@color/colorAAAAAA"
+            android:textSize="@dimen/margin_12" />
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/shop_product_details_tv_add_shop_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_gradient_right_bg_f8ccb3_10"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="@color/colorF63C09"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/shop_product_details_tv_buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_gradient_left_bg_ea5504_10"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shop_product_details_rl_bottom_live"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_65"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/shop_product_details_tv_buy_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_gradient_bg_but_login_50"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_14" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/shop_product_details_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/shop_product_details_rl_bottom"
+        android:layout_below="@id/shop_product_details_rl_head"
+        android:visibility="gone" />
+
+</RelativeLayout>

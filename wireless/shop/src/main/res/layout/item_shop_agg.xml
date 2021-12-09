@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shop_agg"
+    android:layout_width="@dimen/margin_35"
+    android:layout_height="@dimen/margin_35"
+    android:layout_centerInParent="true">
+
+    <com.yuanbaogo.zui.view.CircleImageView
+        android:id="@+id/item_shop_agg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/shape_gradient_bg_red_50" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    tools:context=".joingroup.view.JoinGroupActivity">
+
+    <com.yuanbaogo.zui.scrollview.ObservableScrollView
+        android:id="@+id/shop_join_group_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.yuanbaogo.zui.banner.BannerView
+                android:id="@+id/shop_join_group_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_230" />
+
+            <FrameLayout
+                android:id="@+id/shop_join_group_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_join_group_banner" />
+
+            <RelativeLayout
+                android:id="@+id/shop_join_group_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_join_group_zone">
+
+                <ImageView
+                    android:id="@+id/shop_join_group_img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_join_group4" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shop_join_group_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_join_group_img4"
+                    android:nestedScrollingEnabled="false" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/shop_join_group_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/shop_join_group_img_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_shop_cart" />
+
+        <ImageView
+            android:id="@+id/shop_join_group_img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_join_group_img_shopcart"
+            android:src="@mipmap/icon_search_top" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="552dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/shape_bg_white_corner_top_lr_dp12"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="#9B9B9B"
+    android:outlineSpotShadowColor="#9B9B9B"
+    android:transformPivotY="-5dp"
+    android:translationY="3dp">
+
+    <RelativeLayout
+        android:id="@+id/dialog_bottomsheet_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@drawable/bg_white_top_radius10">
+
+        <ImageView
+            android:id="@+id/dialog_bottomsheet_iv_close"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_pay_set_dialog_close" />
+
+        <TextView
+            android:id="@+id/tv_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评论"
+            android:textColor="@color/colorFF212121"
+            android:textSize="@dimen/text_15"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:srlAccentColor="@color/colorFFFFFF"
+        app:srlEnablePreviewInEditMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dialog_bottomsheet_rv_lists"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_input_title"
+                    android:layout_alignBottom="@+id/tv_input_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_60"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:src="@mipmap/icon_no_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="暂无评论"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/margin_14"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate" />
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_input_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_34"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/margin_9"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/iv_face"
+            android:background="@drawable/icon_order_search_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="说点什么吧~"
+            android:textColor="@color/colorFFAAAAAA"
+            android:textSize="@dimen/text_15" />
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
+            android:layout_alignTop="@+id/tv_input_title"
+            android:layout_alignBottom="@+id/tv_input_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@mipmap/icon_face"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#ffd8d8d8" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+//        resourcePrefix "zui_"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation lib.banner
+    implementation lib.refresh_kernel
+    implementation lib.refresh_footer_classics
+    implementation lib.refresh_header_classics
+    implementation project(":architect:commonlib")
+    implementation project(":architect:res")
+
+
+
+    api 'io.github.lucksiege:pictureselector:v2.7.3-rc07' // 选择图片
+
+//    implementation lib.umsdk_common
+    implementation lib.umsdk_asms
+    implementation lib.umsdk_share_core
+    implementation lib.umsdk_share_wx
+
+    implementation project(":library:libdatacenter")
+    implementation project(":library:libshare")
+    api project(":library:libpermission")
+
+    implementation lib.httpcore
+    implementation lib.circleimageview
+
+}

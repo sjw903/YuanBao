@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_64"
+    android:orientation="horizontal"
+    android:background="@color/colorFFFFFF">
+
+    <ImageView
+        android:id="@+id/my_fans_head_iv"
+        android:layout_width="@dimen/margin_44"
+        android:layout_height="@dimen/margin_44"
+        android:src="@mipmap/icon_video_default_head"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/my_fans_information_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/my_fans_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="百货-老板"
+                    android:textSize="@dimen/text_15"
+                    android:textColor="@color/color424242"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/my_fans_introduce_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小商小贩就是我"
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/colorAAAAAA"
+                    android:layout_marginTop="@dimen/margin_8"/>
+
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/my_fans_state_iv"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_28"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_mutual_attention"/>
+            
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorE4E4E4"/>
+
+    </LinearLayout>
+
+</LinearLayout>

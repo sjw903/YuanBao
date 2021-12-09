@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_70"
+        android:layout_marginRight="@dimen/margin_50"
+        android:background="@drawable/shape_gradient_bg_white_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_47">
+
+            <View
+                android:layout_width="@dimen/margin_64"
+                android:layout_height="@dimen/margin_5"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_gradient_bg_light_orange_10" />
+
+            <TextView
+                android:id="@+id/dialog_assets_view_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="帮助说明"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <com.yuanbaogo.zui.scrollview.ObservableScrollView
+            android:id="@+id/dialog_assets_view_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dialog_assets_view_tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="1.此商品链接均为您购物车中的商品链接"
+                    android:textColor="@color/color212121"
+                    android:textSize="@dimen/text_13" />
+
+            </RelativeLayout>
+
+        </com.yuanbaogo.zui.scrollview.ObservableScrollView>
+
+        <TextView
+            android:id="@+id/dialog_assets_view_tv_determine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:layout_marginLeft="@dimen/margin_45"
+            android:layout_marginRight="@dimen/margin_45"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/selector_bg_but_login"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/icon_assets_dialog_top" />
+
+</RelativeLayout>

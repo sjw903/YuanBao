@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shop_onecity_live_explosion_rl_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5"
+    android:background="@drawable/shape_bg_1affffff_to_bce4e4e4">
+
+    <RelativeLayout
+        android:id="@+id/item_shop_onecity_live_explosion_rl_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/item_shop_onecity_live_explosion_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29.8"
+            android:textColor="@color/colorF63C09"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/item_shop_onecity_live_explosion_tv_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@id/item_shop_onecity_live_explosion_tv_price"
+            android:text="¥99"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_shop_onecity_live_explosion_rl_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_onecity_live_explosion_rl_price"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/item_shop_onecity_live_explosion_img"
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:background="@color/colorE4E4E4"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/item_shop_onecity_live_explosion_rl_attributes"
+            android:layout_width="@dimen/margin_32"
+            android:layout_height="@dimen/margin_32"
+            android:layout_marginLeft="@dimen/margin_1"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/shape_bg_ffa365_to_ffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/margin_31"
+                android:layout_height="@dimen/margin_31"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_bg_ffcdbd_to_ffa365" />
+
+            <TextView
+                android:id="@+id/item_shop_onecity_live_explosion_tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_3"
+                android:text="山东"
+                android:textColor="@color/colorEA5504"
+                android:textSize="@dimen/text_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_shop_onecity_live_explosion_tv_province"
+                android:layout_centerHorizontal="true"
+                android:text="枣庄"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_10" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_shop_onecity_live_explosion_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_onecity_live_explosion_rl_img"
+        android:layout_margin="@dimen/margin_10"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:text="生力枣-礼盒装"
+        android:textColor="@color/color424242"
+        android:textSize="@dimen/text_12" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_video_goods_link"
+        android:layout_width="@dimen/margin_159"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_80"
+        android:drawableLeft="@mipmap/icon_video_goods_car"
+        android:drawablePadding="@dimen/margin_7"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingRight="@dimen/margin_11"
+        android:paddingBottom="@dimen/margin_4"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_10"
+        tools:text="奥斯卡的哈会发货方按实际大数据十九大蓝色的盛大非法" />
+
+    <RelativeLayout
+        android:id="@+id/rl_goods_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_85"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_150"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:background="@drawable/shape_bg_white_10"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/iv_video_goods"
+            android:layout_width="@dimen/margin_75"
+            android:layout_height="@dimen/margin_75"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5" />
+
+        <ImageView
+            android:id="@+id/iv_video_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_6"
+            android:layout_marginRight="@dimen/margin_6"
+            android:src="@mipmap/icon_video_close" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_video_goods_sku"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp">
+
+            <TextView
+                android:id="@+id/tv_video_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorF63C09"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold"
+                tools:text="￥46" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_video_goods_price"
+                android:text="折后价"
+                android:textColor="@color/colorE03030"
+                android:textSize="@dimen/text_10" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_video_goods_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_video_goods_describe"
+            android:layout_alignLeft="@+id/tv_video_goods_describe"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/shape_bg_f6f6f6_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_4"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingRight="@dimen/margin_4"
+            android:paddingBottom="@dimen/margin_2"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/text_9"
+            tools:text="白色 XL" />
+
+        <TextView
+            android:id="@+id/tv_video_goods_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_7"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/iv_video_close"
+            android:layout_toRightOf="@+id/iv_video_goods"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color212121"
+            android:textSize="@dimen/text_13"
+            tools:text="奥科吉闪电发货" />
+
+        <TextView
+            android:id="@+id/tv_video_goods_buy"
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_24"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@drawable/shape_bg_ffa365_to_ed4d16_24"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/colorFFFFFF"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_video_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_278"
+        android:src="@mipmap/icon_video_no_data"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_progress_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

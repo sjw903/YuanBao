@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+def lib = rootProject.ext.dependencies
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    api rootProject.ext.dependencies.fastjson
+    api rootProject.ext.dependencies.okhttp3
+
+    api project(":library:libbase")
+
+}
+
+//uploadArchives {
+//    configuration = configurations.archives
+//    repositories {
+//        mavenDeployer {
+//            repository(url: "${MAVEN_URL}") {
+//                authentication(userName: MAVEN_USERNAME, password: MAVEN_PASSWORD)
+//            }
+//            pom.project {
+//                if (DEVELOP) {
+//                    version "${LIB_BCL_NETWORK_VERSION}-SNAPSHOT"
+//                } else {
+//                    version "${LIB_BCL_NETWORK_VERSION}-RELEASES"
+//                }
+//                artifactId "${LIB_BCL_NETWORK_ARTIFACTID}"
+//
+//                groupId "${GROUP_ID}"
+//            }
+//        }
+//    }
+//}

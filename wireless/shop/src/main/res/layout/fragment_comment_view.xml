@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shop_product_details_comment_smart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA">
+
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_shop_product_details_comment_recycler_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/item_shop_product_details_comment_rl" />
+
+        <RelativeLayout
+            android:id="@+id/item_shop_product_details_comment_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40">
+
+            <TextView
+                android:id="@+id/item_shop_product_details_comment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:gravity="center"
+                android:text="商品评价"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/item_shop_product_details_comment_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@id/item_shop_product_details_comment_title"
+                android:gravity="center"
+                android:text="(1)"
+                android:textColor="@color/colorAAAAAA"
+                android:textSize="@dimen/text_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_shop_product_details_comment_rl_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_100"
+                android:drawableTop="@mipmap/icon_assets_no_data"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="暂无明细"
+                android:textColor="@color/color424242"
+                android:textSize="@dimen/text_14" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

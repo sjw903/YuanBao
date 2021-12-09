@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bindBankCard.view.BindBankCardActivity"
+    tools:ignore="ResourceName">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/bind_bank_card_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="#F9F1ED"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_10"
+        android:text="请绑定持卡人本人的银行卡"
+        android:textColor="#E03030"
+        android:textSize="@dimen/text_12" />
+
+    <RelativeLayout
+        android:id="@+id/bind_bank_card_name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_9"
+                android:text="姓名"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bind_bank_card_name_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="64dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_13" />
+
+            <ImageView
+                android:id="@+id/bind_bank_card_name_delete_iv"
+                android:layout_width="@dimen/margin_19"
+                android:layout_height="@dimen/margin_19"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/margin_17"
+                android:src="@mipmap/icon_bind_delete" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@color/colorE4E4E4" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_bank_card_number_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_9"
+                android:text="卡号"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bind_bank_card_number_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="64dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入银行卡号"
+                android:inputType="numberSigned"
+                android:maxLength="23"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_13" />
+
+            <ImageView
+                android:id="@+id/bind_bank_card_number_delete_iv"
+                android:layout_width="@dimen/margin_19"
+                android:layout_height="@dimen/margin_19"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/margin_17"
+                android:src="@mipmap/icon_bind_delete" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@color/colorE4E4E4" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_bank_card_bank_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_9"
+                android:text="银行"
+                android:textColor="@color/color212121"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bind_bank_card_bank_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="64dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorAAAAAA"
+                android:textSize="@dimen/text_13" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@color/colorE4E4E4" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bind_bank_card_next_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:background="@drawable/btn_state_enabled_ea5504"
+        android:enabled="false"
+        android:text="下一步"
+        android:textColor="@color/colorFFFFFF"
+        android:textSize="@dimen/margin_16" />
+
+</LinearLayout>

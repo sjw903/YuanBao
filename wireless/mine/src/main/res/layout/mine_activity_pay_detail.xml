@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".order.pay.detail.PayDetailActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/wait_pay_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_110"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wait_pay_tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wait_pay_money"
+                        android:textColor="@color/wing_sub_title"
+                        android:textSize="@dimen/wing_sub_title" />
+
+                    <TextView
+                        android:id="@+id/wait_pay_tv_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wing_selected_title"
+                        android:textSize="@dimen/wing_sub_title"
+                        tools:text="23" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wait_pay_hour"
+                        android:textColor="@color/wing_sub_title"
+                        android:textSize="@dimen/wing_sub_title" />
+
+                    <TextView
+                        android:id="@+id/wait_pay_tv_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wing_selected_title"
+                        android:textSize="@dimen/wing_sub_title"
+                        tools:text="23" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wait_pay_minute"
+                        android:textColor="@color/wing_sub_title"
+                        android:textSize="@dimen/wing_sub_title" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/wait_pay_tv_pay"
+                    android:layout_width="@dimen/margin_110"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/icon_address_add"
+                    android:gravity="center"
+                    android:text="@string/wait_to_pay"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wing_selected_btn" />
+
+            </LinearLayout>
+
+            <include layout="@layout/mine_layout_order_address_item" />
+
+            <include layout="@layout/mine_layout_order_goods_list" />
+
+            <include layout="@layout/mine_layout_order_details" />
+
+            <include layout="@layout/mine_layout_order_service" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/white"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/wait_pay_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/order_btn_cancel"
+            android:textColor="@color/wing_sub_title_hint"
+            android:textSize="@dimen/wing_sub_title" />
+
+        <TextView
+            android:id="@+id/wait_pay_tv_to_pay"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_36"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_address_add"
+            android:gravity="center"
+            android:text="@string/wait_to_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_15" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

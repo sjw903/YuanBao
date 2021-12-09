@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFAFAFA">
+
+    <RelativeLayout
+        android:id="@+id/shop_group_joining_zone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_ffa365_to_ed4d16">
+
+        <ImageView
+            android:id="@+id/shop_group_joining_zone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@mipmap/icon_shop_group_joining_zone" />
+
+        <ImageView
+            android:id="@+id/shop_group_joining_zone_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_group_joining_zone_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@mipmap/icon_shop_group_joining_zone2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_group_joining_zone_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_group_joining_zone_img2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:nestedScrollingEnabled="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

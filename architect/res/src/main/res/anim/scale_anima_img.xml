@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fillAfter="true"
+    android:fillBefore="true"
+    android:fromXScale="1.0"
+    android:fromYScale="1.0"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="-1"
+    android:repeatMode="reverse"
+    android:startOffset="200"
+    android:toXScale="1.1"
+    android:toYScale="1.1" />
+
+    <!--    android:duration：动画持续时长-->
+    <!--    android:fillAfter：动画结束之后是否保持动画的最终状态；true，表示保持动画的最终状态-->
+    <!--    android:fillBefore：动画结束之后是否保持动画开始前的状态；true，表示恢复到动画开始前的状态-->
+    <!--    android:interpolator：动画插值器。是实现动画不规则运动的一种方式，后面讲到-->
+    <!--    android:pivotX：缩放中心坐标的X值，取值类型有三种：数字；百分比；百分比+”p”;-->
+    <!--    数字：例如50.0，这里的单位是px像素-->
+    <!--    百分比：例如50%，这里是相对于自己控件宽度的百分比，实际的值是mIvImg.getWidth()*50%；-->
+    <!--    百分比+”p”：例如50%p，这里是表示相对于自己控件的父控件的百分比，-->
+    <!--    android:pivotY：同上-->
+    <!--    android:repeatCount：动画重复的次数。指定动画重复播放的次数，如果你需要无限循环播放，请填写一个小于0的数值，一般写-1-->
+    <!--    android:repeatMode：动画重复的Mode，有reverse和restart两种，效果看后面-->
+    <!--    android:startOffset：动画播放延迟时长，就是调用start之后延迟多少时间播放动画-->
+    <!--    android:fromXScale：动画开始时X轴方向控件大小，取值和android：pivot一样；三种取值类型：数字；百分比；百分比+”p”;-->
+    <!--    android:fromYScale：动画开始时Y轴方向控件大小，取值类型同上-->
+    <!--    android:toXScale：动画在X轴方向上控件的目标大小，取值类型同上-->
+    <!--    android:toYScale：动画在Y轴方向上控件的目标大小，取值类型同上-->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.pay.set.PaySetActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/pay_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_11"
+        android:text="@string/update_phone_tip"
+        android:textSize="@dimen/wing_sub_title" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pay_set_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_set_phone"
+            android:textColor="@color/wing_sub_title_hint"
+            android:textSize="@dimen/wing_title" />
+
+        <TextView
+            android:id="@+id/pay_set_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20"
+            android:textColor="@color/wing_title"
+            android:textSize="@dimen/wing_title"
+            tools:text="17855736459" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pay_set_line" />
+
+    <TextView
+        android:id="@+id/pay_set_tv_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:layout_marginHorizontal="@dimen/address_bottom_btn_horizontal_margin"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/icon_address_add"
+        android:gravity="center"
+        android:text="@string/pay_set_code"
+        android:textColor="@color/white"
+        android:textSize="@dimen/address_bottom_btn_text_size" />
+
+</LinearLayout>

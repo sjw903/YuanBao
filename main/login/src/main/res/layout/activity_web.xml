@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFAFAFA"
+    android:orientation="vertical">
+
+    <com.yuanbaogo.zui.head.HeadView
+        android:id="@+id/web_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id="@+id/web_Agreement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_90"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/list"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/icon_login_xitongchucuo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="还没发现" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:text="您访问的页面搞丢了" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="点击重新加载"
+            android:textColor="@color/color212121" />
+
+    </LinearLayout>
+
+</LinearLayout>

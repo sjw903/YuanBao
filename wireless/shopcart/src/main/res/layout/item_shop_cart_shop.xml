@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shop_cart_child_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/item_shop_cart_child_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/item_shop_cart_child_tv_special_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gradient_bg_but_line_orrange"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_3"
+            android:text="五百专区"
+            android:textColor="@color/colorEA5504"
+            android:textSize="@dimen/text_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_shop_cart_child_tv_special_area"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_3"
+            android:text="充五百送五百 〉"
+            android:textColor="@color/color424242"
+            android:textSize="@dimen/text_12"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_shop_cart_child_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_shop_cart_child_rl_top" />
+
+</RelativeLayout>

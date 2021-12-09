@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.yuanbaogo.app",
+  "variantName": "processHuaweiDebugResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 302,
+      "versionName": "3.0.2",
+      "outputFile": "yuanbao_debug.apk"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+    <item android:top="240dp">
+        <bitmap
+            android:antialias="true"
+            android:gravity="center_horizontal|top"
+            android:src="@color/ugckit_color_danmu_msg" />
+    </item>
+</layer-list>

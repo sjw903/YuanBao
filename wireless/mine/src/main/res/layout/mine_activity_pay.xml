@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.pay.PayActivity">
+
+    <com.yuanbaogo.zui.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleName="@string/pay_title" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/pay_si_set_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        app:nameText="@string/pay_set_password" />
+
+    <com.yuanbaogo.zui.view.SettingItem
+        android:id="@+id/pay_si_reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_first_top_margin"
+        android:visibility="gone"
+        app:nameText="@string/pay_reset_password" />
+
+</LinearLayout>
