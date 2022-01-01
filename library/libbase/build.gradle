@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
 }
 apply from: "${rootDir}/yuanbao-config-android/gradle/baseStructure.gradle"
+apply plugin: 'kotlin-android'
 def lib = rootProject.ext.dependencies
 android {
     defaultConfig {
@@ -32,5 +33,10 @@ dependencies {
     // 修改为api，使别的module也可使用
     api lib.glide
     api lib.fastjson
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+}
+repositories {
+    mavenCentral()
 }

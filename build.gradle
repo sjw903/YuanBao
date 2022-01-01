@@ -2,6 +2,7 @@
 apply from: "${rootDir}/yuanbao-config-android/gradle/init.gradle"
 
 buildscript {
+    ext.kotlin_version = '1.6.10'
     ext.kotlin_version = '1.3.31'
     repositories {
         google()
